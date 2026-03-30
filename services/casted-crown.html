@@ -1,219 +1,501 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"primary-container": "#96f1fa", "tertiary-fixed-dim": "#caf0ec", "on-primary-fixed-variant": "#00666d", "on-background": "#2c3436", "on-secondary-container": "#2b5765", error: "#a83836", "on-surface-variant": "#596063", secondary: "#3a6573", "accent-gold": "#D4AF37", "accent-gold-light": "#E5C76B", "surface-container-lowest": "#ffffff", "surface-container-highest": "#dce4e6", "secondary-dim": "#2d5966", "surface-bright": "#f8fafb", "on-tertiary-fixed": "#2f514f", "primary-dim": "#005d63", surface: "#f8fafb", "surface-container": "#eaeff0", "inverse-on-surface": "#9a9d9e", "on-primary-fixed": "#00474c", "outline-variant": "#acb3b6", "on-surface": "#2c3436", "secondary-fixed": "#bdeafa", "inverse-surface": "#0b0f10", "inverse-primary": "#99f4fd", "secondary-fixed-dim": "#afdbeb", "surface-container-low": "#f0f4f6", "error-container": "#fa746f", outline: "#747c7e", "on-secondary": "#f0fbff", "on-error": "#fff7f6", "primary-fixed": "#96f1fa", background: "#f8fafb", primary: "#006a71", "on-secondary-fixed-variant": "#36616f", "surface-container-high": "#e3e9eb", tertiary: "#436563", "on-primary": "#e7fdff", "surface-dim": "#d4dbde", "tertiary-fixed": "#d8fefa", "on-tertiary-fixed-variant": "#4c6e6c", "error-dim": "#67040d", "tertiary-dim": "#375957", "tertiary-container": "#d8fefa", "primary-fixed-dim": "#88e3eb", "secondary-container": "#bdeafa", "surface-tint": "#006a71", "on-error-container": "#6e0a12", "on-primary-container": "#005b61", "on-tertiary": "#e1fffc", "on-tertiary-container": "#416361", "surface-variant": "#dce4e6", "on-secondary-fixed": "#164552", "gold-accent": "#C5A059"}, fontFamily: {headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"], display: "Manrope"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}}}};</script>
-  <title>Casted Crown | Prof. Dr Ahmed Nabil</title>
-  <style>
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); }
-    .asymmetric-gradient { background: linear-gradient(135deg, #006a71 0%, #D4AF37 100%); }
-    .arabesque-pattern { background-color: #fdfcf9; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.89 19.11L55.03 15 40.89 30l14.14 15-19.14-4.11L30 60l-5.89-19.11L5 45l14.14-15L5 15l19.11 4.11z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E"); }
-    .gold-border { border-color: #D4AF37; }
-    .text-gold { color: #D4AF37; }
-    .nav-dropdown:hover .nav-dropdown-content { display: block; }
-    .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%); }
-    .hero-gradient { background: linear-gradient(135deg, #004B50 0%, #002B2E 100%); }
-    .lotus-pattern { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-2 5-10 15-10 25s8 20 10 25c2-5 10-15 10-25S32 10 30 5z' fill='%23006a71' fill-opacity='0.03'/%3E%3C/svg%3E"); }
-    .editorial-shadow { box-shadow: 0 20px 40px rgba(184, 134, 11, 0.08); }
-    .motif-pattern { background-image: radial-gradient(#B8860B 0.5px, transparent 0.5px); background-size: 24px 24px; opacity: 0.1; }
-  </style>
-  
-  <script type="module" src="/../src/main.js"></script>
-</head>
-<body class="bg-surface text-on-background font-body arabesque-pattern" data-page="services">
-<div id="site-header"></div>
-<main class="pt-20">
-<!-- Hero Section: The Precision Anchor -->
-<section class="relative min-h-[819px] flex items-center overflow-hidden bg-surface">
-<div class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-7 z-10">
-<span class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label font-semibold text-xs mb-6 uppercase tracking-widest">Advanced Prosthodontics</span>
-<h1 class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] mb-8 tracking-tighter">
-                        Casted Crown: <br/>
-<span class="text-primary italic">Precision</span> Restored.
-                    </h1>
-<p class="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed mb-10">
-                        Engineered for ultimate longevity and anatomical accuracy. Our casted crowns provide a seamless transition from natural tooth to restorative perfection.
-                    </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-base hover:shadow-lg transition-all">
-                            Consultation Request
-                        </button>
-<div class="flex items-center gap-3 px-6 py-4 rounded-full bg-surface-container-low">
-<span class="material-symbols-outlined text-primary">verified</span>
-<span class="text-sm font-semibold">15+ Year Durability</span>
-</div>
-</div>
-</div>
-<div class="lg:col-span-5 relative">
-<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl transform rotate-2">
-<img class="w-full h-full object-cover" data-alt="Macro close-up of a high-precision zirconia dental crown being fitted onto a clinical model with soft studio lighting and teal accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPgSjTJJh1H2_9ogaaWi_iVNK9K5MjQj2zDAe8FHv3WCp77tIWQWknauOzihfPk3qccqTA9lTQa7l4X-Vi1-z8GXIWHamUnP8lTZ9sbuwc3_rFpcdKe1XN56q2h63Vw0VvWW1BXowdwhs7zs1z6oOAwrPqHrbZRYQtr-JsX16PjaOqAPMnPMVjEGX056jMJcjqrEtUinYIlU9_C8kMc7SDLK91E96ViQWL5GCuskk0rhHZ5De4jhjX4yaCerY2PRg-K7rP04yjlEj_"/>
-</div>
-<!-- Decorative Element -->
-<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-container/30 rounded-full blur-3xl -z-10"></div>
-</div>
-</div>
-</section>
-<!-- Technical Comparison: Zirconia vs PFM -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-8">
-<div class="mb-16">
-<h2 class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-4">Material Engineering</h2>
-<div class="w-20 h-1.5 bg-primary rounded-full"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Zirconia Card -->
-<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-all">
-<div class="flex justify-between items-start mb-8">
-<h3 class="font-headline text-2xl font-bold">Monolithic Zirconia</h3>
-<span class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-bold uppercase">Modern Gold Standard</span>
-</div>
-<ul class="space-y-6">
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<div>
-<p class="font-bold">Exceptional Biocompatibility</p>
-<p class="text-sm text-on-surface-variant">Non-allergic and tissue-friendly for long-term gum health.</p>
-</div>
-</li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<div>
-<p class="font-bold">Natural Translucency</p>
-<p class="text-sm text-on-surface-variant">Mimics the light-reflecting properties of natural enamel.</p>
-</div>
-</li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<div>
-<p class="font-bold">Chip Resistance</p>
-<p class="text-sm text-on-surface-variant">Extremely high flexural strength, ideal for molars and heavy biters.</p>
-</div>
-</li>
-</ul>
-</div>
-<!-- PFM Card -->
-<div class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-all">
-<div class="flex justify-between items-start mb-8">
-<h3 class="font-headline text-2xl font-bold">Porcelain-Fused-to-Metal</h3>
-<span class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase">Classical Reliability</span>
-</div>
-<ul class="space-y-6">
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
-<div>
-<p class="font-bold">Proven Clinical Track Record</p>
-<p class="text-sm text-on-surface-variant">Decades of data supporting long-term structural success.</p>
-</div>
-</li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
-<div>
-<p class="font-bold">Precise Marginal Fit</p>
-<p class="text-sm text-on-surface-variant">Metal substructure allows for microscopic accuracy at the gum line.</p>
-</div>
-</li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">verified</span>
-<div>
-<p class="font-bold">Cost-Effective Longevity</p>
-<p class="text-sm text-on-surface-variant">High-strength restoration suitable for long-span bridges.</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- Restoration & Strength: Bento Grid -->
-<section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-full md:h-[600px]">
-<!-- Restoration Feature -->
-<div class="md:col-span-2 md:row-span-2 bg-primary text-on-primary p-12 rounded-xl relative overflow-hidden flex flex-col justify-end">
-<div class="absolute top-0 right-0 p-8">
-<span class="material-symbols-outlined text-6xl opacity-20">biotech</span>
-</div>
-<h3 class="font-headline text-3xl font-extrabold mb-4">Structural Restoration</h3>
-<p class="text-on-primary/80 mb-6 leading-relaxed">
-                            For teeth compromised by extensive decay, fractures, or root canal therapy, a casted crown provides the necessary "hoop effect," protecting the remaining structure from catastrophic failure.
-                        </p>
-<div class="flex gap-2">
-<div class="w-8 h-1 bg-on-primary rounded-full"></div>
-<div class="w-4 h-1 bg-on-primary/30 rounded-full"></div>
-<div class="w-4 h-1 bg-on-primary/30 rounded-full"></div>
-</div>
-</div>
-<!-- Strength Feature -->
-<div class="md:col-span-2 bg-surface-container-high p-8 rounded-xl flex items-center gap-6">
-<div class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-primary text-3xl">fitness_center</span>
-</div>
-<div>
-<h4 class="font-headline text-xl font-bold mb-2">Maximum Bite Force</h4>
-<p class="text-sm text-on-surface-variant">Engineered to withstand forces exceeding 800 Newtons, essential for posterior mastication.</p>
-</div>
-</div>
-<!-- Longevity Feature -->
-<div class="md:col-span-2 bg-secondary text-on-secondary p-8 rounded-xl flex items-center gap-6">
-<div class="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-<span class="material-symbols-outlined text-on-secondary text-3xl">hourglass_empty</span>
-</div>
-<div>
-<h4 class="font-headline text-xl font-bold mb-2">Decade-Scale Longevity</h4>
-<p class="text-sm text-on-secondary/80">With optimal hygiene, our casted crowns routinely serve patients for 15-20 years without replacement.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- The Process (Simplified) -->
-<section class="py-24 bg-surface-container-lowest">
-<div class="max-w-7xl mx-auto px-8 text-center">
-<h2 class="font-headline text-4xl font-bold mb-16">The Journey to Perfection</h2>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-<div class="flex flex-col items-center">
-<div class="w-16 h-16 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 font-headline font-bold text-2xl text-primary">01</div>
-<h4 class="font-headline text-xl font-bold mb-3">Digital Scanning</h4>
-<p class="text-sm text-on-surface-variant leading-relaxed">High-resolution 3D impressions ensuring 10-micron accuracy for a perfect fit.</p>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-16 h-16 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 font-headline font-bold text-2xl text-primary">02</div>
-<h4 class="font-headline text-xl font-bold mb-3">Precision Milling</h4>
-<p class="text-sm text-on-surface-variant leading-relaxed">Multi-axis robotic fabrication ensuring material density and structural integrity.</p>
-</div>
-<div class="flex flex-col items-center">
-<div class="w-16 h-16 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 font-headline font-bold text-2xl text-primary">03</div>
-<h4 class="font-headline text-xl font-bold mb-3">Artisanal Finishing</h4>
-<p class="text-sm text-on-surface-variant leading-relaxed">Hand-applied layering and glazing by master technicians for natural aesthetics.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Final Booking CTA -->
-<section class="py-24 bg-surface overflow-hidden">
-<div class="max-w-5xl mx-auto px-8">
-<div class="bg-primary-container/20 rounded-xl p-12 md:p-20 text-center relative">
-<div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(#006a71 1px, transparent 1px); background-size: 20px 20px;"></div>
-<h2 class="font-headline text-4xl md:text-5xl font-extrabold mb-6 text-on-primary-container tracking-tight">Ready to Restore Your Smile?</h2>
-<p class="text-on-surface-variant text-lg mb-10 max-w-2xl mx-auto">
-                        Join hundreds of patients who have chosen the expertise of Prof. Dr Ahmed Nabil for their dental restorations.
-                    </p>
-<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-primary/20">
-                        Schedule Your Assessment
-                    </button>
-<p class="mt-8 text-sm font-semibold text-primary">Limited availability for same-month appointments</p>
-</div>
-</div>
-</section>
-</main>
-<div id="site-footer"></div>
-<div id="site-widget"></div>
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#96f1fa",
+              "tertiary-fixed-dim": "#caf0ec",
+              "on-primary-fixed-variant": "#00666d",
+              "on-background": "#2c3436",
+              "on-secondary-container": "#2b5765",
+              error: "#a83836",
+              "on-surface-variant": "#596063",
+              secondary: "#3a6573",
+              "accent-gold": "#D4AF37",
+              "accent-gold-light": "#E5C76B",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-highest": "#dce4e6",
+              "secondary-dim": "#2d5966",
+              "surface-bright": "#f8fafb",
+              "on-tertiary-fixed": "#2f514f",
+              "primary-dim": "#005d63",
+              surface: "#f8fafb",
+              "surface-container": "#eaeff0",
+              "inverse-on-surface": "#9a9d9e",
+              "on-primary-fixed": "#00474c",
+              "outline-variant": "#acb3b6",
+              "on-surface": "#2c3436",
+              "secondary-fixed": "#bdeafa",
+              "inverse-surface": "#0b0f10",
+              "inverse-primary": "#99f4fd",
+              "secondary-fixed-dim": "#afdbeb",
+              "surface-container-low": "#f0f4f6",
+              "error-container": "#fa746f",
+              outline: "#747c7e",
+              "on-secondary": "#f0fbff",
+              "on-error": "#fff7f6",
+              "primary-fixed": "#96f1fa",
+              background: "#f8fafb",
+              primary: "#006a71",
+              "on-secondary-fixed-variant": "#36616f",
+              "surface-container-high": "#e3e9eb",
+              tertiary: "#436563",
+              "on-primary": "#e7fdff",
+              "surface-dim": "#d4dbde",
+              "tertiary-fixed": "#d8fefa",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "error-dim": "#67040d",
+              "tertiary-dim": "#375957",
+              "tertiary-container": "#d8fefa",
+              "primary-fixed-dim": "#88e3eb",
+              "secondary-container": "#bdeafa",
+              "surface-tint": "#006a71",
+              "on-error-container": "#6e0a12",
+              "on-primary-container": "#005b61",
+              "on-tertiary": "#e1fffc",
+              "on-tertiary-container": "#416361",
+              "surface-variant": "#dce4e6",
+              "on-secondary-fixed": "#164552",
+              "gold-accent": "#C5A059",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Casted Crown | Prof. Dr Ahmed Nabil</title>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(20px);
+      }
+      .asymmetric-gradient {
+        background: linear-gradient(135deg, #006a71 0%, #d4af37 100%);
+      }
+      .arabesque-pattern {
+        background-color: #fdfcf9;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.89 19.11L55.03 15 40.89 30l14.14 15-19.14-4.11L30 60l-5.89-19.11L5 45l14.14-15L5 15l19.11 4.11z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+      }
+      .gold-border {
+        border-color: #d4af37;
+      }
+      .text-gold {
+        color: #d4af37;
+      }
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
+      .gold-gradient {
+        background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+      }
+      .hero-gradient {
+        background: linear-gradient(135deg, #004b50 0%, #002b2e 100%);
+      }
+      .lotus-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-2 5-10 15-10 25s8 20 10 25c2-5 10-15 10-25S32 10 30 5z' fill='%23006a71' fill-opacity='0.03'/%3E%3C/svg%3E");
+      }
+      .editorial-shadow {
+        box-shadow: 0 20px 40px rgba(184, 134, 11, 0.08);
+      }
+      .motif-pattern {
+        background-image: radial-gradient(#b8860b 0.5px, transparent 0.5px);
+        background-size: 24px 24px;
+        opacity: 0.1;
+      }
+    </style>
 
-</body>
+    <script type="module" src="../src/main.js"></script>
+    <script type="module" src="../src/main.js"></script>
+  </head>
+  <body
+    class="bg-surface text-on-background font-body arabesque-pattern"
+    data-page="services"
+  >
+    <header id="site-header"></header>
+    <main class="pt-20">
+      <!-- Hero Section: The Precision Anchor -->
+      <section
+        class="relative min-h-[819px] flex items-center overflow-hidden bg-surface"
+      >
+        <div
+          class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+        >
+          <div class="lg:col-span-7 z-10">
+            <span
+              class="inline-block px-4 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label font-semibold text-xs mb-6 uppercase tracking-widest"
+              >Advanced Prosthodontics</span
+            >
+            <h1
+              class="font-headline text-5xl md:text-7xl font-extrabold text-on-surface leading-[1.1] mb-8 tracking-tighter"
+            >
+              Casted Crown: <br />
+              <span class="text-primary italic">Precision</span> Restored.
+            </h1>
+            <p
+              class="text-on-surface-variant text-lg md:text-xl max-w-xl leading-relaxed mb-10"
+            >
+              Engineered for ultimate longevity and anatomical accuracy. Our
+              casted crowns provide a seamless transition from natural tooth to
+              restorative perfection.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-base hover:shadow-lg transition-all"
+              >
+                Consultation Request
+              </button>
+              <div
+                class="flex items-center gap-3 px-6 py-4 rounded-full bg-surface-container-low"
+              >
+                <span class="material-symbols-outlined text-primary"
+                  >verified</span
+                >
+                <span class="text-sm font-semibold">15+ Year Durability</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-5 relative">
+            <div
+              class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl transform rotate-2"
+            >
+              <img
+                class="w-full h-full object-cover"
+                data-alt="Macro close-up of a high-precision zirconia dental crown being fitted onto a clinical model with soft studio lighting and teal accents"
+                src="https://images.unsplash.com/photo-1598256989800-fea5f00e39b7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+              />
+            </div>
+            <!-- Decorative Element -->
+            <div
+              class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary-container/30 rounded-full blur-3xl -z-10"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Technical Comparison: Zirconia vs PFM -->
+      <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="mb-16">
+            <h2
+              class="font-headline text-3xl md:text-4xl font-bold text-on-surface mb-4"
+            >
+              Material Engineering
+            </h2>
+            <div class="w-20 h-1.5 bg-primary rounded-full"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Zirconia Card -->
+            <div
+              class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-all"
+            >
+              <div class="flex justify-between items-start mb-8">
+                <h3 class="font-headline text-2xl font-bold">
+                  Monolithic Zirconia
+                </h3>
+                <span
+                  class="bg-primary-container text-on-primary-container px-3 py-1 rounded-full text-xs font-bold uppercase"
+                  >Modern Gold Standard</span
+                >
+              </div>
+              <ul class="space-y-6">
+                <li class="flex gap-4">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >check_circle</span
+                  >
+                  <div>
+                    <p class="font-bold">Exceptional Biocompatibility</p>
+                    <p class="text-sm text-on-surface-variant">
+                      Non-allergic and tissue-friendly for long-term gum health.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >check_circle</span
+                  >
+                  <div>
+                    <p class="font-bold">Natural Translucency</p>
+                    <p class="text-sm text-on-surface-variant">
+                      Mimics the light-reflecting properties of natural enamel.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >check_circle</span
+                  >
+                  <div>
+                    <p class="font-bold">Chip Resistance</p>
+                    <p class="text-sm text-on-surface-variant">
+                      Extremely high flexural strength, ideal for molars and
+                      heavy biters.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <!-- PFM Card -->
+            <div
+              class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 shadow-sm hover:shadow-md transition-all"
+            >
+              <div class="flex justify-between items-start mb-8">
+                <h3 class="font-headline text-2xl font-bold">
+                  Porcelain-Fused-to-Metal
+                </h3>
+                <span
+                  class="bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full text-xs font-bold uppercase"
+                  >Classical Reliability</span
+                >
+              </div>
+              <ul class="space-y-6">
+                <li class="flex gap-4">
+                  <span
+                    class="material-symbols-outlined text-secondary"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >verified</span
+                  >
+                  <div>
+                    <p class="font-bold">Proven Clinical Track Record</p>
+                    <p class="text-sm text-on-surface-variant">
+                      Decades of data supporting long-term structural success.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span
+                    class="material-symbols-outlined text-secondary"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >verified</span
+                  >
+                  <div>
+                    <p class="font-bold">Precise Marginal Fit</p>
+                    <p class="text-sm text-on-surface-variant">
+                      Metal substructure allows for microscopic accuracy at the
+                      gum line.
+                    </p>
+                  </div>
+                </li>
+                <li class="flex gap-4">
+                  <span
+                    class="material-symbols-outlined text-secondary"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >verified</span
+                  >
+                  <div>
+                    <p class="font-bold">Cost-Effective Longevity</p>
+                    <p class="text-sm text-on-surface-variant">
+                      High-strength restoration suitable for long-span bridges.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Restoration & Strength: Bento Grid -->
+      <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-8">
+          <div
+            class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 h-full md:h-[600px]"
+          >
+            <!-- Restoration Feature -->
+            <div
+              class="md:col-span-2 md:row-span-2 bg-primary text-on-primary p-12 rounded-xl relative overflow-hidden flex flex-col justify-end"
+            >
+              <div class="absolute top-0 right-0 p-8">
+                <span class="material-symbols-outlined text-6xl opacity-20"
+                  >biotech</span
+                >
+              </div>
+              <h3 class="font-headline text-3xl font-extrabold mb-4">
+                Structural Restoration
+              </h3>
+              <p class="text-on-primary/80 mb-6 leading-relaxed">
+                For teeth compromised by extensive decay, fractures, or root
+                canal therapy, a casted crown provides the necessary "hoop
+                effect," protecting the remaining structure from catastrophic
+                failure.
+              </p>
+              <div class="flex gap-2">
+                <div class="w-8 h-1 bg-on-primary rounded-full"></div>
+                <div class="w-4 h-1 bg-on-primary/30 rounded-full"></div>
+                <div class="w-4 h-1 bg-on-primary/30 rounded-full"></div>
+              </div>
+            </div>
+            <!-- Strength Feature -->
+            <div
+              class="md:col-span-2 bg-surface-container-high p-8 rounded-xl flex items-center gap-6"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center shrink-0"
+              >
+                <span class="material-symbols-outlined text-primary text-3xl"
+                  >fitness_center</span
+                >
+              </div>
+              <div>
+                <h4 class="font-headline text-xl font-bold mb-2">
+                  Maximum Bite Force
+                </h4>
+                <p class="text-sm text-on-surface-variant">
+                  Engineered to withstand forces exceeding 800 Newtons,
+                  essential for posterior mastication.
+                </p>
+              </div>
+            </div>
+            <!-- Longevity Feature -->
+            <div
+              class="md:col-span-2 bg-secondary text-on-secondary p-8 rounded-xl flex items-center gap-6"
+            >
+              <div
+                class="w-20 h-20 rounded-full bg-white/10 flex items-center justify-center shrink-0"
+              >
+                <span
+                  class="material-symbols-outlined text-on-secondary text-3xl"
+                  >hourglass_empty</span
+                >
+              </div>
+              <div>
+                <h4 class="font-headline text-xl font-bold mb-2">
+                  Decade-Scale Longevity
+                </h4>
+                <p class="text-sm text-on-secondary/80">
+                  With optimal hygiene, our casted crowns routinely serve
+                  patients for 15-20 years without replacement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The Process (Simplified) -->
+      <section class="py-24 bg-surface-container-lowest">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+          <h2 class="font-headline text-4xl font-bold mb-16">
+            The Journey to Perfection
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="flex flex-col items-center">
+              <div
+                class="w-16 h-16 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 font-headline font-bold text-2xl text-primary"
+              >
+                01
+              </div>
+              <h4 class="font-headline text-xl font-bold mb-3">
+                Digital Scanning
+              </h4>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                High-resolution 3D impressions ensuring 10-micron accuracy for a
+                perfect fit.
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <div
+                class="w-16 h-16 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 font-headline font-bold text-2xl text-primary"
+              >
+                02
+              </div>
+              <h4 class="font-headline text-xl font-bold mb-3">
+                Precision Milling
+              </h4>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                Multi-axis robotic fabrication ensuring material density and
+                structural integrity.
+              </p>
+            </div>
+            <div class="flex flex-col items-center">
+              <div
+                class="w-16 h-16 rounded-xl bg-surface-container-high flex items-center justify-center mb-6 font-headline font-bold text-2xl text-primary"
+              >
+                03
+              </div>
+              <h4 class="font-headline text-xl font-bold mb-3">
+                Artisanal Finishing
+              </h4>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                Hand-applied layering and glazing by master technicians for
+                natural aesthetics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Final Booking CTA -->
+      <section class="py-24 bg-surface overflow-hidden">
+        <div class="max-w-5xl mx-auto px-8">
+          <div
+            class="bg-primary-container/20 rounded-xl p-12 md:p-20 text-center relative"
+          >
+            <div
+              class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none"
+              style="
+                background-image: radial-gradient(#006a71 1px, transparent 1px);
+                background-size: 20px 20px;
+              "
+            ></div>
+            <h2
+              class="font-headline text-4xl md:text-5xl font-extrabold mb-6 text-on-primary-container tracking-tight"
+            >
+              Ready to Restore Your Smile?
+            </h2>
+            <p class="text-on-surface-variant text-lg mb-10 max-w-2xl mx-auto">
+              Join hundreds of patients who have chosen the expertise of Prof.
+              Dr Ahmed Nabil for their dental restorations.
+            </p>
+            <button
+              class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-primary/20"
+            >
+              Schedule Your Assessment
+            </button>
+            <p class="mt-8 text-sm font-semibold text-primary">
+              Limited availability for same-month appointments
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <div id="site-widget"></div>
+
+    <footer id="site-footer"></footer>
+  </body>
 </html>
