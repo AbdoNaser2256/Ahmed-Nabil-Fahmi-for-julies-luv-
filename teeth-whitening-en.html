@@ -1,0 +1,557 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Teeth Whitening | Prof. Dr Ahmed Nabil</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#96f1fa",
+              "on-background": "#2c3436",
+              "on-tertiary-fixed": "#2f514f",
+              "on-secondary": "#f0fbff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-dim": "#375957",
+              "surface-container-highest": "#dce4e6",
+              "error-container": "#fa746f",
+              "secondary-fixed-dim": "#afdbeb",
+              "inverse-on-surface": "#9a9d9e",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "on-secondary-fixed": "#164552",
+              error: "#a83836",
+              "surface-bright": "#f8fafb",
+              "on-primary-fixed-variant": "#00666d",
+              "surface-container-high": "#e3e9eb",
+              "secondary-dim": "#2d5966",
+              "on-secondary-container": "#2b5765",
+              "tertiary-fixed": "#d8fefa",
+              outline: "#747c7e",
+              "on-secondary-fixed-variant": "#36616f",
+              "on-primary-fixed": "#00474c",
+              "primary-dim": "#005d63",
+              "on-tertiary-container": "#416361",
+              secondary: "#3a6573",
+              "primary-fixed-dim": "#88e3eb",
+              surface: "#f8fafb",
+              "error-dim": "#67040d",
+              "secondary-container": "#bdeafa",
+              "inverse-surface": "#0b0f10",
+              "primary-container": "#96f1fa",
+              primary: "#006a71",
+              "inverse-primary": "#99f4fd",
+              "tertiary-fixed-dim": "#caf0ec",
+              "secondary-fixed": "#bdeafa",
+              "on-primary": "#e7fdff",
+              "surface-container-low": "#f0f4f6",
+              "on-primary-container": "#005b61",
+              "on-error": "#fff7f6",
+              background: "#f8fafb",
+              "surface-variant": "#dce4e6",
+              "on-surface-variant": "#596063",
+              "surface-dim": "#d4dbde",
+              "on-surface": "#2c3436",
+              "tertiary-container": "#d8fefa",
+              "surface-container": "#eaeff0",
+              "outline-variant": "#acb3b6",
+              "surface-tint": "#006a71",
+              "on-error-container": "#6e0a12",
+              tertiary: "#436563",
+              "on-tertiary": "#e1fffc",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .no-line {
+        border: none !important;
+      }
+      .tonal-shift {
+        transition: background-color 0.3s ease;
+      }
+
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-surface font-body text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <div id="site-header"></div>
+
+    <!-- TopNavBar -->
+
+    <!-- Hero Section -->
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-40 overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+      >
+        <div class="lg:col-span-7 z-10">
+          <span
+            class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container font-semibold text-xs tracking-widest uppercase mb-6"
+            >Signature Aesthetic Dentistry</span
+          >
+          <h1
+            class="text-5xl md:text-7xl font-headline font-extrabold text-on-background tracking-tighter leading-[1.1] mb-8"
+          >
+            Luminous Smiles, <br /><span class="text-primary italic"
+              >Curated</span
+            >
+            for You.
+          </h1>
+          <p
+            class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed"
+          >
+            Experience a transformative teeth whitening journey that prioritizes
+            health and comfort as much as radiance. Utilizing advanced Zoom™
+            technology to reveal your most brilliant self.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <button
+              class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg shadow-lg hover:shadow-primary/20 transition-all active:scale-95"
+            >
+              Start Your Journey
+            </button>
+            <button
+              class="bg-surface-container-low text-primary px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container transition-all active:scale-95"
+            >
+              View Gallery
+            </button>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <div
+            class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative transform lg:rotate-2 lg:translate-x-10"
+          >
+            <img
+              alt="Woman smiling beautifully"
+              class="w-full h-full object-cover"
+              data-alt="close-up of a young woman with a radiant perfectly white smile laughing gently in soft ethereal morning sunlight"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaxuxVqnRrM6zXRIyVDy-bsq4PqnosvNws6lKj0oOYquExJbgHh-vDH92MAJ9-pJMpXpiLWRuqdJd4BAx43ykwTa1W23DdlpVkPuMKnjA-kwrCJ5_e2MzJzZZGyn71nEkOEBLOPEPCd-I0NMDTT6vS1kG8El6Ois8a2o913C1a34bFO0SI8P4vhVt6TMdJGiGFNy4qbga9x4JFjeE9FrkVeF8OF7wi_bs0U_nmYclmpMKRStd5HoveAay1svAV47IeM6fhWxkFUbDs"
+            />
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"
+            ></div>
+          </div>
+          <!-- Floating Decorative Element -->
+          <div
+            class="absolute -bottom-8 -left-8 bg-surface-container-lowest glass-effect p-6 rounded-lg shadow-xl max-w-[200px] border border-outline-variant/10"
+          >
+            <div class="flex items-center gap-2 mb-2 text-primary">
+              <span
+                class="material-symbols-outlined"
+                data-icon="auto_awesome"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >auto_awesome</span
+              >
+              <span class="font-headline font-bold text-sm tracking-tight"
+                >8 Shades Whiter</span
+              >
+            </div>
+            <p class="text-xs text-on-surface-variant">
+              Clinical results in a single boutique session.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Background Accent -->
+      <div
+        class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary-container/20 to-transparent -z-10 blur-3xl"
+      ></div>
+    </header>
+    <!-- Professional vs At-Home Bento Grid -->
+    <section class="py-24 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="mb-16">
+          <h2
+            class="text-3xl md:text-4xl font-headline font-extrabold text-on-background tracking-tight mb-4 text-center"
+          >
+            Tailored Whitening Experiences
+          </h2>
+          <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Professional In-Office -->
+          <div
+            class="md:col-span-2 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm flex flex-col md:flex-row gap-8 items-center border border-outline-variant/5"
+          >
+            <div class="flex-1">
+              <div
+                class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center text-primary mb-6"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="medical_services"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >medical_services</span
+                >
+              </div>
+              <h3 class="text-2xl font-headline font-bold mb-4">
+                In-Office Boutique Treatment
+              </h3>
+              <p class="text-on-surface-variant mb-6">
+                Our flagship experience using Zoom™ Light-Activated technology.
+                Rapid results in approximately 60 minutes with maximum clinical
+                potency.
+              </p>
+              <ul class="space-y-3 mb-8">
+                <li class="flex items-center gap-3 text-sm font-medium">
+                  <span
+                    class="material-symbols-outlined text-primary text-lg"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  Professional supervision for gum protection
+                </li>
+                <li class="flex items-center gap-3 text-sm font-medium">
+                  <span
+                    class="material-symbols-outlined text-primary text-lg"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  Immediate transformation in one visit
+                </li>
+                <li class="flex items-center gap-3 text-sm font-medium">
+                  <span
+                    class="material-symbols-outlined text-primary text-lg"
+                    data-icon="check_circle"
+                    >check_circle</span
+                  >
+                  Integrated desensitizing protocols
+                </li>
+              </ul>
+              <button
+                class="text-primary font-bold flex items-center gap-2 group"
+              >
+                Explore Clinical Process
+                <span
+                  class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                  data-icon="arrow_forward"
+                  >arrow_forward</span
+                >
+              </button>
+            </div>
+            <div
+              class="w-full md:w-1/3 aspect-square rounded-lg overflow-hidden"
+            >
+              <img
+                alt="Modern dental equipment"
+                class="w-full h-full object-cover"
+                data-alt="ultra-modern dental whitening equipment in a bright minimalist clinic with soft blue ambient lighting and clean surfaces"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhQg9bgpvQwKndzhoUUxL6Mfzd_E8iBN6pDhYCR8OxAI60oK-yjSyzKrmz3meZIdQO5FgqCjPnPtyRIZTYt4RsRSIyaR0AFkHD-ZgN5rB6tqF8FBYQxPbVP4Mw3pfe5_HbWMi-wS7Nf7OsS3t-7d1SpVf0WLf3Wl4DhQ4U-WNJSq6sNbQ9omDlk_BdWz9zVAHrVuMpB0yeCvvTh5YH4mQfPleNE_H86XAxVyTnRPjgwpaxHYK5Jg3Y6uUx9oCq7Et0MMiKvDDIhsEo"
+              />
+            </div>
+          </div>
+          <!-- At-Home Kits -->
+          <div
+            class="bg-primary p-8 md:p-10 rounded-xl flex flex-col justify-between text-on-primary"
+          >
+            <div>
+              <div
+                class="w-12 h-12 rounded-full bg-on-primary/10 flex items-center justify-center mb-6"
+              >
+                <span
+                  class="material-symbols-outlined"
+                  data-icon="home"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >home</span
+                >
+              </div>
+              <h3 class="text-2xl font-headline font-bold mb-4">
+                Curated At-Home Kits
+              </h3>
+              <p class="opacity-90 mb-8 leading-relaxed">
+                Professional-grade results from the comfort of your sanctuary.
+                Custom-fitted trays designed specifically for your anatomy.
+              </p>
+            </div>
+            <ul class="space-y-4 mb-10">
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-on-primary/80"
+                  data-icon="star"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span class="text-sm">Custom precision-molded trays</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <span
+                  class="material-symbols-outlined text-on-primary/80"
+                  data-icon="star"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span class="text-sm">Maintenance &amp; touch-up systems</span>
+              </li>
+            </ul>
+            <button
+              class="w-full py-4 bg-on-primary text-primary rounded-full font-headline font-bold hover:bg-white transition-all"
+            >
+              Request Kit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Zoom Technology Showcase -->
+    <section class="py-24 bg-surface">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+          <div class="order-2 lg:order-1">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="space-y-4">
+                <div
+                  class="h-48 rounded-lg overflow-hidden shadow-lg transform -rotate-2"
+                >
+                  <img
+                    alt="Microscopic view of tooth enamel"
+                    class="w-full h-full object-cover"
+                    data-alt="abstract artistic close-up of crystal structures representing healthy tooth enamel under soft blue microscope light"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMqd9OibIyN3D7VK0-Ai3j3qCkwSk8zgiMNgYXU4w-BNEbjOI9auUlAwBcNRyMBABMUInQ5Yc9P3cV_ID6B7ojyra9HBpSOw13Hk0wLywSKQD83S-HKUFr7RoYvgz_B5mkELuzptH8RcWIBS958dcuxjOIZUXh7TrPy-7MRl9_3BrUJOkxTFSPtTBBxt_tsXqQeAJeLHaesrbKpvOWJfWG6nwaIqIqXYfhZMd3xnVuygqeK929qxLlrdz8hF2A9wT_NYG1tZDkmdnu"
+                  />
+                </div>
+                <div
+                  class="h-64 rounded-lg overflow-hidden shadow-lg transform translate-x-4"
+                >
+                  <img
+                    alt="Blue laser tech"
+                    class="w-full h-full object-cover"
+                    data-alt="aesthetic blue glowing light source representing clinical dental laser technology in a high-tech dental studio"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4p4LEaWlFhXJfGu9cnfQGV57cdZlgDF4OIPF5x9bKNlq_uWmikdGg1HbN7ioIdqAi8LIFPZghGdDbAVFaFK0TX1-PXEGJhl0JVU6W_u9gCcx8m8qKK6GhVG4olgiy_nVPnyLpMw322zzDJXnxUm88kPtKeVp9hEoPokr4eHo3JQPa9zsfyshVGAs55FM6v9tm55OxrgXDwhysNJv8MrJYG2KrIOpBaUs5cqmP4UamLMBO_1BMUlelcsFa61Hn3Qwmw8yOqTCdq3DI"
+                  />
+                </div>
+              </div>
+              <div class="pt-12">
+                <div
+                  class="h-80 rounded-lg overflow-hidden shadow-lg transform rotate-3"
+                >
+                  <img
+                    alt="Patient comfort"
+                    class="w-full h-full object-cover"
+                    data-alt="a peaceful patient relaxing in a high-end dentist chair during a treatment with soft indirect lighting"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB4eJTBLIr1ve3sJKolnXVmaPKwYL2o5uNFcbM-8tSG2dIMzLXP5KSpOs7xC__A1buI3s9OwApr4FcIbaJQ4HsvksJD2_JBT4mLo2YE0HdDv83CDw0lI7OpbTsLoJYnqNksVKws3UzbNsXd8Q59WxH_hpxYDzZejpj5lM4_w-sUTu86ydyZ1fCWFNJHxqw-tGaxbeFuPMuPEj6umXciTt3V6k1lcRJ7YYcHr1duRSvZhhEaYeZEMYSJvYSDaA8k6t4GnkqNqpb9GDA"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="order-1 lg:order-2">
+            <h2
+              class="text-4xl font-headline font-extrabold text-on-background tracking-tight mb-6"
+            >
+              Philips Zoom™: <br />The Gold Standard
+            </h2>
+            <p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+              Unlike traditional whitening that can cause surface dehydration,
+              our Zoom™ Blue LED technology accelerates the oxygenation of
+              whitening gel, penetrating deep into the enamel to break down
+              tough stains while maintaining tooth hydration.
+            </p>
+            <div class="space-y-6">
+              <div class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"
+                >
+                  <span class="material-symbols-outlined" data-icon="bolt"
+                    >bolt</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-lg mb-1">
+                    Accelerated Oxidation
+                  </h4>
+                  <p class="text-sm text-on-surface-variant">
+                    40% faster results than non-light activated methods.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-4">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary"
+                >
+                  <span
+                    class="material-symbols-outlined"
+                    data-icon="health_and_safety"
+                    >health_and_safety</span
+                  >
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-lg mb-1">
+                    Enamel Protection
+                  </h4>
+                  <p class="text-sm text-on-surface-variant">
+                    ACP (Amorphous Calcium Phosphate) formula to rebuild tooth
+                    structure.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sensitivity Management Section -->
+    <section class="py-24 bg-surface-container-low overflow-hidden relative">
+      <div class="max-w-7xl mx-auto px-8 relative z-10">
+        <div
+          class="bg-surface-container-lowest rounded-xl p-8 md:p-16 flex flex-col md:flex-row items-center gap-12 border border-outline-variant/10"
+        >
+          <div class="md:w-1/2">
+            <h2
+              class="text-3xl md:text-4xl font-headline font-extrabold text-on-background mb-6"
+            >
+              Whitening Without the Ache
+            </h2>
+            <p class="text-on-surface-variant text-lg mb-8 leading-relaxed">
+              Sensitivity is the primary concern for most patients. Our
+              "Comfort-First" protocol uses pre-treatment mineralizers and
+              adjustable light intensity to ensure a painless experience for
+              even the most sensitive teeth.
+            </p>
+            <div
+              class="p-6 bg-tertiary-fixed-dim rounded-lg border-l-4 border-tertiary"
+            >
+              <p class="text-on-tertiary-fixed font-medium italic">
+                "We tailor the concentration of our whitening agents to your
+                specific enamel thickness and sensitivity history."
+              </p>
+              <p
+                class="text-xs text-on-tertiary-fixed-variant mt-3 font-bold uppercase tracking-widest"
+              >
+                — Clinical Standard
+              </p>
+            </div>
+          </div>
+          <div class="md:w-1/2 grid grid-cols-2 gap-4">
+            <div
+              class="bg-surface-container p-6 rounded-lg text-center hover:bg-surface-container-high transition-colors"
+            >
+              <span
+                class="material-symbols-outlined text-primary mb-3 text-3xl"
+                data-icon="water_drop"
+                >water_drop</span
+              >
+              <h5 class="font-headline font-bold text-sm">Deep Hydration</h5>
+            </div>
+            <div
+              class="bg-surface-container p-6 rounded-lg text-center hover:bg-surface-container-high transition-colors"
+            >
+              <span
+                class="material-symbols-outlined text-primary mb-3 text-3xl"
+                data-icon="shield"
+                >shield</span
+              >
+              <h5 class="font-headline font-bold text-sm">Gum Barrier</h5>
+            </div>
+            <div
+              class="bg-surface-container p-6 rounded-lg text-center hover:bg-surface-container-high transition-colors"
+            >
+              <span
+                class="material-symbols-outlined text-primary mb-3 text-3xl"
+                data-icon="thermostat"
+                >thermostat</span
+              >
+              <h5 class="font-headline font-bold text-sm">Cool Light Tech</h5>
+            </div>
+            <div
+              class="bg-surface-container p-6 rounded-lg text-center hover:bg-surface-container-high transition-colors"
+            >
+              <span
+                class="material-symbols-outlined text-primary mb-3 text-3xl"
+                data-icon="pill"
+                >pill</span
+              >
+              <h5 class="font-headline font-bold text-sm">ACP Protection</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative background shapes -->
+      <div
+        class="absolute top-0 left-0 w-64 h-64 bg-primary-container/30 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2"
+      ></div>
+    </section>
+    <!-- Booking CTA -->
+    <section class="py-24 bg-surface">
+      <div class="max-w-4xl mx-auto px-8 text-center">
+        <h2
+          class="text-4xl md:text-5xl font-headline font-extrabold text-on-background tracking-tight mb-6"
+        >
+          Your Brightest Smile Awaits
+        </h2>
+        <p class="text-on-surface-variant text-lg mb-10 max-w-2xl mx-auto">
+          Schedule a consultation today and discover why Prof. Dr Ahmed Nabil is
+          the trusted choice for aesthetic dentistry.
+        </p>
+        <div
+          class="inline-flex flex-col sm:flex-row p-2 bg-surface-container rounded-full shadow-inner gap-2"
+        >
+          <input
+            class="bg-transparent border-none focus:ring-0 px-8 py-3 w-full sm:w-80 font-medium placeholder:text-outline-variant"
+            placeholder="Enter your phone or email"
+            type="email"
+          />
+          <button
+            class="bg-primary text-on-primary px-10 py-4 rounded-full font-headline font-bold whitespace-nowrap active:scale-95 transition-all"
+          >
+            Book Consultation
+          </button>
+        </div>
+        <p
+          class="mt-6 text-sm text-on-surface-variant/70 flex items-center justify-center gap-2"
+        >
+          <span
+            class="material-symbols-outlined text-primary text-base"
+            data-icon="lock"
+            >lock</span
+          >
+          Your information is secure &amp; private
+        </p>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer id="site-footer"></footer>
+  </body>
+</html>
