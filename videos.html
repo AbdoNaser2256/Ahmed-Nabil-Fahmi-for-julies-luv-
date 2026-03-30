@@ -1,248 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"primary-container": "#96f1fa", "tertiary-fixed-dim": "#caf0ec", "on-primary-fixed-variant": "#00666d", "on-background": "#2c3436", "on-secondary-container": "#2b5765", error: "#a83836", "on-surface-variant": "#596063", secondary: "#3a6573", "accent-gold": "#D4AF37", "accent-gold-light": "#E5C76B", "surface-container-lowest": "#ffffff", "surface-container-highest": "#dce4e6", "secondary-dim": "#2d5966", "surface-bright": "#f8fafb", "on-tertiary-fixed": "#2f514f", "primary-dim": "#005d63", surface: "#f8fafb", "surface-container": "#eaeff0", "inverse-on-surface": "#9a9d9e", "on-primary-fixed": "#00474c", "outline-variant": "#acb3b6", "on-surface": "#2c3436", "secondary-fixed": "#bdeafa", "inverse-surface": "#0b0f10", "inverse-primary": "#99f4fd", "secondary-fixed-dim": "#afdbeb", "surface-container-low": "#f0f4f6", "error-container": "#fa746f", outline: "#747c7e", "on-secondary": "#f0fbff", "on-error": "#fff7f6", "primary-fixed": "#96f1fa", background: "#f8fafb", primary: "#006a71", "on-secondary-fixed-variant": "#36616f", "surface-container-high": "#e3e9eb", tertiary: "#436563", "on-primary": "#e7fdff", "surface-dim": "#d4dbde", "tertiary-fixed": "#d8fefa", "on-tertiary-fixed-variant": "#4c6e6c", "error-dim": "#67040d", "tertiary-dim": "#375957", "tertiary-container": "#d8fefa", "primary-fixed-dim": "#88e3eb", "secondary-container": "#bdeafa", "surface-tint": "#006a71", "on-error-container": "#6e0a12", "on-primary-container": "#005b61", "on-tertiary": "#e1fffc", "on-tertiary-container": "#416361", "surface-variant": "#dce4e6", "on-secondary-fixed": "#164552", "gold-accent": "#C5A059"}, fontFamily: {headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"], display: "Manrope"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}}}};</script>
-  <title>Videos | Prof. Dr Ahmed Nabil</title>
-  <style>
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); }
-    .asymmetric-gradient { background: linear-gradient(135deg, #006a71 0%, #D4AF37 100%); }
-    .arabesque-pattern { background-color: #fdfcf9; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.89 19.11L55.03 15 40.89 30l14.14 15-19.14-4.11L30 60l-5.89-19.11L5 45l14.14-15L5 15l19.11 4.11z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E"); }
-    .gold-border { border-color: #D4AF37; }
-    .text-gold { color: #D4AF37; }
-    .nav-dropdown:hover .nav-dropdown-content { display: block; }
-    .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%); }
-    .hero-gradient { background: linear-gradient(135deg, #004B50 0%, #002B2E 100%); }
-    .lotus-pattern { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-2 5-10 15-10 25s8 20 10 25c2-5 10-15 10-25S32 10 30 5z' fill='%23006a71' fill-opacity='0.03'/%3E%3C/svg%3E"); }
-    .editorial-shadow { box-shadow: 0 20px 40px rgba(184, 134, 11, 0.08); }
-    .motif-pattern { background-image: radial-gradient(#B8860B 0.5px, transparent 0.5px); background-size: 24px 24px; opacity: 0.1; }
-  </style>
-  
-  <script type="module" src="/src/main.js"></script>
-</head>
-<body class="bg-surface text-on-background font-body arabesque-pattern" data-page="videos">
-<div id="site-header"></div>
-<main class="pt-24 lotus-pattern">
-<!-- Hero Section -->
-<section class="max-w-7xl mx-auto px-8 py-16 lg:py-24">
-<div class="grid lg:grid-cols-2 gap-12 items-center">
-<div class="relative z-10">
-<span class="inline-block px-4 py-1 rounded-full bg-tertiary-container text-on-tertiary-container text-xs font-bold tracking-widest uppercase mb-6">Patient Education</span>
-<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-on-surface leading-tight tracking-tighter mb-8">
-                    Mastering Your <span class="text-primary italic">Smile</span>
-</h1>
-<p class="text-lg md:text-xl text-on-surface-variant max-w-xl leading-relaxed font-light">
-                    Demystifying dental excellence through visual storytelling. Explore our curated sanctuary of knowledge, where clinical precision meets aesthetic artistry.
-                </p>
-<div class="mt-10 flex gap-4">
-<div class="h-1 w-20 bg-gold-accent rounded-full self-center opacity-60"></div>
-<span class="text-sm font-semibold text-secondary uppercase tracking-[0.2em]">Guided by Cairo's Finest</span>
-</div>
-</div>
-<div class="relative aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-2xl">
-<img alt="Modern Dental Studio" class="w-full h-full object-cover mix-blend-multiply opacity-80" data-alt="Modern high-end dental studio interior with teal accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbBhL9RZBJfnyxErgqr9wm7rNuSsgZvxlu-T2RDR9lim1SpsBJOkj4Rzuurz9uVyMk_nJYzlT8Hf_iUP_bfQ_8vFfcxsT0n12vj0caiTiFiXsi826lFIg82ciSuNbDHnd_dG8EnER4btmCFR3A-Vzyhk5lCzWjVT6EArwGkP2VdEpOu28l6iLRiFnMrZJgkcmbvaRYhRWp2gMaFRcNW0vhmKZHLy9qOnBTkSc9BCUarr7Q5jVJOyrvaXj5f4qNTknaRJp2ghYL6NPR"/>
-<div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent"></div>
-</div>
-</div>
-</section>
-<!-- Clinical Shorts & Reels -->
-<section class="max-w-7xl mx-auto px-8 py-24">
-<div class="mb-12">
-<div class="flex items-center gap-4 mb-2">
-<span class="h-px w-8 bg-gold-accent"></span>
-<h2 class="font-headline text-3xl font-extrabold tracking-tight">Clinical Shorts &amp; Reels</h2>
-</div>
-<p class="text-on-surface-variant max-w-2xl font-light">Quick insights, behind-the-scenes moments, and transformative results in under 60 seconds.</p>
-</div>
-<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-<!-- Reel Card 1 -->
-<div class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container shadow-lg hover:shadow-xl transition-all cursor-pointer">
-<img alt="Reel Thumb" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlJJi5YWic2YXH9d_SFVASqbP9a-LtZL7Y5hAZ-JpVTbmhfk9QpW0GyrGxW8QcsnLogVNRPheM-3mb9hss9K_Z5mA1qRQJeZXKygnMTXdYZSVzPsOUWrNqvfUXMpuObn8j0Ji_Q2GRaXN1a4E3kn_HdGM7Jsjf6N5YUI3SC2EPdVoG-A5wdiQDSMk_TWxJKR1SzgqkjVkv0-MnR_NPzUW8fc9-yw8nTFTHaxf-BoIPKFGQyve8xDMKhdSQxjYRVJD1ZP1XdrCMeSJw"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
-<div class="flex items-center gap-2 mb-2 text-white/90 text-[10px] font-bold uppercase tracking-wider">
-<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-                        1.2k views
-                    </div>
-<h5 class="text-white font-semibold text-sm leading-tight line-clamp-2 mb-2">Transformation: Morning at the Studio</h5>
-<div class="w-full h-1 bg-white/20 rounded-full overflow-hidden">
-<div class="h-full bg-gold-accent w-0 group-hover:w-full transition-all duration-1000"></div>
-</div>
-</div>
-</div>
-<!-- Reel Card 2 -->
-<div class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container shadow-lg hover:shadow-xl transition-all cursor-pointer">
-<img alt="Reel Thumb" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1b3w3aRydpI-sU92tfqHk33dkIUGMI6KAy6NpvrzibMgLEUw_ipV92sZljjpMSIZJgouoqrLDlx2ZhCMA8GTmvwB-D23OiusRQCpPPgTTArSbwmx9f6_s7GMpnTTrFzr27sL6TdmQm7EaCQGK3Eqx9HXwRED-x5-Y_Ob6y3qdRbB5r_LNAsqLLjodkDoLBPlxRp0xka3QLW7gjRT3gyeXzyRBxi_ZIJ6i00jUiziZLfTLM10bCNu8yiOc9q4pMdC8kHbIoXzVdLAO"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
-<div class="flex items-center gap-2 mb-2 text-white/90 text-[10px] font-bold uppercase tracking-wider">
-<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-                        850 views
-                    </div>
-<h5 class="text-white font-semibold text-sm leading-tight line-clamp-2 mb-2">Quick Tip: Laser Whitening Care</h5>
-<div class="w-full h-1 bg-white/20 rounded-full overflow-hidden">
-<div class="h-full bg-gold-accent w-0 group-hover:w-full transition-all duration-1000"></div>
-</div>
-</div>
-</div>
-<!-- Reel Card 3 -->
-<div class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container shadow-lg hover:shadow-xl transition-all cursor-pointer">
-<img alt="Reel Thumb" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA91Qxe5ss9kbEmI5wYHgo_nsIY8W1p4v88jcUcRNykS3xxW81SGNNM781b9nhOXIus-N46O0WojrlyhafKrGJ1Ij3trJFRGrjZ3on-woob6MnvxGj2Uk_r1yWGavdz6x3XGMaBsYW1E8WVdP3xSCyosA_SquNiX9XQaNEpbMBpH_AvbypRt2zEzP-AcKmBK1jUZNwStVNhLjTT8PolJYaofNaUEbP_hHTaRKXvz7-LGbT57wgeK6wUyGr_2pHq4razSSd7RmehoWGB"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
-<div class="flex items-center gap-2 mb-2 text-white/90 text-[10px] font-bold uppercase tracking-wider">
-<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-                        3.1k views
-                    </div>
-<h5 class="text-white font-semibold text-sm leading-tight line-clamp-2 mb-2">3D Scanning: The Ethereal Process</h5>
-<div class="w-full h-1 bg-white/20 rounded-full overflow-hidden">
-<div class="h-full bg-gold-accent w-0 group-hover:w-full transition-all duration-1000"></div>
-</div>
-</div>
-</div>
-<!-- Reel Card 4 -->
-<div class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container shadow-lg hover:shadow-xl transition-all cursor-pointer">
-<img alt="Reel Thumb" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwIFHMbTlQ23XYFNSeLY8LI0wXH9KEmYM7HbVNyfP1XtpmXRNU_xOVyzIid01BE7vwkF-I7d8o1JEKMKdTy7QvWPWrBG1sddqgchaWmbOgmoEwvoFZBzOp4Rzmla7TCRXQe2nAA5xIVWgwMPpYhcC8Gh9hRF8ItbZ0gaLo6CtM5_9KtXnY7bIU4aQzCEgSth_r_rjTe6w_L8OLyylgrb711Ol_vRQ7bHZCHv8fGfcNE5_5NeNv8TA3TjtmI_TgNkrK539TBZuQ7Z2T"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
-<div class="flex items-center gap-2 mb-2 text-white/90 text-[10px] font-bold uppercase tracking-wider">
-<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-                        2.5k views
-                    </div>
-<h5 class="text-white font-semibold text-sm leading-tight line-clamp-2 mb-2">Why Our Patients Keep Smiling</h5>
-<div class="w-full h-1 bg-white/20 rounded-full overflow-hidden">
-<div class="h-full bg-gold-accent w-0 group-hover:w-full transition-all duration-1000"></div>
-</div>
-</div>
-</div>
-<!-- Reel Card 5 -->
-<div class="group relative aspect-[9/16] rounded-2xl overflow-hidden bg-surface-container shadow-lg hover:shadow-xl transition-all cursor-pointer">
-<img alt="Reel Thumb" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMPVi5Y9tgFXA6vrunRPY_9aArK2lc4gJ8Eiwoc1iRZAey1_z7Akzge1x0Ogo1O51oNJx8o4PQaKoSx05klDj5EdgYT1zkIxUMgEKq_KTONs5KgFtAV1PlzEWFV6Lz2LLX2jfKjxW5xttSABH3AnxHYecKIulujbHqCK_19Rps0Dpm7BNmf14P_AcN6-kEAFPywlXTavSSGIUzjU3jtsfOa5uGtTjO_TWfafmwJE-GFyjulqnioorWDnuR3c9NoooAh-kmBrhqfbUl"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end p-4">
-<div class="flex items-center gap-2 mb-2 text-white/90 text-[10px] font-bold uppercase tracking-wider">
-<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-                        1.9k views
-                    </div>
-<h5 class="text-white font-semibold text-sm leading-tight line-clamp-2 mb-2">Precision Instruments Tour</h5>
-<div class="w-full h-1 bg-white/20 rounded-full overflow-hidden">
-<div class="h-full bg-gold-accent w-0 group-hover:w-full transition-all duration-1000"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Featured Masterclass / Long-form -->
-<section class="bg-surface-container-low py-24 relative overflow-hidden">
-<div class="max-w-7xl mx-auto px-8">
-<div class="mb-12 flex items-end justify-between border-b border-gold-accent/20 pb-6">
-<div>
-<span class="text-gold-accent text-xs font-bold tracking-widest uppercase mb-2 block">Premium Content</span>
-<h2 class="font-headline text-4xl font-bold text-on-surface tracking-tight">Clinical Masterclasses</h2>
-</div>
-<p class="text-on-surface-variant font-medium text-sm hidden md:block">In-depth education for the discerning patient</p>
-</div>
-<div class="relative group cursor-pointer overflow-hidden rounded-xl bg-surface shadow-2xl mb-16">
-<div class="aspect-video relative overflow-hidden">
-<img alt="Procedure Video" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Cinematic shot of a dental procedure with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3vEugat1zIe-nGLMu7GBgbsKMXh0Ns6xtebsHNEo-eE8YFdtHbUb1Z-Ak459SRC36YD5TVCdfY2-Zztuv1dzzaGzHIBy8XV6Td7ld_u5y5bIsrD4zqM31aY8liPbiMXzRprJIMNf-mdmSUK3JKYvqYb5gBwO6OHzmRGleq6HWxZmv1GKJbf3AgOwAhZKraGHvMtWXjwhzXNYsXq-RxWTQbwYESkg38S7KTSj_RUQ-h3kFNuVAbVyUxfmV9e5WtgOsm_vFYMomFu0y"/>
-<div class="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors flex items-center justify-center">
-<div class="w-24 h-24 bg-white/10 backdrop-blur-xl rounded-full flex items-center justify-center border border-white/40 group-hover:scale-110 transition-transform">
-<span class="material-symbols-outlined text-white text-5xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</div>
-</div>
-</div>
-<div class="p-8 md:p-12 bg-surface-container-lowest grid md:grid-cols-3 gap-8 items-center border-t border-gold-accent/10">
-<div class="md:col-span-2">
-<div class="flex items-center gap-2 mb-2">
-<span class="px-2 py-0.5 rounded bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider">Now Playing</span>
-</div>
-<h3 class="font-headline text-2xl font-bold mb-4">The Digital Smile Design (DSD) Workflow</h3>
-<p class="text-on-surface-variant leading-relaxed">Experience our signature approach to smile transformations. Learn how we use advanced 3D scanning and facial analysis to craft a smile that is uniquely yours, before any treatment even begins.</p>
-</div>
-<div class="flex flex-col gap-4 border-l border-gold-accent/20 pl-8">
-<div class="flex items-center gap-3 text-sm text-secondary font-semibold">
-<span class="material-symbols-outlined text-lg text-gold-accent">timer</span>
-                            08:45 Minutes
-                        </div>
-<div class="flex items-center gap-3 text-sm text-secondary font-semibold">
-<span class="material-symbols-outlined text-lg text-gold-accent">visibility</span>
-                            2.4k Patient Views
-                        </div>
-<button class="mt-2 text-primary font-bold flex items-center gap-2 group-hover:gap-4 transition-all">
-                            Full Playlist <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-<!-- Other Long-form Videos Grid -->
-<div class="grid md:grid-cols-2 gap-8">
-<!-- Video Card -->
-<div class="group cursor-pointer">
-<div class="aspect-video rounded-lg overflow-hidden relative mb-4 shadow-sm border border-outline-variant/10">
-<img alt="The 6-Month Ritual" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNr5tUMyRiL4GFWc0CBvkoPLjNelJk2XS94Gh5Ik1GcDqfvc4SNnfecgj2vJgkhRh29ova2I6F9Y97MT1VYkhgIJpp3NvEBCLNBMzUV9BrB7geCd-I7pmBIxvpEIRfdsn_RUcC57YRxo7_IBpwv1s9QwIQ5vLcSaziEW5c6l80Qzh27wYCLFHVB-jKRw4_ye0DnPBjeBuuCXi5rv5HB-ozH8yzqSnIrejopKBcdHzCbKMetYtQ872gfZ3gMfFTVrkG61yvgNvu25MN"/>
-<div class="absolute inset-0 bg-on-surface/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<div class="p-3 bg-white/90 rounded-full text-primary shadow-lg">
-<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</div>
-</div>
-<div class="absolute bottom-3 right-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold rounded">12:40</div>
-</div>
-<h4 class="font-headline font-bold text-lg mb-2 group-hover:text-primary transition-colors">The 6-Month Ritual: Why Routine Matters</h4>
-<p class="text-on-surface-variant text-sm line-clamp-2">Understanding the clinical benefits of professional maintenance for long-term oral health.</p>
-</div>
-<!-- Video Card -->
-<div class="group cursor-pointer">
-<div class="aspect-video rounded-lg overflow-hidden relative mb-4 shadow-sm border border-outline-variant/10">
-<img alt="Veneers" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2L1U0gQK5zjO8YDuuBiGQbf2qKMg9Cq_9gWzWoi2CqqOyQRh-gx9nWwFHTiPL171HOwOQL9YLFgKmp72SPldmKpJh0B1StjzgIk4Sj60STCXoWI3wNJnp3yWjyjlCfNOQoAMESGqZUvF4r45_lLJH7APU-3bmTUYXF3coz-W7g1PAsPbiUVPV5bEcIKW57DihSV3pHmnlN_1K6lDXOGB-HvM7n6HZoGzLWLagm991ju1-ygmk-zKe9arcyB53dISQEKgsyFva7QKZ"/>
-<div class="absolute inset-0 bg-on-surface/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-<div class="p-3 bg-white/90 rounded-full text-primary shadow-lg">
-<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
-</div>
-</div>
-<div class="absolute bottom-3 right-3 px-2 py-1 bg-black/60 text-white text-[10px] font-bold rounded">15:15</div>
-</div>
-<h4 class="font-headline font-bold text-lg mb-2 group-hover:text-primary transition-colors">Porcelain Veneers: Behind the Artistry</h4>
-<p class="text-on-surface-variant text-sm line-clamp-2">A technical deep dive into material selection and the bonding process.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Patient Stories -->
-<section class="max-w-7xl mx-auto px-8 py-24 border-t border-outline-variant/10">
-<div class="flex items-center gap-6 mb-12">
-<h2 class="font-headline text-4xl font-extrabold tracking-tighter">Patient Stories</h2>
-<div class="flex-grow h-px bg-outline-variant/20"></div>
-</div>
-<div class="grid md:grid-cols-2 gap-8">
-<div class="p-8 rounded-xl bg-gradient-to-br from-tertiary-container/30 to-surface-container-low border border-tertiary-fixed-dim/50 flex gap-8 items-center">
-<div class="w-24 h-24 rounded-full overflow-hidden shrink-0 border-4 border-white shadow-lg">
-<img alt="Patient" class="w-full h-full object-cover" data-alt="Portrait of a smiling young woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlJJi5YWic2YXH9d_SFVASqbP9a-LtZL7Y5hAZ-JpVTbmhfk9QpW0GyrGxW8QcsnLogVNRPheM-3mb9hss9K_Z5mA1qRQJeZXKygnMTXdYZSVzPsOUWrNqvfUXMpuObn8j0Ji_Q2GRaXN1a4E3kn_HdGM7Jsjf6N5YUI3SC2EPdVoG-A5wdiQDSMk_TWxJKR1SzgqkjVkv0-MnR_NPzUW8fc9-yw8nTFTHaxf-BoIPKFGQyve8xDMKhdSQxjYRVJD1ZP1XdrCMeSJw"/>
-</div>
-<div>
-<span class="text-xs font-bold text-tertiary tracking-widest uppercase block mb-2">Journey to Confidence</span>
-<h4 class="font-headline font-bold text-xl mb-3">Sarah's Wedding Transformation</h4>
-<button class="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
-                        Watch Full Interview <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-<div class="p-8 rounded-xl bg-gradient-to-br from-secondary-container/30 to-surface-container-low border border-secondary-fixed-dim/50 flex gap-8 items-center">
-<div class="w-24 h-24 rounded-full overflow-hidden shrink-0 border-4 border-white shadow-lg">
-<img alt="Patient" class="w-full h-full object-cover" data-alt="Portrait of a smiling professional man" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwIFHMbTlQ23XYFNSeLY8LI0wXH9KEmYM7HbVNyfP1XtpmXRNU_xOVyzIid01BE7vwkF-I7d8o1JEKMKdTy7QvWPWrBG1sddqgchaWmbOgmoEwvoFZBzOp4Rzmla7TCRXQe2nAA5xIVWgwMPpYhcC8Gh9hRF8ItbZ0gaLo6CtM5_9KtXnY7bIU4aQzCEgSth_r_rjTe6w_L8OLyylgrb711Ol_vRQ7bHZCHv8fGfcNE5_5NeNv8TA3TjtmI_TgNkrK539TBZuQ7Z2T"/>
-</div>
-<div>
-<span class="text-xs font-bold text-secondary tracking-widest uppercase block mb-2">Legacy of Care</span>
-<h4 class="font-headline font-bold text-xl mb-3">Professional Restoration Story</h4>
-<button class="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
-                        Watch Full Interview <span class="material-symbols-outlined">arrow_forward</span>
-</button>
-</div>
-</div>
-</div>
-</section>
-</main>
-<div id="site-footer"></div>
-<div id="site-widget"></div>
+<!doctype html>
 
-</body>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              error: "#a83836",
+              "surface-container-high": "#e3e9eb",
+              "primary-fixed": "#96f1fa",
+              "outline-variant": "#acb3b6",
+              "on-error-container": "#6e0a12",
+              tertiary: "#436563",
+              "on-primary-container": "#005b61",
+              "surface-variant": "#dce4e6",
+              background: "#f8fafb",
+              "tertiary-fixed-dim": "#caf0ec",
+              outline: "#747c7e",
+              "surface-container-highest": "#dce4e6",
+              "on-surface-variant": "#596063",
+              "tertiary-dim": "#375957",
+              "inverse-surface": "#0b0f10",
+              "on-surface": "#2c3436",
+              "on-primary": "#e7fdff",
+              primary: "#006a71",
+              "on-secondary-fixed-variant": "#36616f",
+              "error-dim": "#67040d",
+              "surface-tint": "#006a71",
+              "primary-container": "#96f1fa",
+              "on-primary-fixed": "#00474c",
+              "on-background": "#2c3436",
+              "surface-container-low": "#f0f4f6",
+              "on-tertiary-fixed": "#2f514f",
+              "on-tertiary": "#e1fffc",
+              "on-secondary": "#f0fbff",
+              "tertiary-container": "#d8fefa",
+              "secondary-fixed-dim": "#afdbeb",
+              "surface-bright": "#f8fafb",
+              "primary-dim": "#005d63",
+              "on-error": "#fff7f6",
+              "on-secondary-container": "#2b5765",
+              "surface-dim": "#d4dbde",
+              secondary: "#3a6573",
+              "secondary-container": "#bdeafa",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "on-tertiary-container": "#416361",
+              "secondary-dim": "#2d5966",
+              "inverse-on-surface": "#9a9d9e",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#00666d",
+              "inverse-primary": "#99f4fd",
+              "tertiary-fixed": "#d8fefa",
+              "surface-container": "#eaeff0",
+              "primary-fixed-dim": "#88e3eb",
+              "secondary-fixed": "#bdeafa",
+              surface: "#f8fafb",
+              "on-secondary-fixed": "#164552",
+              "error-container": "#fa746f",
+              "gold-accent": "#C5A059",
+              "accent-gold": "#D4AF37",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .tonal-transition {
+        transition: background-color 0.3s ease;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .no-line {
+        border: none !important;
+      }
+      .lotus-pattern {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-2 5-10 15-10 25s8 20 10 25c2-5 10-15 10-25S32 10 30 5z' fill='%23006a71' fill-opacity='0.03'/%3E%3C/svg%3E");
+      }
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
+    </style>
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body
+    class="bg-surface font-body text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopNavBar -->
+    <div id="site-header"></div>
+
+    <header id="site-header"></header>
+    <!-- TopNavBar -->
+    <header
+      class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none no-line tonal-transition bg-surface-container-low/50"
+    ></header>
+    <footer id="site-footer"></footer>
+  </body>
 </html>
