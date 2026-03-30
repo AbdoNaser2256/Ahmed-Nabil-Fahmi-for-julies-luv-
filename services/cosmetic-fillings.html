@@ -1,181 +1,423 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"primary-container": "#96f1fa", "tertiary-fixed-dim": "#caf0ec", "on-primary-fixed-variant": "#00666d", "on-background": "#2c3436", "on-secondary-container": "#2b5765", error: "#a83836", "on-surface-variant": "#596063", secondary: "#3a6573", "accent-gold": "#D4AF37", "accent-gold-light": "#E5C76B", "surface-container-lowest": "#ffffff", "surface-container-highest": "#dce4e6", "secondary-dim": "#2d5966", "surface-bright": "#f8fafb", "on-tertiary-fixed": "#2f514f", "primary-dim": "#005d63", surface: "#f8fafb", "surface-container": "#eaeff0", "inverse-on-surface": "#9a9d9e", "on-primary-fixed": "#00474c", "outline-variant": "#acb3b6", "on-surface": "#2c3436", "secondary-fixed": "#bdeafa", "inverse-surface": "#0b0f10", "inverse-primary": "#99f4fd", "secondary-fixed-dim": "#afdbeb", "surface-container-low": "#f0f4f6", "error-container": "#fa746f", outline: "#747c7e", "on-secondary": "#f0fbff", "on-error": "#fff7f6", "primary-fixed": "#96f1fa", background: "#f8fafb", primary: "#006a71", "on-secondary-fixed-variant": "#36616f", "surface-container-high": "#e3e9eb", tertiary: "#436563", "on-primary": "#e7fdff", "surface-dim": "#d4dbde", "tertiary-fixed": "#d8fefa", "on-tertiary-fixed-variant": "#4c6e6c", "error-dim": "#67040d", "tertiary-dim": "#375957", "tertiary-container": "#d8fefa", "primary-fixed-dim": "#88e3eb", "secondary-container": "#bdeafa", "surface-tint": "#006a71", "on-error-container": "#6e0a12", "on-primary-container": "#005b61", "on-tertiary": "#e1fffc", "on-tertiary-container": "#416361", "surface-variant": "#dce4e6", "on-secondary-fixed": "#164552", "gold-accent": "#C5A059"}, fontFamily: {headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"], display: "Manrope"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}}}};</script>
-  <title>Cosmetic Fillings | Prof. Dr Ahmed Nabil</title>
-  <style>
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); }
-    .asymmetric-gradient { background: linear-gradient(135deg, #006a71 0%, #D4AF37 100%); }
-    .arabesque-pattern { background-color: #fdfcf9; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.89 19.11L55.03 15 40.89 30l14.14 15-19.14-4.11L30 60l-5.89-19.11L5 45l14.14-15L5 15l19.11 4.11z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E"); }
-    .gold-border { border-color: #D4AF37; }
-    .text-gold { color: #D4AF37; }
-    .nav-dropdown:hover .nav-dropdown-content { display: block; }
-    .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%); }
-    .hero-gradient { background: linear-gradient(135deg, #004B50 0%, #002B2E 100%); }
-    .lotus-pattern { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-2 5-10 15-10 25s8 20 10 25c2-5 10-15 10-25S32 10 30 5z' fill='%23006a71' fill-opacity='0.03'/%3E%3C/svg%3E"); }
-    .editorial-shadow { box-shadow: 0 20px 40px rgba(184, 134, 11, 0.08); }
-    .motif-pattern { background-image: radial-gradient(#B8860B 0.5px, transparent 0.5px); background-size: 24px 24px; opacity: 0.1; }
-  </style>
-  
-  <script type="module" src="/../src/main.js"></script>
-</head>
-<body class="bg-surface text-on-background font-body arabesque-pattern" data-page="services">
-<div id="site-header"></div>
-<main class="pt-20">
-<!-- Hero Section: Invisible Restoration -->
-<section class="relative min-h-[819px] flex items-center overflow-hidden">
-<div class="absolute inset-0 bg-surface-container-low asymmetric-clip z-0"></div>
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-<div class="space-y-8">
-<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/30 text-primary font-bold text-xs uppercase tracking-widest font-headline">
-<span class="material-symbols-outlined text-[18px]">verified</span> Precision Dentistry
-                    </div>
-<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-on-background leading-[1.1] tracking-tighter">
-                        Invisible <span class="text-primary">Artistry</span>, Perfect Restoration.
-                    </h1>
-<p class="text-on-surface-variant text-xl leading-relaxed max-w-xl">
-                        Experience the evolution of dental care. Our cosmetic fillings are meticulously color-matched to your natural enamel, restoring your tooth's structural integrity with zero visual compromise.
-                    </p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform active:scale-95">
-                            Consult Specialist
-                        </button>
-<div class="flex items-center gap-3 px-6 py-4">
-<span class="material-symbols-outlined text-primary text-3xl">biotech</span>
-<span class="text-sm font-semibold text-on-surface-variant leading-tight">Advanced Biomimetic<br/>Materials</span>
-</div>
-</div>
-</div>
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary/5 rounded-xl blur-2xl group-hover:bg-primary/10 transition-colors"></div>
-<div class="relative rounded-xl overflow-hidden shadow-2xl">
-<img alt="Professional dental restoration" class="w-full h-[500px] object-cover" data-alt="Macro close-up of a perfect white tooth surface with soft studio lighting reflecting on the smooth ceramic-like texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA33380WJNRc2D8PZnxJivAFHFuKUVjSsenq7n5QUv7P4DRQi6_PtJccE9tkwZTbtce92iYsUTZi5UyTIGh8krbHcH3qrDUQjcHUvcEHoK7iVmzG_sQocayKfwJoA1cCD3otl5eGxYFU09wj66KUsPPf0v7rpXjTWtU7vT6rVndDjyDR-dZK-4xhVzN-0Ofe1zUTgMN8H5029b9bfxgKG6uLQ0Bdx6YX1Yk_N3zs38xC0FPBIeJdiQkkEKy4TIOI4fPQJ0587ycpy-H"/>
-<div class="absolute bottom-6 left-6 right-6 p-6 bg-surface/90 backdrop-blur-md rounded-lg shadow-lg">
-<p class="font-headline font-bold text-teal-900 italic">"The highest form of restoration is that which cannot be seen."</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Advantage: Composite vs Mercury -->
-<section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-8">
-<div class="mb-16 max-w-3xl">
-<h2 class="font-headline text-4xl font-bold text-on-background mb-6 tracking-tight">The Modern Standard of Safety</h2>
-<p class="text-on-surface-variant text-lg">We prioritize your long-term health by exclusively using biocompatible, tooth-colored composite resins over traditional mercury amalgams.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<!-- Mercury Column -->
-<div class="p-10 rounded-xl bg-surface-container border border-outline-variant/10">
-<div class="flex items-center gap-4 mb-8">
-<div class="w-12 h-12 rounded-full bg-error-container/20 flex items-center justify-center">
-<span class="material-symbols-outlined text-error">dangerous</span>
-</div>
-<h3 class="font-headline text-2xl font-bold text-on-surface">Mercury Amalgam</h3>
-</div>
-<ul class="space-y-6">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-error-container mt-1">remove_circle</span>
-<span class="text-on-surface-variant">Contains elemental mercury and metal alloys.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-error-container mt-1">remove_circle</span>
-<span class="text-on-surface-variant">Requires removal of healthy tooth structure for retention.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-error-container mt-1">remove_circle</span>
-<span class="text-on-surface-variant">Expands and contracts, leading to potential fractures over time.</span>
-</li>
-</ul>
-</div>
-<!-- Composite Column -->
-<div class="p-10 rounded-xl bg-primary text-on-primary shadow-2xl">
-<div class="flex items-center gap-4 mb-8">
-<div class="w-12 h-12 rounded-full bg-on-primary/20 flex items-center justify-center">
-<span class="material-symbols-outlined text-on-primary">verified</span>
-</div>
-<h3 class="font-headline text-2xl font-bold">Cosmetic Composite</h3>
-</div>
-<ul class="space-y-6">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span>100% Metal-free and biocompatible materials.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span>Bonds directly to the tooth, preserving healthy enamel.</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined mt-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
-<span>Mimics natural tooth expansion to prevent micro-leaks.</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- Bento Grid: Strength & Beauty -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
-<div class="md:col-span-8 p-12 rounded-xl bg-surface-container-lowest flex flex-col justify-between relative overflow-hidden group">
-<div class="relative z-10">
-<h3 class="font-headline text-3xl font-bold mb-4">Structural Integrity Restoration</h3>
-<p class="text-on-surface-variant max-w-lg mb-8">Beyond aesthetics, our composite materials are engineered to reinforce the tooth's natural structure, restoring its original bite strength and durability.</p>
-<div class="flex gap-4">
-<div class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold">Durable</div>
-<div class="px-4 py-2 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-bold">Biomimetic</div>
-</div>
-</div>
-<img alt="Restoration detail" class="absolute right-0 bottom-0 w-1/2 h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity" data-alt="Conceptual image of clean molecular structure or high-tech glass-like surface with soft blue and teal highlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAR5ey7_m2UrQvKYoZpGWXRr0T-xhNOC7FnS8fo0NOlXAUMsFVCBG_vSeu975B_anmNwf6ZkOJLyfrIE_asyBUEuSQonjTAkJQFxLveCVg_7PkMX0gJq2oKz2HjJmv_GdWSGUesqAdJNChf2WCNsWThCBqRaIl8Hyvr3ITbarVVP4-oP6M8nGCgHdi8phZtZ9pPpTTw74cxKJtGvjN5PJLPj3jXi6kvwfBjFZeLSDab0trN291dTKgpD3XvHkEHbQQQRbOYZAGL6hDD"/>
-</div>
-<div class="md:col-span-4 p-12 rounded-xl bg-primary-container text-on-primary-container flex flex-col justify-center text-center">
-<span class="material-symbols-outlined text-6xl mb-6">workspace_premium</span>
-<h3 class="font-headline text-2xl font-bold mb-2">Painless Application</h3>
-<p class="text-sm opacity-80 font-medium">Minimally invasive techniques that ensure your comfort throughout the quick restoration process.</p>
-</div>
-<div class="md:col-span-4 p-10 rounded-xl bg-secondary-container text-on-secondary-container">
-<h4 class="font-headline text-4xl font-black mb-2">15+</h4>
-<p class="text-sm font-bold uppercase tracking-widest opacity-70">Years of Longevity</p>
-<p class="mt-4 text-sm leading-relaxed">With proper oral hygiene, our high-grade materials are designed for long-term functional excellence.</p>
-</div>
-<div class="md:col-span-8 p-10 rounded-xl bg-surface-container-lowest border border-outline-variant/10 flex items-center gap-8">
-<div class="w-24 h-24 rounded-full bg-surface-container-high flex-shrink-0 flex items-center justify-center">
-<span class="material-symbols-outlined text-primary text-4xl">palette</span>
-</div>
-<div>
-<h3 class="font-headline text-xl font-bold mb-2">Customized Shade Mapping</h3>
-<p class="text-on-surface-variant text-sm">We use a multi-layered shading approach to mimic the translucency and gradients of your natural teeth.</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Booking CTA -->
-<section class="py-32 relative overflow-hidden bg-on-background text-surface">
-<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/20 blur-[120px] rounded-full"></div>
-<div class="max-w-7xl mx-auto px-8 relative z-10 text-center">
-<h2 class="font-headline text-4xl md:text-6xl font-extrabold mb-8 tracking-tighter">Ready for a Seamless Smile?</h2>
-<p class="text-surface-variant text-xl mb-12 max-w-2xl mx-auto">Join thousands who have trusted Prof. Dr Ahmed Nabil for precision restoration and aesthetic excellence.</p>
-<div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline font-bold text-lg hover:bg-primary-dim transition-colors w-full sm:w-auto">
-                        Book Your Consultation
-                    </button>
-<a class="text-surface font-headline font-bold flex items-center gap-2 hover:underline" href="#">
-                        View More Services <span class="material-symbols-outlined">arrow_forward</span>
-</a>
-</div>
-</div>
-</section>
-</main>
-<div id="site-footer"></div>
-<div id="site-widget"></div>
+<!doctype html>
 
-</body>
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Cosmetic Fillings | Prof. Dr Ahmed Nabil</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#96f1fa",
+              "on-background": "#2c3436",
+              "on-tertiary-fixed": "#2f514f",
+              "on-secondary": "#f0fbff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-dim": "#375957",
+              "surface-container-highest": "#dce4e6",
+              "error-container": "#fa746f",
+              "secondary-fixed-dim": "#afdbeb",
+              "inverse-on-surface": "#9a9d9e",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "on-secondary-fixed": "#164552",
+              error: "#a83836",
+              "surface-bright": "#f8fafb",
+              "on-primary-fixed-variant": "#00666d",
+              "surface-container-high": "#e3e9eb",
+              "secondary-dim": "#2d5966",
+              "on-secondary-container": "#2b5765",
+              "tertiary-fixed": "#d8fefa",
+              outline: "#747c7e",
+              "on-secondary-fixed-variant": "#36616f",
+              "on-primary-fixed": "#00474c",
+              "primary-dim": "#005d63",
+              "on-tertiary-container": "#416361",
+              secondary: "#3a6573",
+              "primary-fixed-dim": "#88e3eb",
+              surface: "#f8fafb",
+              "error-dim": "#67040d",
+              "secondary-container": "#bdeafa",
+              "inverse-surface": "#0b0f10",
+              "primary-container": "#96f1fa",
+              primary: "#006a71",
+              "inverse-primary": "#99f4fd",
+              "tertiary-fixed-dim": "#caf0ec",
+              "secondary-fixed": "#bdeafa",
+              "on-primary": "#e7fdff",
+              "surface-container-low": "#f0f4f6",
+              "on-primary-container": "#005b61",
+              "on-error": "#fff7f6",
+              background: "#f8fafb",
+              "surface-variant": "#dce4e6",
+              "on-surface-variant": "#596063",
+              "surface-dim": "#d4dbde",
+              "on-surface": "#2c3436",
+              "tertiary-container": "#d8fefa",
+              "surface-container": "#eaeff0",
+              "outline-variant": "#acb3b6",
+              "surface-tint": "#006a71",
+              "on-error-container": "#6e0a12",
+              tertiary: "#436563",
+              "on-tertiary": "#e1fffc",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+        vertical-align: middle;
+      }
+      .text-shadow-sm {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      }
+      .asymmetric-clip {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+      }
+    </style>
+    <script type="module" src="../src/main.js"></script>
+  </head>
+  <body class="bg-surface text-on-surface font-body antialiased">
+    <header id="site-header"></header>
+    <!-- Top Navigation Shell -->
+    <main class="pt-20">
+      <!-- Hero Section: Invisible Restoration -->
+      <section class="relative min-h-[819px] flex items-center overflow-hidden">
+        <div
+          class="absolute inset-0 bg-surface-container-low asymmetric-clip z-0"
+        ></div>
+        <div
+          class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10"
+        >
+          <div class="space-y-8">
+            <div
+              class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container/30 text-primary font-bold text-xs uppercase tracking-widest font-headline"
+            >
+              <span class="material-symbols-outlined text-[18px]"
+                >verified</span
+              >
+              Precision Dentistry
+            </div>
+            <h1
+              class="font-headline text-5xl lg:text-7xl font-extrabold text-on-background leading-[1.1] tracking-tighter"
+            >
+              Invisible <span class="text-primary">Artistry</span>, Perfect
+              Restoration.
+            </h1>
+            <p class="text-on-surface-variant text-xl leading-relaxed max-w-xl">
+              Experience the evolution of dental care. Our cosmetic fillings are
+              meticulously color-matched to your natural enamel, restoring your
+              tooth's structural integrity with zero visual compromise.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg shadow-xl shadow-primary/20 hover:scale-105 transition-transform active:scale-95"
+              >
+                Consult Specialist
+              </button>
+              <div class="flex items-center gap-3 px-6 py-4">
+                <span class="material-symbols-outlined text-primary text-3xl"
+                  >biotech</span
+                >
+                <span
+                  class="text-sm font-semibold text-on-surface-variant leading-tight"
+                  >Advanced Biomimetic<br />Materials</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="relative group">
+            <div
+              class="absolute -inset-4 bg-primary/5 rounded-xl blur-2xl group-hover:bg-primary/10 transition-colors"
+            ></div>
+            <div class="relative rounded-xl overflow-hidden shadow-2xl">
+              <img
+                alt="Professional dental restoration"
+                class="w-full h-[500px] object-cover"
+                data-alt="Macro close-up of a perfect white tooth surface with soft studio lighting reflecting on the smooth ceramic-like texture"
+                src="https://images.unsplash.com/photo-1598256989800-fea5f00e39b7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+              />
+              <div
+                class="absolute bottom-6 left-6 right-6 p-6 bg-surface/90 backdrop-blur-md rounded-lg shadow-lg"
+              >
+                <p class="font-headline font-bold text-teal-900 italic">
+                  "The highest form of restoration is that which cannot be
+                  seen."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Advantage: Composite vs Mercury -->
+      <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="mb-16 max-w-3xl">
+            <h2
+              class="font-headline text-4xl font-bold text-on-background mb-6 tracking-tight"
+            >
+              The Modern Standard of Safety
+            </h2>
+            <p class="text-on-surface-variant text-lg">
+              We prioritize your long-term health by exclusively using
+              biocompatible, tooth-colored composite resins over traditional
+              mercury amalgams.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Mercury Column -->
+            <div
+              class="p-10 rounded-xl bg-surface-container border border-outline-variant/10"
+            >
+              <div class="flex items-center gap-4 mb-8">
+                <div
+                  class="w-12 h-12 rounded-full bg-error-container/20 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-error"
+                    >dangerous</span
+                  >
+                </div>
+                <h3 class="font-headline text-2xl font-bold text-on-surface">
+                  Mercury Amalgam
+                </h3>
+              </div>
+              <ul class="space-y-6">
+                <li class="flex items-start gap-3">
+                  <span
+                    class="material-symbols-outlined text-error-container mt-1"
+                    >remove_circle</span
+                  >
+                  <span class="text-on-surface-variant"
+                    >Contains elemental mercury and metal alloys.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="material-symbols-outlined text-error-container mt-1"
+                    >remove_circle</span
+                  >
+                  <span class="text-on-surface-variant"
+                    >Requires removal of healthy tooth structure for
+                    retention.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="material-symbols-outlined text-error-container mt-1"
+                    >remove_circle</span
+                  >
+                  <span class="text-on-surface-variant"
+                    >Expands and contracts, leading to potential fractures over
+                    time.</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Composite Column -->
+            <div class="p-10 rounded-xl bg-primary text-on-primary shadow-2xl">
+              <div class="flex items-center gap-4 mb-8">
+                <div
+                  class="w-12 h-12 rounded-full bg-on-primary/20 flex items-center justify-center"
+                >
+                  <span class="material-symbols-outlined text-on-primary"
+                    >verified</span
+                  >
+                </div>
+                <h3 class="font-headline text-2xl font-bold">
+                  Cosmetic Composite
+                </h3>
+              </div>
+              <ul class="space-y-6">
+                <li class="flex items-start gap-3">
+                  <span
+                    class="material-symbols-outlined mt-1"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >check_circle</span
+                  >
+                  <span>100% Metal-free and biocompatible materials.</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="material-symbols-outlined mt-1"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >check_circle</span
+                  >
+                  <span
+                    >Bonds directly to the tooth, preserving healthy
+                    enamel.</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span
+                    class="material-symbols-outlined mt-1"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >check_circle</span
+                  >
+                  <span
+                    >Mimics natural tooth expansion to prevent
+                    micro-leaks.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Bento Grid: Strength & Beauty -->
+      <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <div
+              class="md:col-span-8 p-12 rounded-xl bg-surface-container-lowest flex flex-col justify-between relative overflow-hidden group"
+            >
+              <div class="relative z-10">
+                <h3 class="font-headline text-3xl font-bold mb-4">
+                  Structural Integrity Restoration
+                </h3>
+                <p class="text-on-surface-variant max-w-lg mb-8">
+                  Beyond aesthetics, our composite materials are engineered to
+                  reinforce the tooth's natural structure, restoring its
+                  original bite strength and durability.
+                </p>
+                <div class="flex gap-4">
+                  <div
+                    class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold"
+                  >
+                    Durable
+                  </div>
+                  <div
+                    class="px-4 py-2 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-bold"
+                  >
+                    Biomimetic
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="Restoration detail"
+                class="absolute right-0 bottom-0 w-1/2 h-full object-cover opacity-10 group-hover:opacity-20 transition-opacity"
+                data-alt="Conceptual image of clean molecular structure or high-tech glass-like surface with soft blue and teal highlights"
+                src="https://images.unsplash.com/photo-1598256989800-fea5f00e39b7?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3"
+              />
+            </div>
+            <div
+              class="md:col-span-4 p-12 rounded-xl bg-primary-container text-on-primary-container flex flex-col justify-center text-center"
+            >
+              <span class="material-symbols-outlined text-6xl mb-6"
+                >workspace_premium</span
+              >
+              <h3 class="font-headline text-2xl font-bold mb-2">
+                Painless Application
+              </h3>
+              <p class="text-sm opacity-80 font-medium">
+                Minimally invasive techniques that ensure your comfort
+                throughout the quick restoration process.
+              </p>
+            </div>
+            <div
+              class="md:col-span-4 p-10 rounded-xl bg-secondary-container text-on-secondary-container"
+            >
+              <h4 class="font-headline text-4xl font-black mb-2">15+</h4>
+              <p class="text-sm font-bold uppercase tracking-widest opacity-70">
+                Years of Longevity
+              </p>
+              <p class="mt-4 text-sm leading-relaxed">
+                With proper oral hygiene, our high-grade materials are designed
+                for long-term functional excellence.
+              </p>
+            </div>
+            <div
+              class="md:col-span-8 p-10 rounded-xl bg-surface-container-lowest border border-outline-variant/10 flex items-center gap-8"
+            >
+              <div
+                class="w-24 h-24 rounded-full bg-surface-container-high flex-shrink-0 flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-primary text-4xl"
+                  >palette</span
+                >
+              </div>
+              <div>
+                <h3 class="font-headline text-xl font-bold mb-2">
+                  Customized Shade Mapping
+                </h3>
+                <p class="text-on-surface-variant text-sm">
+                  We use a multi-layered shading approach to mimic the
+                  translucency and gradients of your natural teeth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Booking CTA -->
+      <section
+        class="py-32 relative overflow-hidden bg-on-background text-surface"
+      >
+        <div
+          class="absolute top-0 right-0 w-1/3 h-full bg-primary/20 blur-[120px] rounded-full"
+        ></div>
+        <div class="max-w-7xl mx-auto px-8 relative z-10 text-center">
+          <h2
+            class="font-headline text-4xl md:text-6xl font-extrabold mb-8 tracking-tighter"
+          >
+            Ready for a Seamless Smile?
+          </h2>
+          <p class="text-surface-variant text-xl mb-12 max-w-2xl mx-auto">
+            Join thousands who have trusted Prof. Dr Ahmed Nabil for precision
+            restoration and aesthetic excellence.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-6 justify-center items-center"
+          >
+            <button
+              class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline font-bold text-lg hover:bg-primary-dim transition-colors w-full sm:w-auto"
+            >
+              Book Your Consultation
+            </button>
+            <a
+              class="text-surface font-headline font-bold flex items-center gap-2 hover:underline"
+              href="#"
+            >
+              View More Services
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Shell -->
+    <footer id="site-footer"></footer>
+  </body>
 </html>
