@@ -1,0 +1,421 @@
+<!doctype html>
+
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#006a71",
+              "primary-container": "#96f1fa",
+              "on-primary-container": "#005b61",
+              secondary: "#3a6573",
+              "secondary-container": "#bdeafa",
+              "on-secondary-container": "#2b5765",
+              tertiary: "#436563",
+              background: "#f8fafb",
+              "on-background": "#2c3436",
+              surface: "#f8fafb",
+              "surface-container": "#eaeff0",
+              "surface-container-low": "#f0f4f6",
+              "surface-container-lowest": "#ffffff",
+              "on-surface": "#2c3436",
+              "on-surface-variant": "#596063",
+              outline: "#747c7e",
+              "outline-variant": "#acb3b6",
+              "accent-gold": "#B8860B",
+              "primary-fixed-dim": "#88e3eb",
+              "inverse-surface": "#0b0f10",
+              "on-error": "#fff7f6",
+              "tertiary-container": "#d8fefa",
+              "on-primary-fixed": "#00474c",
+              "surface-bright": "#f8fafb",
+              "on-tertiary-fixed": "#2f514f",
+              "on-secondary-fixed-variant": "#36616f",
+              "secondary-fixed": "#bdeafa",
+              "inverse-on-surface": "#9a9d9e",
+              "on-primary": "#e7fdff",
+              "inverse-primary": "#99f4fd",
+              "surface-dim": "#d4dbde",
+              "on-error-container": "#6e0a12",
+              "error-dim": "#67040d",
+              "on-tertiary-container": "#416361",
+              "tertiary-fixed": "#d8fefa",
+              "surface-variant": "#dce4e6",
+              "secondary-fixed-dim": "#afdbeb",
+              "primary-dim": "#005d63",
+              "on-secondary": "#f0fbff",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "error-container": "#fa746f",
+              "on-secondary-fixed": "#164552",
+              "surface-container-highest": "#dce4e6",
+              "surface-tint": "#006a71",
+              error: "#a83836",
+              "secondary-dim": "#2d5966",
+              "tertiary-dim": "#375957",
+              "primary-fixed": "#96f1fa",
+              "on-primary-fixed-variant": "#00666d",
+              "on-tertiary": "#e1fffc",
+              "surface-container-high": "#e3e9eb",
+              "tertiary-fixed-dim": "#caf0ec",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-nav {
+        background: rgba(253, 251, 247, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .editorial-shadow {
+        box-shadow: 0 20px 40px rgba(184, 134, 11, 0.08);
+      }
+      .asymmetric-gradient {
+        background: linear-gradient(135deg, #006a71 0%, #b8860b 100%);
+      }
+      .motif-pattern {
+        background-image: radial-gradient(#b8860b 0.5px, transparent 0.5px);
+        background-size: 24px 24px;
+        opacity: 0.1;
+      }
+      .lotus-bg {
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-5 10-15 15-15 25s10 15 15 25c5-10 15-15 15-25S35 15 30 5z' fill='%23B8860B' fill-opacity='0.05' fill-rule='evenodd'/%3E%3C/svg%3E");
+      }
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container lotus-bg"
+  >
+    <!-- TopNavBar -->
+    <div id="site-header"></div>
+
+    <!-- TopNavBar -->
+
+    <main class="pt-32">
+      <!-- Hero Section -->
+      <section
+        class="max-w-7xl mx-auto px-8 mb-32 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+      >
+        <div class="lg:col-span-7 z-10">
+          <span
+            class="text-secondary font-headline font-bold tracking-widest uppercase text-sm mb-4 block flex items-center gap-2"
+          >
+            <span class="w-8 h-[1px] bg-secondary"></span> Cairo's Premier
+            Restorative Studio
+          </span>
+          <h1
+            class="text-6xl md:text-7xl font-headline font-extrabold text-on-background tracking-tighter leading-[1.1] mb-8"
+          >
+            Mastering Wellness <br />
+            <span class="text-primary">Through Heritage.</span>
+          </h1>
+          <p
+            class="text-xl text-on-surface-variant max-w-xl leading-relaxed font-light mb-10"
+          >
+            Dr. Julian Thorne merges international Ivy League precision with the
+            warmth of Egyptian hospitality, redefining dentistry as a
+            restorative ritual.
+          </p>
+          <div class="flex items-center gap-6">
+            <div
+              class="w-16 h-16 rounded-full bg-secondary-container flex items-center justify-center text-secondary"
+            >
+              <span class="material-symbols-outlined text-3xl"
+                >verified_user</span
+              >
+            </div>
+            <div>
+              <h4 class="font-headline font-bold text-lg">
+                Licensed Cairo Practitioner
+              </h4>
+              <p class="text-on-surface-variant text-sm">
+                Combining Global Standards with Local Excellence
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <div
+            class="absolute -top-10 -left-10 w-64 h-64 bg-secondary/10 rounded-xl -z-10 opacity-50 motif-pattern"
+          ></div>
+          <div
+            class="rounded-lg overflow-hidden editorial-shadow border-4 border-white aspect-[4/5] relative"
+          >
+            <img
+              alt="Dr. Julian Thorne"
+              class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAaULjo-cbTf9fzo9DDjV-QAXzXwGCTySMAy3qPsGGd7GUmzWnjNArg_sgrGbyLBjyAq1BUFbaCmH6Rc-bBdktKJQ3k62DUEztSjo39PrwUzlAS708zd7S3l_n-UoaOI0lNnH-Xx3q5K-sPRpBW_DmEOSL-Lm6V5QClB-wBCBdk5UNvR0cudQzcRO1HZHjdoeCrzzAXsnjImuFG-y8iC3hu8vpa8qkwj6mBskHMXdk3SxXi2BCt2FojKRLvyywOzuVKoYIS4Sfr0r1"
+            />
+            <div
+              class="absolute inset-0 border-[20px] border-primary/5 pointer-events-none"
+            ></div>
+          </div>
+          <div
+            class="absolute -bottom-6 -right-6 p-8 bg-white editorial-shadow rounded-lg max-w-[240px] border-l-4 border-secondary"
+          >
+            <p
+              class="italic text-on-secondary-container font-light leading-snug"
+            >
+              "Bringing the gold standard of dental care to the heart of Egypt."
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- About the Dentist & Philosophy -->
+      <section class="bg-surface-container-low py-32 overflow-hidden relative">
+        <div
+          class="absolute top-0 right-0 w-1/3 h-full motif-pattern pointer-events-none"
+        ></div>
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-start">
+            <div class="space-y-12 relative z-10">
+              <div>
+                <h2 class="text-4xl font-headline font-bold mb-6">
+                  A Legacy of Excellence in Egypt
+                </h2>
+                <div
+                  class="space-y-6 text-lg text-on-surface-variant leading-relaxed"
+                >
+                  <p>
+                    With a career rooted in both academic rigor and local
+                    community service, Dr. Thorne stands as one of Cairo's most
+                    trusted practitioners. My philosophy is simple: treating
+                    every patient with the same meticulous care I would my own
+                    family.
+                  </p>
+                  <p>
+                    Educated at the
+                    <span
+                      class="text-primary font-semibold underline decoration-secondary"
+                      >Ivy League Institute of Dental Medicine</span
+                    >
+                    and a long-standing member of the
+                    <span class="text-on-surface font-semibold"
+                      >Egyptian Dental Association</span
+                    >, I bridge the gap between world-class innovation and local
+                    dental needs.
+                  </p>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-8">
+                <div
+                  class="bg-white p-8 rounded-lg editorial-shadow border-t-2 border-secondary"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary mb-4"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >account_balance</span
+                  >
+                  <h5 class="font-headline font-bold mb-2">Credentials</h5>
+                  <p class="text-sm text-on-surface-variant">
+                    DDS, Yale School of Medicine<br />Board Certified in Egypt
+                  </p>
+                </div>
+                <div
+                  class="bg-white p-8 rounded-lg editorial-shadow border-t-2 border-secondary"
+                >
+                  <span
+                    class="material-symbols-outlined text-secondary mb-4"
+                    style="font-variation-settings: &quot;FILL&quot; 1"
+                    >stars</span
+                  >
+                  <h5 class="font-headline font-bold mb-2">Recognition</h5>
+                  <p class="text-sm text-on-surface-variant">
+                    Fellow of the International Congress of Oral Implantologists
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative mt-20 lg:mt-0">
+              <div class="grid grid-cols-6 grid-rows-6 gap-4 h-[600px]">
+                <div
+                  class="col-span-4 row-span-3 rounded-lg overflow-hidden border border-secondary/20"
+                >
+                  <img
+                    alt="Modern Dental Operatory"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE46Vn0FZOF0qwjGu8z2GJDzaodXj1wRGW_UOthaLBu9TJxovJNX_lyyNTn-bqjbnbhu_lcdAPc4JrhDPAL9N6pLRmM2IiSt7ZlIYQ1YXGrn43N01VZBfkJsTgYVyL-zv4xBGC5Zqg9yhxV2ZEAOZf1GsIqQ6OsY31f7fax-4NMSuzPxzAW15lg2bLdVhfh0ThB8m8wDl_bU7Q30cMccGZ5f4YclE1SPoWxXLwtwD_sAxzNnTwkMtv0r6mpqegqhlN1yx0LXPFYHih"
+                  />
+                </div>
+                <div
+                  class="col-span-2 row-span-2 rounded-lg overflow-hidden border border-secondary/20"
+                >
+                  <img
+                    alt="Clinic Reception Area"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2aOeTM7smto0zn2yx1hE6_JHF64CMSdwDnbi0NR4Du4_-Zr7i4JI3X2SgXvNaJ5KnMG4ogqpoVtQUOeauRAGhLklbOzruPLpLYGAZcTcoORD2Qv7FOR03Fk0xynIMTfH5Tv4YlB91viqORpNX4pbmQeAd418u8cEE0GD7joJn4tBPhh7r0ZxTt5S8iEpUp_Tc3bx3ub3JZ6dh2uUAy1pVLVM2RGCaFagHddikCFGzopZYqYmi1sdJC1VGdWODxVcoCrTAqhcxVJ3a"
+                  />
+                </div>
+                <div
+                  class="col-span-2 row-span-4 rounded-lg overflow-hidden border border-secondary/20"
+                >
+                  <img
+                    alt="Sterilization Center"
+                    class="w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC9uSZ-B6isPAHO8HB-kLP0pslJcm0UDq0FMU-FdLI_M1qY31P48hZ4IO20rBbQm8tJA1jKiljnQLbic6aG_6_MYVewezAmbLHRtJ6Sjx2VJRkVfaxGI3HQBauBUcnc1McUIJnBrenhx_OwIJEoQ_at4yA5J5nIB3dCormRRuJ6lyyMNqKRmfTqzLLhQ0XmQunnUxYXhqeVWhEh44sVk-4tlSDiFjNc-fNmUTyD2hb9Fdm18XMygKonvEi0Fi1aFu_9GlBl_S61YyY"
+                  />
+                </div>
+                <div
+                  class="col-span-4 row-span-3 rounded-lg overflow-hidden bg-primary p-12 text-on-primary flex flex-col justify-end relative"
+                >
+                  <div
+                    class="absolute top-0 right-0 w-24 h-24 motif-pattern opacity-30"
+                  ></div>
+                  <h3
+                    class="text-3xl font-headline font-bold leading-tight mb-4"
+                  >
+                    A Sanctuary in the City
+                  </h3>
+                  <p class="opacity-80">
+                    Experience world-class technology in a space designed for
+                    peace, privacy, and precision.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Professional Philosophy -->
+      <section class="py-32 max-w-5xl mx-auto px-8 text-center">
+        <span
+          class="material-symbols-outlined text-secondary text-6xl mb-8"
+          style="font-variation-settings: &quot;FILL&quot; 0"
+          >health_metrics</span
+        >
+        <h2 class="text-5xl font-headline font-bold mb-12 tracking-tight">
+          The Boutique Experience
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-left">
+          <div class="space-y-4">
+            <div class="text-4xl font-headline font-black text-secondary/20">
+              01
+            </div>
+            <h4 class="text-xl font-headline font-bold">Dedicated Time</h4>
+            <p class="text-on-surface-variant leading-relaxed">
+              As a solo practitioner, Dr. Thorne personally oversees every
+              aspect of your care. No delegated procedures, only focused
+              expertise.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="text-4xl font-headline font-black text-secondary/20">
+              02
+            </div>
+            <h4 class="text-xl font-headline font-bold">Biomimetic Mastery</h4>
+            <p class="text-on-surface-variant leading-relaxed">
+              We focus on preserving natural tooth structure using advanced
+              materials that mimic the strength and translucency of real enamel.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div class="text-4xl font-headline font-black text-secondary/20">
+              03
+            </div>
+            <h4 class="text-xl font-headline font-bold">Modern Comfort</h4>
+            <p class="text-on-surface-variant leading-relaxed">
+              Our clinic features state-of-the-art air filtration and
+              noise-canceling technology, ensuring your visit is as relaxing as
+              it is effective.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="max-w-7xl mx-auto px-8 mb-32">
+        <div
+          class="asymmetric-gradient rounded-lg p-16 text-center text-white relative overflow-hidden shadow-2xl"
+        >
+          <div class="absolute inset-0 motif-pattern opacity-20"></div>
+          <div
+            class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48 blur-3xl"
+          ></div>
+          <h2
+            class="text-4xl md:text-5xl font-headline font-bold mb-8 relative z-10"
+          >
+            Experience Cairo's Finest Dental Care
+          </h2>
+          <p class="text-xl opacity-90 mb-12 max-w-2xl mx-auto relative z-10">
+            We invite you to join our exclusive list of patients who value
+            precision, luxury, and personalized attention.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row justify-center gap-6 relative z-10"
+          >
+            <button
+              class="bg-white text-primary px-10 py-4 rounded-full font-headline font-bold editorial-shadow hover:bg-secondary hover:text-white transition-all"
+            >
+              Schedule Consultation
+            </button>
+            <button
+              class="border border-white/30 text-white px-10 py-4 rounded-full font-headline font-bold hover:bg-white/10 transition-colors"
+            >
+              View Case Studies
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="site-footer"></footer>
+    <!-- WhatsApp Floating Button -->
+    <a
+      class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform active:scale-95 group"
+      href="https://wa.me/201000000000"
+      target="_blank"
+    >
+      <svg
+        class="w-8 h-8 fill-current"
+        viewbox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+        ></path>
+      </svg>
+      <div
+        class="absolute right-16 bg-white text-slate-800 px-4 py-2 rounded-xl text-sm font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none border border-slate-100"
+      >
+        Chat with us
+      </div>
+    </a>
+  </body>
+</html>
