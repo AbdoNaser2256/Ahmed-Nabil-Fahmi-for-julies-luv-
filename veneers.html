@@ -1,340 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="scroll-smooth" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Veneers | Prof. Dr Ahmed Nabil</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"primary-fixed": "#96f1fa", "on-background": "#2c3436", "on-tertiary-fixed": "#2f514f", "on-secondary": "#f0fbff", "surface-container-lowest": "#ffffff", "tertiary-dim": "#375957", "surface-container-highest": "#dce4e6", "error-container": "#fa746f", "secondary-fixed-dim": "#afdbeb", "inverse-on-surface": "#9a9d9e", "on-tertiary-fixed-variant": "#4c6e6c", "on-secondary-fixed": "#164552", error: "#a83836", "surface-bright": "#f8fafb", "on-primary-fixed-variant": "#00666d", "surface-container-high": "#e3e9eb", "secondary-dim": "#2d5966", "on-secondary-container": "#2b5765", "tertiary-fixed": "#d8fefa", outline: "#747c7e", "on-secondary-fixed-variant": "#36616f", "on-primary-fixed": "#00474c", "primary-dim": "#005d63", "on-tertiary-container": "#416361", secondary: "#3a6573", "primary-fixed-dim": "#88e3eb", surface: "#f8fafb", "error-dim": "#67040d", "secondary-container": "#bdeafa", "inverse-surface": "#0b0f10", "primary-container": "#96f1fa", primary: "#006a71", "inverse-primary": "#99f4fd", "tertiary-fixed-dim": "#caf0ec", "secondary-fixed": "#bdeafa", "on-primary": "#e7fdff", "surface-container-low": "#f0f4f6", "on-primary-container": "#005b61", "on-error": "#fff7f6", background: "#f8fafb", "surface-variant": "#dce4e6", "on-surface-variant": "#596063", "surface-dim": "#d4dbde", "on-surface": "#2c3436", "tertiary-container": "#d8fefa", "surface-container": "#eaeff0", "outline-variant": "#acb3b6", "surface-tint": "#006a71", "on-error-container": "#6e0a12", tertiary: "#436563", "on-tertiary": "#e1fffc"}, fontFamily: {headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"], display: "Manrope"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}}}};</script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .glass-nav {
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Veneers | Prof. Dr Ahmed Nabil</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#96f1fa",
+              "on-background": "#2c3436",
+              "on-tertiary-fixed": "#2f514f",
+              "on-secondary": "#f0fbff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-dim": "#375957",
+              "surface-container-highest": "#dce4e6",
+              "error-container": "#fa746f",
+              "secondary-fixed-dim": "#afdbeb",
+              "inverse-on-surface": "#9a9d9e",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "on-secondary-fixed": "#164552",
+              error: "#a83836",
+              "surface-bright": "#f8fafb",
+              "on-primary-fixed-variant": "#00666d",
+              "surface-container-high": "#e3e9eb",
+              "secondary-dim": "#2d5966",
+              "on-secondary-container": "#2b5765",
+              "tertiary-fixed": "#d8fefa",
+              outline: "#747c7e",
+              "on-secondary-fixed-variant": "#36616f",
+              "on-primary-fixed": "#00474c",
+              "primary-dim": "#005d63",
+              "on-tertiary-container": "#416361",
+              secondary: "#3a6573",
+              "primary-fixed-dim": "#88e3eb",
+              surface: "#f8fafb",
+              "error-dim": "#67040d",
+              "secondary-container": "#bdeafa",
+              "inverse-surface": "#0b0f10",
+              "primary-container": "#96f1fa",
+              primary: "#006a71",
+              "inverse-primary": "#99f4fd",
+              "tertiary-fixed-dim": "#caf0ec",
+              "secondary-fixed": "#bdeafa",
+              "on-primary": "#e7fdff",
+              "surface-container-low": "#f0f4f6",
+              "on-primary-container": "#005b61",
+              "on-error": "#fff7f6",
+              background: "#f8fafb",
+              "surface-variant": "#dce4e6",
+              "on-surface-variant": "#596063",
+              "surface-dim": "#d4dbde",
+              "on-surface": "#2c3436",
+              "tertiary-container": "#d8fefa",
+              "surface-container": "#eaeff0",
+              "outline-variant": "#acb3b6",
+              "surface-tint": "#006a71",
+              "on-error-container": "#6e0a12",
+              tertiary: "#436563",
+              "on-tertiary": "#e1fffc",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-nav {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .asymmetric-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+      }
+      @media (max-width: 768px) {
         .asymmetric-grid {
-            grid-template-columns: 1.2fr 0.8fr;
+          grid-template-columns: 1fr;
         }
-        @media (max-width: 768px) {
-            .asymmetric-grid {
-                grid-template-columns: 1fr;
-            }
-        }
+      }
 
-        .nav-dropdown:hover .nav-dropdown-content {
-            display: block;
-        }
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
     </style>
-</head>
-<body class="bg-surface font-body text-on-surface antialiased">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl transition-all duration-300 shadow-sm">
-<div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
-<div class="text-2xl font-bold tracking-tighter text-teal-900 flex items-center gap-2 font-headline">
-<div class="flex flex-col leading-tight">
-<div class="flex items-center gap-2">Prof. Dr Ahmed Nabil</div>
-<span class="text-[10px] uppercase tracking-[0.2em] text-accent-gold font-semibold">استاذ - دكتور احمد نبيل</span>
-</div>
-</div>
-<div class="hidden lg:flex items-center gap-x-8">
-<a class="font-headline font-semibold text-teal-700 border-b-2 border-teal-600 pb-1 transition-all" href="index.html">Home</a>
-<div class="relative nav-dropdown">
-<button class="font-headline font-semibold text-slate-600 hover:text-teal-800 transition-colors flex items-center gap-1 pb-1">
-        Services
-        <span class="material-symbols-outlined text-lg leading-none">keyboard_arrow_down</span>
-</button>
-<div class="nav-dropdown-content hidden absolute left-0 top-full pt-4 w-64 z-50">
-<div class="bg-white rounded-xl shadow-2xl border border-slate-100 overflow-hidden backdrop-blur-xl bg-white/95">
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="services.html">All Services</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="dental-implants.html">Dental Implants</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="hollywood-smile.html">Hollywood Smile</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="veneers.html">Veneers</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="root-canal.html">Root canal treatment</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="childrens-teeth.html">Children’s teeth</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="gum-depigmentation.html">Gum Depigmentation</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="cosmetic-fillings.html">Cosmetic fillings</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="orthodontics.html">Orthodontics</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="teeth-whitening.html">Teeth whitening</a>
-<a class="block px-5 py-3 text-sm font-semibold text-slate-700 hover:bg-teal-50 hover:text-teal-900 transition-colors border-l-4 border-transparent hover:border-accent-gold" href="casted-crown.html">Casted Crown</a>
-</div>
-</div>
-</div>
-<a class="font-headline font-semibold text-slate-600 hover:text-teal-800 transition-colors" href="before-after.html">Before &amp; After</a>
-<a class="font-headline font-semibold text-slate-600 hover:text-teal-800 transition-colors" href="videos.html">Videos</a>
-<a class="font-headline font-semibold text-slate-600 hover:text-teal-800 transition-colors" href="about.html">About</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="hover:bg-teal-50/50 rounded-full transition-all flex items-center gap-1 text-slate-600 font-semibold text-sm px-3 py-1.5">
-<span class="material-symbols-outlined text-xl text-slate-600">language</span>
-<span class="text-slate-700 font-semibold text-sm ml-1">English</span>
-<span class="material-symbols-outlined text-lg text-slate-500 ml-1">keyboard_arrow_down</span>
-</button>
-<div class="relative nav-dropdown">
-<button class="bg-surface border border-slate-200 text-teal-800 px-6 py-2 rounded-full font-headline font-semibold hover:bg-teal-50 transition-all flex items-center gap-2">
-<span class="">Call</span>
-<span class="material-symbols-outlined text-lg">keyboard_arrow_down</span>
-</button>
-<div class="nav-dropdown-content hidden absolute right-0 top-full mt-2 w-48 bg-white rounded-xl shadow-xl border border-slate-100 overflow-hidden z-50">
-<a class="flex items-center gap-3 px-4 py-3 hover:bg-teal-50 transition-colors text-slate-700" href="tel:+201002345678">
-<span class="material-symbols-outlined text-teal-600">call</span>
-<span class="font-semibold">Call Now</span>
-</a>
-<button class="w-full flex items-center gap-3 px-4 py-3 hover:bg-teal-50 transition-colors text-slate-700 border-t border-slate-50">
-<span class="material-symbols-outlined text-teal-600">content_copy</span>
-<span class="font-semibold">Copy Number</span>
-</button>
-<button class="w-full flex items-center gap-3 px-4 py-3 hover:bg-teal-50 transition-colors text-slate-700 border-t border-slate-50">
-<span class="material-symbols-outlined text-teal-600">share</span>
-<span class="font-semibold">Share Contact</span>
-</button>
-</div>
-</div>
-<button class="bg-accent-gold text-white px-8 py-2.5 rounded-full font-headline font-bold hover:bg-[#c4a030] active:scale-90 transition-all shadow-md">
-                Book Now
-            </button>
-</div>
-</div>
-</nav>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface">
-<div class="max-w-7xl mx-auto px-8 grid asymmetric-grid items-center gap-16 w-full">
-<div class="z-10">
-<span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6">Cosmetic Artistry</span>
-<h1 class="font-headline font-extrabold text-6xl md:text-7xl text-on-surface leading-[1.1] tracking-tighter mb-8">
-                        The Invisible Art of <span class="text-primary italic">Porcelain Veneers</span>
-</h1>
-<p class="text-on-surface-variant text-lg max-w-xl mb-10 leading-relaxed">
-                        Hand-crafted ceramic shells as thin as a contact lens, designed with microscopic precision to recreate the natural translucency and strength of youthful enamel.
-                    </p>
-<div class="flex flex-wrap gap-4">
-<button class="px-8 py-4 rounded-full bg-primary text-on-primary font-bold shadow-lg hover:shadow-xl transition-all">Start Your Transformation</button>
-<button class="px-8 py-4 rounded-full border border-outline-variant/30 text-on-surface font-semibold hover:bg-surface-container-low transition-colors flex items-center gap-2">
-<span class="material-symbols-outlined" data-icon="play_circle">play_circle</span>
-                            View Artistry
-                        </button>
-</div>
-</div>
-<div class="relative group">
-<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/30 rounded-full blur-3xl group-hover:bg-primary-container/50 transition-colors"></div>
-<div class="relative rounded-xl overflow-hidden shadow-2xl rotate-2 group-hover:rotate-0 transition-transform duration-700">
-<img alt="Artistic Veneers" class="w-full h-[600px] object-cover" data-alt="ultra close-up of a delicate translucent porcelain veneer held by a dental instrument under clinical soft studio lighting with teal accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANErdYrGJ3KlVya0scuxngdSAgty8qs5uJuDg1SkKMcuCtLqljQMLJy1CxJH0OGZ5Jh12mRIp7a-dMchUiEJvsMG_wcb3PC6EfiR8dIRtLj_6pCoaIGcc0ZQgSxGi2aY4dRMUBcr-rzQWyZ0pEZ-jC2ud5NRG3dRskP0-1eGU3Gl4_BCbwIHK_ldoumfspBjMMYqb-1WMnBYvgQhJNmNH3P3il-gKCaeInRhrUMqabXzCUClbexXo8IoaTiy32ymktLgj7rF1zoNZ0"/>
-</div>
-<div class="absolute -bottom-8 -right-8 bg-surface-container-lowest p-6 rounded-lg shadow-xl max-w-[240px]">
-<p class="text-primary font-headline font-bold text-sm mb-1">Micro-Precision</p>
-<p class="text-on-surface-variant text-xs leading-relaxed">Crafted to 0.3mm thickness for maximum tooth preservation.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Benefits Bento Grid -->
-<section class="py-32 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-20">
-<h2 class="font-headline font-bold text-4xl mb-4">Engineered for Perfection</h2>
-<p class="text-on-surface-variant max-w-2xl mx-auto">Beyond aesthetics, our veneers are biological masterpieces designed to mimic every property of natural teeth.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Benefit 1 -->
-<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between hover:shadow-lg transition-shadow">
-<div>
-<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="light_mode">light_mode</span>
-<h3 class="font-headline font-bold text-2xl mb-4">Natural Light Reflection</h3>
-<p class="text-on-surface-variant text-lg leading-relaxed max-w-lg">
-                                Our porcelain is layered with internal translucency effects, allowing light to travel through the veneer and reflect off the underlying structure, just like real enamel. No "flat" or "plastic" looks.
-                            </p>
-</div>
-<div class="mt-8 flex gap-4 overflow-hidden rounded-lg h-32">
-<img alt="Enamel Detail" class="w-1/2 object-cover" data-alt="extreme macro shot of human tooth enamel texture showing subtle light refraction and translucency" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcrz3O2fbnqesEGO-ix90SPC6jSfNXPWTuL9cs8mzxbnKlCjjPnv6WonUi6ZXkqwgzgFa8Z8KP499MTf_T7ykQI5PrTZjSJqGqSzgcq6dkABRIHzleQaEMgrnFXKG2TC8i4UZKYf2hCZR4i7n0RlND08QUrbW5XCEUOmxky60MVzOp9Z-YvC-nNFV8zatiC6PZkP9Hb4xckQyO7LyeJG9488s0yNWSlEpt3AooraMZX7W7ksyqecm348SlwtNKHHeEPdv3K579W2zo"/>
-<img alt="Porcelain Detail" class="w-1/2 object-cover" data-alt="professional dental laboratory shot of a master ceramicist painting fine details on a porcelain crown with a tiny brush" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMvox8dCzyGy5ScjMNiTqluJa1pqCUVaXgYk1eiN7M7e3HkS1HfArFnX5_cbMAXdVZkTkqUX_8E_VLr-56HywXU3Y66_Lt-TIwp3HvY_ufDL03nK6Jd1YNpinoyOTWsvjebHEQYf7SWgvxHHfZ17bGRCyodNU3GJmvK7GWq9sBGhArfEWSM9mAFZjtXI911qVZw8wly-wQeEo_63h7miBogBXTbVPwJcBWUikkpdGwKC8fW_DAMwVP-4--tZ8xvLEbcGax2Jyjg5nZ"/>
-</div>
-</div>
-<!-- Benefit 2 -->
-<div class="bg-gradient-to-br from-primary to-secondary p-10 rounded-xl text-on-primary">
-<span class="material-symbols-outlined text-4xl mb-6" data-icon="verified">verified</span>
-<h3 class="font-headline font-bold text-2xl mb-4">Permanent Stain Resistance</h3>
-<p class="opacity-90 leading-relaxed">
-                            Unlike natural enamel, medical-grade porcelain is non-porous. Coffee, red wine, and tobacco leave no trace, keeping your smile brilliantly white for decades.
-                        </p>
-</div>
-<!-- Benefit 3 -->
-<div class="bg-surface-container-lowest p-10 rounded-xl hover:shadow-lg transition-shadow">
-<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="biotech">biotech</span>
-<h3 class="font-headline font-bold text-2xl mb-4">Gingival Biocompatibility</h3>
-<p class="text-on-surface-variant leading-relaxed">
-                            Our materials are recognized by the body as natural tissue, promoting healthy gum attachment and preventing the "black line" often seen in cheaper restorations.
-                        </p>
-</div>
-<!-- Benefit 4 -->
-<div class="md:col-span-2 bg-surface-container p-10 rounded-xl flex items-center gap-12">
-<div class="flex-1">
-<h3 class="font-headline font-bold text-2xl mb-4">Structural Integrity</h3>
-<p class="text-on-surface-variant leading-relaxed">
-                                Chemically bonded to your natural tooth, veneers create a monolithic structure that restores the original strength of the tooth while improving the contour.
-                            </p>
-</div>
-<div class="hidden lg:block w-48 h-48 bg-primary-container rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl text-primary" data-icon="shield">shield</span>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- E-max vs Zirconia Comparison -->
-<section class="py-32 bg-surface">
-<div class="max-w-5xl mx-auto px-8">
-<div class="text-center mb-16">
-<h2 class="font-headline font-bold text-4xl mb-4">The Material Science</h2>
-<p class="text-on-surface-variant">We select the material based on your unique bite and aesthetic goals.</p>
-</div>
-<div class="grid md:grid-cols-2 gap-12">
-<!-- E-Max -->
-<div class="p-8 rounded-xl border border-outline-variant/20 bg-surface-container-lowest">
-<div class="w-12 h-12 bg-tertiary-container rounded-lg flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-tertiary" data-icon="auto_awesome">auto_awesome</span>
-</div>
-<h3 class="font-headline font-bold text-2xl mb-2 text-tertiary">IPS E-max®</h3>
-<p class="text-xs font-bold text-tertiary-dim tracking-widest uppercase mb-6">The Aesthetic Gold Standard</p>
-<ul class="space-y-4 text-on-surface-variant">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
-<span>Unrivaled translucency for front teeth</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
-<span>Lithium Disilicate glass-ceramic structure</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
-<span>Requires minimal tooth preparation</span>
-</li>
-</ul>
-</div>
-<!-- Zirconia -->
-<div class="p-8 rounded-xl border border-outline-variant/20 bg-surface-container-lowest">
-<div class="w-12 h-12 bg-secondary-container rounded-lg flex items-center justify-center mb-6">
-<span class="material-symbols-outlined text-secondary" data-icon="fitness_center">fitness_center</span>
-</div>
-<h3 class="font-headline font-bold text-2xl mb-2 text-secondary">Zirconia Ultra-HD</h3>
-<p class="text-xs font-bold text-secondary-dim tracking-widest uppercase mb-6">The Strength Powerhouse</p>
-<ul class="space-y-4 text-on-surface-variant">
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
-<span>Ideal for heavy biters or bruxism cases</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
-<span>Exceptional masking of dark underlying teeth</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-symbols-outlined text-primary text-sm mt-1" data-icon="check_circle">check_circle</span>
-<span>Polished surface prevents wear on opposing teeth</span>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
-<!-- Minimal Prep Section -->
-<section class="py-32 bg-surface-container-high overflow-hidden">
-<div class="max-w-7xl mx-auto px-8 grid asymmetric-grid gap-20 items-center">
-<div class="relative">
-<img alt="Precision Tool" class="rounded-xl shadow-2xl relative z-10" data-alt="close-up of a high-tech dental microscope lens in a modern clinic with soft bokeh background of blue and white medical equipment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC59cpYXwbCwJ_YXWR3roP-x1Kxmfgg0QZSwbfwAA3x4G73Ceo5P6UXewAguGnyfp5czb6CqobOa7lRDAZu3px_XKJjjFQG6S81ADQoyPYT4VDehN75jp45yMenaa3NbVsgD-X5xN3eUQZVzVPPNDK-v68y540GsU_VY2CxY2zA5o4NfnIL7lLsGyHbFIaV2Hx4XdcQMBqWoC-ICOwuy-RwmJ7K9jJtjkpOZwB6gIUtS9XcNm-VXY_2N9q2qktAU7qet9IiBAmgZ4yi"/>
-<div class="absolute -top-10 -right-10 w-40 h-40 border-8 border-primary/20 rounded-full"></div>
-</div>
-<div>
-<h2 class="font-headline font-bold text-4xl mb-8 leading-tight">The Philosophy of <span class="text-primary">Minimal Preparation</span></h2>
-<div class="space-y-8">
-<div class="flex gap-6">
-<div class="w-12 h-12 shrink-0 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">01</div>
-<div>
-<h4 class="font-bold mb-2">Preservation First</h4>
-<p class="text-on-surface-variant">We use 3D digital planning to identify the exact areas needing adjustment, often preserving 95% of your natural tooth structure.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-12 h-12 shrink-0 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">02</div>
-<div>
-<h4 class="font-bold mb-2">Pain-Free Process</h4>
-<p class="text-on-surface-variant">Because preparation is so shallow, many cases require minimal or no anesthesia, ensuring a comfortable experience from start to finish.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="w-12 h-12 shrink-0 rounded-full bg-primary text-on-primary flex items-center justify-center font-bold">03</div>
-<div>
-<h4 class="font-bold mb-2">Trial Smiles</h4>
-<p class="text-on-surface-variant">Before anything is permanent, you wear a "Trial Smile"—a physical mockup that lets you test-drive your new look in real life.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- CTA Section -->
-<section class="py-40 bg-on-background relative overflow-hidden">
-<div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-primary/20 to-transparent"></div>
-<div class="max-w-7xl mx-auto px-8 relative z-10 text-center">
-<h2 class="font-headline font-extrabold text-5xl md:text-6xl text-white mb-8 tracking-tighter">Your Masterpiece Awaits</h2>
-<p class="text-surface-variant text-xl max-w-2xl mx-auto mb-12">Consult with Prof. Dr Ahmed Nabil to design a smile that reflects your true character and confidence.</p>
-<div class="flex flex-col md:flex-row gap-6 justify-center items-center">
-<button class="w-full md:w-auto px-10 py-5 rounded-full bg-primary text-on-primary font-bold text-lg hover:bg-primary-dim transition-colors shadow-2xl">Book Your Consultation</button>
-<div class="flex items-center gap-4 text-white/80">
-<span class="material-symbols-outlined text-secondary-container" data-icon="phone_in_talk">phone_in_talk</span>
-<span class="font-headline font-semibold">+20 (0) 100 000 0000</span>
-</div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full pt-20 pb-10 bg-slate-50 dark:bg-slate-950">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto px-8">
-<div class="md:col-span-1">
-<span class="text-2xl font-['Manrope'] font-black text-teal-900 dark:text-teal-50 mb-4 block">Prof. Dr Ahmed Nabil</span>
-<p class="font-['Work_Sans'] text-slate-600 dark:text-slate-400 antialiased text-sm leading-relaxed">
-                    Elevating dentistry to a curated art form. Combining clinical excellence with a sanctuary of calm.
-                </p>
-</div>
-<div>
-<h4 class="font-headline font-bold text-teal-800 dark:text-teal-400 mb-6 uppercase text-xs tracking-widest">Specialized Care</h4>
-<ul class="space-y-3 font-['Work_Sans'] text-slate-500 dark:text-slate-500 text-sm">
-<li><a class="hover:text-teal-600 dark:hover:text-teal-400 underline-offset-4 hover:underline" href="#">Dental Implants</a></li>
-<li><a class="font-semibold text-teal-700 dark:text-teal-300" href="#">Hollywood Smile</a></li>
-<li><a class="hover:text-teal-600 dark:hover:text-teal-400 underline-offset-4 hover:underline" href="#">Veneers</a></li>
-<li><a class="hover:text-teal-600 dark:hover:text-teal-400 underline-offset-4 hover:underline" href="#">Root Canal</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-headline font-bold text-teal-800 dark:text-teal-400 mb-6 uppercase text-xs tracking-widest">Aesthetics</h4>
-<ul class="space-y-3 font-['Work_Sans'] text-slate-500 dark:text-slate-500 text-sm">
-<li><a class="hover:text-teal-600 dark:hover:text-teal-400 underline-offset-4 hover:underline" href="#">Gum Depigmentation</a></li>
-<li><a class="hover:text-teal-600 dark:hover:text-teal-400 underline-offset-4 hover:underline" href="#">Cosmetic Fillings</a></li>
-<li><a class="hover:text-teal-600 dark:hover:text-teal-400 underline-offset-4 hover:underline" href="#">Teeth Whitening</a></li>
-<li><a class="hover:text-teal-600 dark:hover:text-teal-400 underline-offset-4 hover:underline" href="#">Orthodontics</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-headline font-bold text-teal-800 dark:text-teal-400 mb-6 uppercase text-xs tracking-widest">The Sanctuary</h4>
-<p class="font-['Work_Sans'] text-slate-500 dark:text-slate-500 text-sm mb-4">
-                    New Cairo, Fifth Settlement<br/>Medical Excellence Center, Floor 3
-                </p>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-teal-700 cursor-pointer" data-icon="share">share</span>
-<span class="material-symbols-outlined text-teal-700 cursor-pointer" data-icon="location_on">location_on</span>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-8 mt-20 pt-8 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
-<p class="font-['Work_Sans'] text-slate-500 dark:text-slate-500 text-xs">© 2024 Prof. Dr Ahmed Nabil. The Curated Sanctuary.</p>
-<div class="flex gap-6 text-xs text-slate-400">
-<a href="#">Privacy Policy</a>
-<a href="#">Terms of Service</a>
-</div>
-</div>
-</footer>
-</body></html>
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body class="bg-surface font-body text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <div id="site-header"></div>
+
+    <header id="site-header"></header>
+    <!-- TopNavBar -->
+    <footer id="site-footer"></footer>
+  </body>
+</html>
