@@ -1,0 +1,475 @@
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Orthodontics | Prof. Dr Ahmed Nabil</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#96f1fa",
+              "on-background": "#2c3436",
+              "on-tertiary-fixed": "#2f514f",
+              "on-secondary": "#f0fbff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-dim": "#375957",
+              "surface-container-highest": "#dce4e6",
+              "error-container": "#fa746f",
+              "secondary-fixed-dim": "#afdbeb",
+              "inverse-on-surface": "#9a9d9e",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "on-secondary-fixed": "#164552",
+              error: "#a83836",
+              "surface-bright": "#f8fafb",
+              "on-primary-fixed-variant": "#00666d",
+              "surface-container-high": "#e3e9eb",
+              "secondary-dim": "#2d5966",
+              "on-secondary-container": "#2b5765",
+              "tertiary-fixed": "#d8fefa",
+              outline: "#747c7e",
+              "on-secondary-fixed-variant": "#36616f",
+              "on-primary-fixed": "#00474c",
+              "primary-dim": "#005d63",
+              "on-tertiary-container": "#416361",
+              secondary: "#3a6573",
+              "primary-fixed-dim": "#88e3eb",
+              surface: "#f8fafb",
+              "error-dim": "#67040d",
+              "secondary-container": "#bdeafa",
+              "inverse-surface": "#0b0f10",
+              "primary-container": "#96f1fa",
+              primary: "#006a71",
+              "inverse-primary": "#99f4fd",
+              "tertiary-fixed-dim": "#caf0ec",
+              "secondary-fixed": "#bdeafa",
+              "on-primary": "#e7fdff",
+              "surface-container-low": "#f0f4f6",
+              "on-primary-container": "#005b61",
+              "on-error": "#fff7f6",
+              background: "#f8fafb",
+              "surface-variant": "#dce4e6",
+              "on-surface-variant": "#596063",
+              "surface-dim": "#d4dbde",
+              "on-surface": "#2c3436",
+              "tertiary-container": "#d8fefa",
+              "surface-container": "#eaeff0",
+              "outline-variant": "#acb3b6",
+              "surface-tint": "#006a71",
+              "on-error-container": "#6e0a12",
+              tertiary: "#436563",
+              "on-tertiary": "#e1fffc",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-nav {
+        background: rgba(248, 250, 251, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      body {
+        font-family: "Work Sans", sans-serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: "Manrope", sans-serif;
+      }
+
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <div id="site-header"></div>
+
+    <!-- Top Navigation Bar -->
+
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-[716px] flex items-center overflow-hidden bg-surface"
+      >
+        <div
+          class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+        >
+          <div class="z-10">
+            <span
+              class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-wider mb-6"
+            >
+              Expert Orthodontics
+            </span>
+            <h1
+              class="text-5xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] tracking-tight mb-8"
+            >
+              The Science of a
+              <span class="text-primary italic">Perfectly</span> Aligned Smile.
+            </h1>
+            <p
+              class="text-lg text-on-surface-variant leading-relaxed max-w-lg mb-10"
+            >
+              Advanced orthodontic solutions tailored to your unique facial
+              structure, combining medical excellence with aesthetic precision
+              for results that last a lifetime.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:shadow-lg transition-all active:scale-95"
+              >
+                Start Your Journey
+              </button>
+              <button
+                class="flex items-center gap-2 px-8 py-4 rounded-full font-bold text-primary hover:bg-primary-container/20 transition-all"
+              >
+                <span class="material-symbols-outlined">play_circle</span>
+                View Transformations
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="aspect-square rounded-xl overflow-hidden bg-surface-container-low shadow-2xl relative"
+            >
+              <img
+                class="w-full h-full object-cover"
+                data-alt="Close-up of a perfectly aligned, healthy white smile with natural lighting in a high-end clinical setting"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ7x9eKD2yt_d4L20QkghytglM4TXpgW5ZIFlX7vBezLiFfF5qXCXT1vPLizBmgCCaoUmEnH8buBYW_C67cVWu10kJK4noDQX86jlpXClQ5Dnxq_HNTXnEVFYhpyShIzoUhUXQXXuQuUuJmJswy2QPSgG1wYOLPNjjXgkrg8wbzoJYLIXPIplMosqsojyVejTF6YbjEVF3buGYizcPmJVqpvdp94BVHvWXggNfEwujp3TR3v0qReQbbX-fOAfbxe9DOMFO-VdT_Fqm"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"
+              ></div>
+            </div>
+            <!-- Asymmetric Decorative Element -->
+            <div
+              class="absolute -bottom-10 -left-10 w-48 h-48 bg-tertiary-fixed-dim rounded-lg -z-10 opacity-50 blur-3xl"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Solutions Bento Grid -->
+      <section class="py-24 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-on-surface mb-4">
+              Treatment Modalitites
+            </h2>
+            <p class="text-on-surface-variant">
+              We offer the full spectrum of modern alignment technologies.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+            <!-- Clear Aligners (Invisalign) -->
+            <div
+              class="md:col-span-8 bg-surface-container-lowest rounded-xl p-8 flex flex-col md:flex-row gap-8 items-center border border-outline-variant/10 hover:shadow-xl transition-all group"
+            >
+              <div class="flex-1">
+                <h3 class="text-2xl font-bold text-primary mb-4">
+                  Clear Aligners
+                </h3>
+                <p class="text-on-surface-variant mb-6">
+                  Virtually invisible and removable. Perfect for professionals
+                  and those seeking a discreet correction without dietary
+                  restrictions.
+                </p>
+                <ul class="space-y-3 mb-8">
+                  <li class="flex items-center gap-2 text-sm font-medium">
+                    <span
+                      class="material-symbols-outlined text-primary text-lg"
+                      data-weight="fill"
+                      >check_circle</span
+                    >
+                    3D Digital Planning
+                  </li>
+                  <li class="flex items-center gap-2 text-sm font-medium">
+                    <span
+                      class="material-symbols-outlined text-primary text-lg"
+                      data-weight="fill"
+                      >check_circle</span
+                    >
+                    Predictable Outcomes
+                  </li>
+                </ul>
+                <a
+                  class="text-primary font-bold inline-flex items-center gap-1 group-hover:gap-3 transition-all"
+                  href="#"
+                  >Learn more
+                  <span class="material-symbols-outlined"
+                    >arrow_forward</span
+                  ></a
+                >
+              </div>
+              <div
+                class="w-full md:w-1/2 aspect-video rounded-lg overflow-hidden"
+              >
+                <img
+                  class="w-full h-full object-cover"
+                  data-alt="Macro photo of clear dental aligner sitting on a clean clinical surface with soft turquoise highlights"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI8paxscQTZLEjB24-7l3BBQngheEx2JptCV4ltIA2T7ULezaApa7I029tjKb0abWZ2qcOn6J8xXVSIDi9X8W3wQYB0uT2eOXMc6U3A1EzTBDj0aO81FfrBaqPFB1EoAr7YuWyikqZLq9aOry0A0GfgvUG6oFnz562Pbc-SypLHt466nJVjLqoUyg0hoY4-DfgLjbXdlRi-gDzldFB9k4FYmBQi3blhaLWaAR2EYpEsA7h5oNQ4mr3i97IGI5leo7_mAX20mPCAmLs"
+                />
+              </div>
+            </div>
+            <!-- Metal Braces -->
+            <div
+              class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/10 hover:shadow-xl transition-all"
+            >
+              <div
+                class="mb-6 w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-on-secondary-container"
+                  >precision_manufacturing</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-on-surface mb-3">
+                Metal Braces
+              </h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                The gold standard for complex structural corrections. Durable,
+                efficient, and highly effective for severe malocclusions.
+              </p>
+              <span class="text-primary font-bold text-sm"
+                >Proven Reliability</span
+              >
+            </div>
+            <!-- Clear Braces -->
+            <div
+              class="md:col-span-4 bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/10 hover:shadow-xl transition-all"
+            >
+              <div
+                class="mb-6 w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center"
+              >
+                <span
+                  class="material-symbols-outlined text-on-tertiary-container"
+                  >visibility_off</span
+                >
+              </div>
+              <h3 class="text-xl font-bold text-on-surface mb-3">
+                Clear Braces
+              </h3>
+              <p class="text-sm text-on-surface-variant leading-relaxed mb-6">
+                Ceramic brackets that blend with your natural tooth color,
+                offering the strength of metal with a softer aesthetic.
+              </p>
+              <span class="text-primary font-bold text-sm"
+                >Aesthetic Strength</span
+              >
+            </div>
+            <!-- Digital Diagnostics -->
+            <div
+              class="md:col-span-8 bg-primary rounded-xl p-8 text-on-primary flex items-center justify-between overflow-hidden relative"
+            >
+              <div class="z-10 max-w-md">
+                <h3 class="text-2xl font-bold mb-4">iTero® Element Scanning</h3>
+                <p class="opacity-90 mb-6">
+                  No more messy impressions. We capture a precise 3D model of
+                  your teeth in minutes for a perfect fit.
+                </p>
+              </div>
+              <div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-20">
+                <span
+                  class="material-symbols-outlined text-[200px]"
+                  style="font-variation-settings: &quot;wght&quot; 100"
+                  >biotech</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Process Section -->
+      <section class="py-24 bg-surface">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="text-center max-w-3xl mx-auto mb-20">
+            <h2 class="text-4xl font-bold mb-6">
+              Tailored for Every Stage of Life
+            </h2>
+            <p class="text-on-surface-variant text-lg">
+              Whether you are a teen starting your journey or an adult looking
+              to refine your smile, our protocols are designed for comfort and
+              speed.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="space-y-12">
+              <div class="flex gap-6">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center font-bold text-primary"
+                >
+                  01
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2">Adult Orthodontics</h4>
+                  <p class="text-on-surface-variant">
+                    It's never too late. We specialize in non-invasive,
+                    fast-acting treatments that fit into a busy professional
+                    lifestyle.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center font-bold text-primary"
+                >
+                  02
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2">Teen Treatment</h4>
+                  <p class="text-on-surface-variant">
+                    Developing jaws require special care. We monitor growth and
+                    intervene at the optimal time for shorter treatment spans.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div
+                  class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center font-bold text-primary"
+                >
+                  03
+                </div>
+                <div>
+                  <h4 class="text-xl font-bold mb-2">Early Intervention</h4>
+                  <p class="text-on-surface-variant">
+                    Screening by age 7 allows us to identify potential crowding
+                    or bite issues before they become complex.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="relative rounded-xl overflow-hidden shadow-2xl">
+              <img
+                class="w-full h-full object-cover"
+                data-alt="Modern dental office with soft blue lighting and high-tech equipment looking pristine and professional"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfj2nDUcrdvg4Uz7dURWC99YuCmUhUeWGLMWLQqyVpnHe4sM_CqaikL_emtNjeZQtmdu4D7k21va5cjligi6Yd-4mSDCct-CfE9f6vaO64yMdt9YFqqdYFQudrNxs5VSNXFXZ_KbwzRIKqu4bndrVPqwSQ1jyR4AcO5Uiq-ydWRrnyCbNqIgxAYktpgf4F2DV-a0h1Ek1lgfaC79dOnLSNW-fO1CV-u7JtievPxnHr0Npm7v-4Byf1iqvJQiQP9UNeFIF_EzCZ4PWa"
+              />
+              <div
+                class="absolute inset-0 bg-primary/10 mix-blend-multiply"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Benefits Section (Tonal Transition) -->
+      <section class="py-24 bg-surface-container">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-1">
+              <h2 class="text-3xl font-bold text-on-surface mb-4">
+                Beyond the Mirror
+              </h2>
+              <p class="text-on-surface-variant text-sm">
+                Correcting alignment isn't just about aesthetics; it's a vital
+                investment in your systemic health.
+              </p>
+            </div>
+            <div
+              class="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+              <div class="bg-surface-container-lowest p-6 rounded-lg">
+                <span class="material-symbols-outlined text-primary mb-4"
+                  >health_and_safety</span
+                >
+                <h5 class="font-bold mb-2">Reduced Gum Disease</h5>
+                <p class="text-sm text-on-surface-variant">
+                  Straight teeth are easier to brush and floss, significantly
+                  lowering the risk of gingivitis.
+                </p>
+              </div>
+              <div class="bg-surface-container-lowest p-6 rounded-lg">
+                <span class="material-symbols-outlined text-primary mb-4"
+                  >nutrition</span
+                >
+                <h5 class="font-bold mb-2">Improved Digestion</h5>
+                <p class="text-sm text-on-surface-variant">
+                  Properly aligned bites ensure more efficient chewing and
+                  better nutrient absorption.
+                </p>
+              </div>
+              <div class="bg-surface-container-lowest p-6 rounded-lg">
+                <span class="material-symbols-outlined text-primary mb-4"
+                  >psychology</span
+                >
+                <h5 class="font-bold mb-2">Unwavering Confidence</h5>
+                <p class="text-sm text-on-surface-variant">
+                  The psychological impact of a smile you love can transform
+                  your social and professional life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="py-24 px-8">
+        <div
+          class="max-w-5xl mx-auto rounded-xl bg-gradient-to-br from-primary to-secondary p-12 md:p-20 text-center relative overflow-hidden"
+        >
+          <div class="z-10 relative">
+            <h2
+              class="text-4xl md:text-5xl font-extrabold text-on-primary mb-6"
+            >
+              Ready to redefine your smile?
+            </h2>
+            <p class="text-on-primary/80 text-lg max-w-2xl mx-auto mb-10">
+              Schedule a comprehensive 3D scan and consultation with Prof. Dr
+              Ahmed Nabil today.
+            </p>
+            <button
+              class="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-on-primary transition-all active:scale-95 shadow-xl"
+            >
+              Book Your Consultation
+            </button>
+          </div>
+          <!-- Abstract Design elements -->
+          <div
+            class="absolute -top-20 -right-20 w-80 h-80 bg-primary-fixed-dim/20 rounded-full blur-3xl"
+          ></div>
+          <div
+            class="absolute -bottom-20 -left-20 w-80 h-80 bg-tertiary-fixed-dim/20 rounded-full blur-3xl"
+          ></div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="site-footer"></footer>
+  </body>
+</html>
