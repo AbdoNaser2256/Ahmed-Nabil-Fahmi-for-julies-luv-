@@ -1,306 +1,974 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-  <script id="tailwind-config">tailwind.config = {darkMode: "class", theme: {extend: {colors: {"primary-container": "#96f1fa", "tertiary-fixed-dim": "#caf0ec", "on-primary-fixed-variant": "#00666d", "on-background": "#2c3436", "on-secondary-container": "#2b5765", error: "#a83836", "on-surface-variant": "#596063", secondary: "#3a6573", "accent-gold": "#D4AF37", "accent-gold-light": "#E5C76B", "surface-container-lowest": "#ffffff", "surface-container-highest": "#dce4e6", "secondary-dim": "#2d5966", "surface-bright": "#f8fafb", "on-tertiary-fixed": "#2f514f", "primary-dim": "#005d63", surface: "#f8fafb", "surface-container": "#eaeff0", "inverse-on-surface": "#9a9d9e", "on-primary-fixed": "#00474c", "outline-variant": "#acb3b6", "on-surface": "#2c3436", "secondary-fixed": "#bdeafa", "inverse-surface": "#0b0f10", "inverse-primary": "#99f4fd", "secondary-fixed-dim": "#afdbeb", "surface-container-low": "#f0f4f6", "error-container": "#fa746f", outline: "#747c7e", "on-secondary": "#f0fbff", "on-error": "#fff7f6", "primary-fixed": "#96f1fa", background: "#f8fafb", primary: "#006a71", "on-secondary-fixed-variant": "#36616f", "surface-container-high": "#e3e9eb", tertiary: "#436563", "on-primary": "#e7fdff", "surface-dim": "#d4dbde", "tertiary-fixed": "#d8fefa", "on-tertiary-fixed-variant": "#4c6e6c", "error-dim": "#67040d", "tertiary-dim": "#375957", "tertiary-container": "#d8fefa", "primary-fixed-dim": "#88e3eb", "secondary-container": "#bdeafa", "surface-tint": "#006a71", "on-error-container": "#6e0a12", "on-primary-container": "#005b61", "on-tertiary": "#e1fffc", "on-tertiary-container": "#416361", "surface-variant": "#dce4e6", "on-secondary-fixed": "#164552", "gold-accent": "#C5A059"}, fontFamily: {headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"], display: "Manrope"}, borderRadius: {DEFAULT: "1rem", lg: "2rem", xl: "3rem", full: "9999px"}}}};</script>
-  <title>Before & After | Prof. Dr Ahmed Nabil</title>
-  <style>
-    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    .glass-nav { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(20px); }
-    .asymmetric-gradient { background: linear-gradient(135deg, #006a71 0%, #D4AF37 100%); }
-    .arabesque-pattern { background-color: #fdfcf9; background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.89 19.11L55.03 15 40.89 30l14.14 15-19.14-4.11L30 60l-5.89-19.11L5 45l14.14-15L5 15l19.11 4.11z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E"); }
-    .gold-border { border-color: #D4AF37; }
-    .text-gold { color: #D4AF37; }
-    .nav-dropdown:hover .nav-dropdown-content { display: block; }
-    .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%); }
-    .hero-gradient { background: linear-gradient(135deg, #004B50 0%, #002B2E 100%); }
-    .lotus-pattern { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5c-2 5-10 15-10 25s8 20 10 25c2-5 10-15 10-25S32 10 30 5z' fill='%23006a71' fill-opacity='0.03'/%3E%3C/svg%3E"); }
-    .editorial-shadow { box-shadow: 0 20px 40px rgba(184, 134, 11, 0.08); }
-    .motif-pattern { background-image: radial-gradient(#B8860B 0.5px, transparent 0.5px); background-size: 24px 24px; opacity: 0.1; }
-  </style>
-  
-  <script type="module" src="/src/main.js"></script>
-</head>
-<body class="bg-surface text-on-background font-body arabesque-pattern" data-page="before & after">
-<div id="site-header"></div>
-<main class="pt-24">
-<!-- Hero Section -->
-<section class="relative px-8 py-20 lg:py-32 max-w-7xl mx-auto overflow-hidden">
-<div class="grid lg:grid-cols-2 gap-12 items-center">
-<div class="z-10">
-<span class="inline-block px-4 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-semibold mb-6 tracking-wide">RESULTS GALLERY</span>
-<h1 class="text-5xl lg:text-7xl font-headline font-extrabold text-on-surface tracking-tighter leading-[1.1] mb-8">
-                        Transforming Smiles, <br/><span class="text-primary italic font-light">One Journey</span> at a Time
-                    </h1>
-<p class="text-lg text-on-surface-variant max-w-md leading-relaxed mb-10">
-                        Explore the precision of our aesthetic reconstruction and the life-changing impact of a bespoke smile.
-                    </p>
-<div class="flex flex-wrap gap-4">
-<button class="px-8 py-4 bg-primary text-on-primary rounded-full font-headline font-bold shadow-lg shadow-primary/20 flex items-center gap-2 hover:opacity-90 transition-all" onclick="document.getElementById('cases').scrollIntoView({behavior: 'smooth'})">
-                            View All Cases <span class="material-symbols-outlined">arrow_downward</span>
-</button>
-</div>
-</div>
-<div class="relative">
-<div class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
-<img alt="Beautiful Smile Transformation" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4wejt-2nNBgOhK7Nxz7HSdRvKgtdeKeTbBnOd8ozzHhfSTfR8vUzk-YVXSPq4sAaK5W3tQks3XwTgSSXg1MHSOcu7-aFDPSaNes8xC_Oa1DUT2NLkiv0PpZo-9npCGnKEfREWav4-dyyhL7de50r5bsqtsAT7_MvgP29_9P-Txg6CuPPlbJftZhG43BTa4fbIyXEftfbGq4HjEzz6wTtHrhnMoe62Oav_6YGxTyEV5b_y6RdjCf9Y-aPsMKqBnLhV487iyOTZ_9xT"/>
-<div class="absolute bottom-6 left-6 right-6 p-6 bg-surface/90 backdrop-blur-md rounded-lg">
-<p class="font-headline font-bold text-teal-900 italic">"The sanctuary I never knew a dentist could be."</p>
-<p class="text-sm text-on-surface-variant mt-2">— Sarah J., Aesthetic Reconstruction</p>
-</div>
-</div>
-<div class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
-</div>
-</div>
-</section>
-<!-- Gallery Section -->
-<section class="bg-surface-container-low py-24 px-8" id="cases">
-<div class="max-w-7xl mx-auto">
-<div class="mb-16 text-center md:text-left">
-<h2 class="text-3xl lg:text-4xl font-headline font-bold text-teal-950 mb-4">Case Studies</h2>
-<div class="h-1 w-20 bg-primary rounded-full mx-auto md:mx-0"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Case 1 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="1">
-<img alt="After Result" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0ugLxBI9FYn5EA3UHAKsua50QFOerMeHgda4CNBfgzIfFWRhfJHPCkzeopxyzyZRDhfSvFQZVHbsx4G2UcNv5GezSOrbICEvF9b_JI8RQ378YYlp7Q5zoI1rtigqfIsomNn536eheTW1uRUc9hTmyvoNb1dxn34ywGkJ4W1JkzRFdDaDn1Rs_lZyTkHNPeaMpA_KBzh5C7MtOuttcjMDJmM9ZFY_8gp7Bmqv35-fazrln1fitlqQUHJh46uy0x6jvWoNzHJLHDRs4yQ"/>
-<img alt="Before Result" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0uiNt9gxf41bGHxY01Lrc29bcV2VTC5jX5X1lnGFDDPCp0Cc1zebfrolZO1hIzI3NkQ5b6DsOseQYApZburE8Ov372HgGBZo9DRrtdCpM15EG5pPWCJnbYy_CA1C_cHEWqWng-CglkJfg1sH3qV6lvCcvXU8a5b0skoF0GkQp1TWjCI5E3-QCqYwJdwywgc5cpfrvry7WQaT8ktO6aT7q6jpbEaSaBPsgJE0LUbRg6A8IB7iU9zQzYYVNFza6f2WkWs1tCzageT1BQg"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Full Smile Aesthetic Transformation</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">High-precision porcelain veneers to correct misalignment and brighten the natural smile for a harmonious, radiant result.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"I never thought my smile could look this natural and bright at the same time. It has completely changed my confidence."</p>
-</div>
-</div>
-</div>
-<!-- Case 2 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="2">
-<img alt="After Result" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0uiPI5ixCisrJlYxtcZwbX2CtH-JJO5h6L49Jrqd-NYTP1B1LD1v9gftobm_hIirpzTHvNEsBj18Fm-ZIrTmcVyEa536Hj_WQv5ITs81zE2MC7atC75Edik-UrudcDHib-4wg7A1b4LoloXWxZODKfiCsZTZu6hYlqZWyO30fJV3J5wvL_oHGTuAhiYBb8cTV3LCT941zLVw_X8ps-a7agZMn3HeuigMwFoCCddxb-TV-iXq095BfwQEUEAGME7hl3uLx2xYefNDFJo"/>
-<img alt="Before Result" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0ugjYo2-jM63gJUQc6DLgtlbEr6ad2kwsmP3-vUFFZsxMAMOx7GuT-DVx6iuvJKevL3FMnS2cFO53T-ymFhBbB11PEiHQkJ2_Ihxbn8g6JMkhcuTqkcRrN_xPe-IJHmZtVEJH6r1TGXYlTXyEbzfZ4rDKt_Rb0rTtE9spHkqXMlxDVJPqQZNn2jODmQpLeFi3XO55CWxWfuU-wF6bt4OofTDlZnT8A54eBO5ZYIyV7j-Rg2jaYC5EYoO0ftBD83VVt_ACg3cfCWTGg"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Advanced Functional Reconstruction</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Restoring dental integrity and aesthetic balance through custom-designed ceramic restorations.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"Finally, I can smile and eat with total comfort. The attention to detail was remarkable."</p>
-</div>
-</div>
-</div>
-<!-- Case 3 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="3">
-<img alt="After Result" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0uiZ7ROo4Q2I1YLg_WnIWRV3c71Ei6rckXBukt1miguwI4gWTA2aDuSKqhksuN-xfYHHS_CW2lMcfjSnf640yoFNBktZDyfT2GlFlrZY_kxgI1hH8zuyL8Pivq9nkqHh3b9P1SF8kfPQR7MqF8p0uwOGRHAQMGXkCr_lPo-ldIPIDCvNrUVEdjZ-UAvVDlwtPypLTZnMoYD-KXnC4J-u6JZktF7TyVvbydp_UdQ46UlheVrmLvy2stVvpzRdzUf2x0kOt2uIp95ToNk"/>
-<img alt="Before Result" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0uiTrzcGKBrecf1P8fNjCafeadrAOQz90uNxmAwnd1ISTRksPuEMkqc4LhezntDBL316DWkrSex-dkKw1m1UfI_3lIM1aGDVAAlsYoaln7B9TBtrSK0GjFXRrY4M01MTKTW8r0RiXjzIFi60FY5_3hTy9NuJE5SXhdMdL_VSEPWnPQFADbLdliQI5G1UUhLa3DxE0GAzsgTJVFKWf5iihF6dvHGh_XxnxfSkMOOCnu6AqdrXrM2eB4jEZea30zn24vAFmdoM9XoIgoA"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Bespoke Porcelain Artistry</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Targeted veneer application to close gaps and refine tooth shape for a flawless, elegant appearance.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"The process was seamless, and the results are even better than I imagined. Truly life-changing work."</p>
-</div>
-</div>
-</div>
-<!-- Case 4 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="4">
-<img alt="After Result" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0ujPtYaQgckiIRWhPRCfafw5e0boJ7Ee9YqXBKLdFt7hoo_8iHwD_xRGLJcd862eYNH3vaHrZPMbQOwlJEruaQ7pFuO-nqg-JqnpSA9OwSnfIVNwakFJ0Tuwxqv2qGjYWbFt599uG74chcpbwxSHqUweRbsh11ULCM87Uetby5Hu0XuzktVabKLr5OLC4yEKxoE014BTslQvyaLUZwQzlMSj2TvKFr7hbl581uLoTDBM_8DsZTgzT-nks5WG9wEil8GAPlpEk50Fik8"/>
-<img alt="Before Result" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0ui3G6pvZQBDD0V_0ebfVsDMJdZDrjEnRFkleeJjrqGAzuy1PpMLWRcNv5gRHqyWgxV6atUnkC-eVG1Cb99KFClznkvrfyNT_IhQPBgjLlvxJMeisCa301Udm4YwzqPpP8JfTtLaGWtPI12xgad6pF8SBvgY3S6AowKvPyTQZ_C06guy4g5Cg-IV17H6jxmL9LOQ7fAKT9h8iQqGfv653Yiha-sRT98IoUkw4UmNfISMOJ1qwK_bnFEug_Qn9qcD35oOD7hdoUVoUfs"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Comprehensive Oral Rehabilitation</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">A full-mouth approach to restoring health and aesthetics, correcting years of wear and damage.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"Dr. Nabil gave me back a healthy smile that I'm proud to show the world. Professionalism at its best."</p>
-</div>
-</div>
-</div>
-<!-- Case 5 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="5">
-<img alt="After Result" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0uhsLeknLoVC-P4yqyu0haR64B9KpqsvQ6PLSRv7jSgQ3AGBLfOdqd29NEojWv04NNtED2h7hupTZXy0LaYes68FPAvbdyYo5l8OF2EE1cGLcsZck1XaFu-k3Hr2wJ4AkMxa-9SXT4-JHeZUbR_jiX9Ah2CeCXUAMgtiL9JG3eFNRKcGbShAaJJ02HrV2tZxV_IbfZrTbufcSm7r8LDlo0yIJ1GGcWX7kcF_hSrvQFTP_ExuCypGQTbWiDz_6LO-HcMmxkUTY0h7UY4"/>
-<img alt="Before Result" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0ugsNRwMe88Q5FDh9LQZL5s5nGBlMmnHDXBJHb8dJqgMW-03WfBI709fvVhzTm1JJAK4mtN8M913gT8j1qMgPhHhLylKdNyv0uiLlKKYyc8sEI1r_9ExPwDFt9IjKgj4CAPjY_RmcvFHxEf6h_Jb31PwQEdGnSAwg5GsHWILRqtaJFS_ttGm2DXVC9NY9M_j4L_rCARZFTwWqxS4gD1hfm2FiYus7NkWgn03BeNR-6-yiKcyQn9OSw44QOyc7bXtT6sgvWQueUggLiE"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Precision Cosmetic Enhancements</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Subtle but impactful corrections to symmetry and color, utilizing conservative aesthetic techniques.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"It's the little details that made the big difference. My smile feels rejuvenated and perfectly mine."</p>
-</div>
-</div>
-</div>
-<!-- Case 6 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="6">
-<img alt="After Result" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0ugEXYAKni5nSFPK7QEsD4RuNOAJR1pQpJOx4SdY41QvVezmN0qiaPeOebBaqO6RZ-epF9aYAKt1Pqz0zlDsdHLaiUzMdiIEhR35nJhUMhusE2eRDbiNHuUh1RZIxA7jZaR2CW0BAYV0k45c8Xv64zvSTjGJlS5bnFgxfaxgm0zV9bdBLu8KRkH9KBvehHmpGz0gVymXZgWE8DoCOSFIGz_QFQWTwiXWQ25b723N-MrXEpAH0kwweuhiQqJ1IEoiCO4rzISjEtSbbg"/>
-<img alt="Before Result" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0uhi90E-8UfWc7Yjoa5vx2Vk8SM_sipWBknyajBo3Q7CbayF_y0pFFHpCFpumnDiA2MSbwUdgFQx38AGDlM_ft0CZ7InMPyHZGMDl02kJKliv7YJnOwll8PRRC8LZ9pikzCG5Jcpw91sXxyL7sIc2LdaiKXu5rY8MthbnMa_y7gUlKNThM00Gy8ZIlZ9ZEV7-V1Jq5cLTcaLCSxv4svRDvyXwUuv0BccFaPOjKotyzzkPOeHjmB04ZTxeo3K6ePolModObV85sQJZkE"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Clinical Implant Excellence</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Seamless integration of high-end implants to restore missing teeth with permanent, natural-looking results.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"I can't even tell which ones are the implants. They feel and look exactly like my natural teeth."</p>
-</div>
-</div>
-</div>
-<!-- Case 7 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="7">
-<img alt="After Result" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0uhsQSBuEtn-WCUojrjy-kqmnqdHq-9gr1c3hmYKGUihev9nuEytBZ7mazku1eoeNoJx-3_6giSywc9dYuD-AfPwVUiLtRVZvHtqNxgZlqX_uwJl8ekx46d-LXZXbD-VAoBI5Ng__LSbPENrQ73PaQwQhyY3kNtK-08GTqH_KPKiRyLd-6uynhVhzngJ_PYJp8JHOmubc6aQDh04Ct47TwDmQ9zMT3cgAisKvJstfPO3aBcwcgBDwqTI3dLqTm_u5ltaq6HlhLEs4JA"/>
-<img alt="Before Result" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0uhNkHKOs0Y1XUWq3zNC5SDtAeKegGrqo62oulgDu-bj-l3wAJ3Ecc_LrJRRa3YUj4LVXZBds9bVezHdlwmuYEJfb-3oPHMaFtpArjRtgKiZKG3J7_97SJs4iW0oDB-HAnQgk7duemZk4N5bu1JZeY2AwLFaBWXFUCkdRecRsknD0PYxI41XqunwIMCJ-gpfyFLhNllxN--HMF0APa7_S9T0fm1_nqTZWicm778tEGVfVswa1mxW_uIPOPAzVEoTD5Qikkun8TOGumA"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Advanced Dental Implant Integration</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Restoring structural stability and aesthetic flow with state-of-the-art implantology.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"The expertise involved in my surgery was evident. I felt safe and the outcome is spectacular."</p>
-</div>
-</div>
-</div>
-<!-- Case 8 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="8">
-<img alt="After - Clinical Result" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0uhl3J0Lz_Do0y4jSyEFvGqOuc1S-ESTSBPfaOaFVtnXEQ3VwOFGqTd40HqEyKN_WZBGvEfsSNyJVNRvdpmW6PFvd1M4AO9AYJGNRNbmSK27n5DX5o50cf8779tBduhcvGm9mkrZELldSwW6IEPav4EJ0GW1nJ1uNV-goYOzMRI0WJ-vOtyZqTocdxTjhqE3JHAusxhOwYJqTzF9VGsqyGAAZ0_DVPyMjOOb_AN4UsOAZy4iVmUsfVpCky1ESVruHMjqRYCM2RfENg"/>
-<img alt="Before - Clinical Case" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0ujLE3vIvODXWPB4YZnsz9emQ0tJwVDq-pP0obDnByvOFhYkESOBcgGBu3ag5QKIvP2AyxnpFPxwzlFLCMYqaMn2F4VtKtyszZsoukXK0QimLCfCiJ2cTYPOj4lD_f2Fc4QNBnVLHaTQH93SMcVAleu1wkIhPJL1Ky_-_ixjp8IEd3At9ewBX3iC8sQaWR8JwUw7UWI3AnptP0Jc3XJRhYYHcdLCAn8F3N2U817VRiopLgTp2oxMAh_ByC0e2yq435xDWATQ9KP3ovU"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Professional Biological Whitening</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Advanced clinical whitening protocols to remove deep-seated stains while protecting enamel health.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"My teeth haven't been this bright in ten years. A simple procedure with a massive impact on my look."</p>
-</div>
-</div>
-</div>
-<!-- Case 9 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="9">
-<img alt="After Result" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0uiwEHx9n6oWCvG2coE5ojM7ZYdrK0bZI3lvrww-YHOTR_bs-hMuAUZJcHMtg0ZVpy9XL1RH8KfImQAlD_zD3eW6kPIXEMAIRHFrD2v8ArsnY2YZXvYehtrmf4odsSB1foBRQ34A_gEw90_2TDd-XFJJ24elAtGs-RKyTmmyp6OQK8yXZw-yO_jZYLmeyNMq8rrCxu2nchiKeau-_njAqcHRm7UZ8pjIt_154zMSTxK5O7s59WeOteNsNz-4vcKqwientYWE2XFnVQk"/>
-<img alt="Before Result" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0uiSD6rFCcrbxutnNVRy62SxgjPkJliQaFZvioMGcJLGQ92ChNzXob-9RSOfwmjuRNH5I8zFBEyLyjFuM1h1e2RaubMMY4N7esyA8vi2eMAW8f2_bNprvrm499NRh8TLgVMzLOPwp2AA_aZi_NpfA8-3bUXcaPeAzyUcVpdbppw7BWUPKMx1jDCCw_GgcQqhd8cLLQvHNPzYi7WVvf0sDMhBJPFPhRDVvmk5afoTW9jMxLt34fh1vSQbE-ksE59GjUOcQF7KqKjCLQ"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Durable Zirconia Restorations</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Utilizing high-strength Zirconia for posterior teeth, combining lasting durability with a natural finish.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"Strength and beauty combined perfectly. My new crowns feel incredibly solid and look great."</p>
-</div>
-</div>
-</div>
-<!-- Case 10 -->
-<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10">
-<div class="relative aspect-[4/3] bg-surface-container">
-<div class="comparison-slider" data-id="10">
-<img alt="After - Aligned Smile" class="image-after" src="https://lh3.googleusercontent.com/aida/ADBb0uhU7_g9EBBBwxT4rfSSzMHK6iedvBU5cD1yHL3UOUG8Bs1YpBQl62p5jwTivea5aMZxtltYmt_5d5rgmd6hPzAc1T0ymT5i61GefhA0yoOd1T2GsGE4zxrgl4nm6uP9TjchulgKOcUUPr0cITYH3KpmbWDxZcZy3KycDxG8mkWgagL51L81OJHLfzZS8aZMT39wpXXo2gWKZEM0qLu2hG7VcbBfZw2AqgRxLoq7adDQOPuj7n2BOPtgGpHoYLud0Fta5xmBfrWQflw"/>
-<img alt="Before - Severe Gaps" class="image-before" src="https://lh3.googleusercontent.com/aida/ADBb0uhTjJSs8BhsaqZ6t895C3cHrpNnidH4fUW0zaWUaKFkbT7jRNKOtbx3N0YiXHKg8oIvF8BE5WGTVsIcKYxpGFctXYXYMzcMtiF8Y-8-jZEUQb__IJzlYSUqFqASTtnTSXI-YaFXXx_s6EK6xuEGZHsNLqdBh4-R_wh6YIrhZjjWSs9PWz1rPQq7D5VFIBPYHdIMizc5KSeO18bT4OMxjrE4qdrr1lc7JoIkxaeZbiol0gNpj4aqiSsCzoCy0OJ93SquD_aiPsEqri4"/>
-<div class="slider-handle"></div>
-<input class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40" max="100" min="0" oninput="this.parentElement.querySelector('.image-before').style.clipPath = `inset(0 ${100 - this.value}% 0 0)`; this.parentElement.querySelector('.slider-handle').style.left = `${this.value}%`" type="range" value="50"/>
-<span class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20">Before</span>
-<span class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20">After</span>
-</div>
-</div>
-<div class="p-8">
-<h3 class="font-headline font-bold text-xl mb-3">Modern Orthodontic Refinement</h3>
-<p class="text-on-surface-variant text-sm leading-relaxed mb-6">Correction of complex crowding and bite issues using contemporary alignment techniques for a straight, healthy smile.</p>
-<div class="flex items-center gap-3 pt-6 border-t border-surface-container">
-<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center">
-<span class="material-symbols-outlined text-sm text-on-tertiary-fixed">format_quote</span>
-</div>
-<p class="text-xs italic text-on-surface-variant font-medium">"The journey was worth every moment. Seeing the final alignment was an emotional and proud moment for me."</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-</main>
-<div id="site-footer"></div>
-<div id="site-widget"></div>
+<html dir="rtl" lang="ar">
+  <head></head>
+  <body
+    class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopNavBar -->
+    <div id="site-header"></div>
 
-</body>
+    ```html
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Before &amp; After | The Clinical Ethereal</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#e3e9eb",
+              "on-tertiary-fixed": "#2f514f",
+              "surface-container": "#eaeff0",
+              "surface-container-lowest": "#ffffff",
+              surface: "#f8fafb",
+              "on-surface": "#2c3436",
+              "surface-bright": "#f8fafb",
+              "inverse-surface": "#0b0f10",
+              "tertiary-dim": "#375957",
+              "secondary-dim": "#2d5966",
+              "on-secondary-container": "#2b5765",
+              "tertiary-container": "#d8fefa",
+              "inverse-on-surface": "#9a9d9e",
+              "surface-container-highest": "#dce4e6",
+              "on-secondary-fixed-variant": "#36616f",
+              "on-error-container": "#6e0a12",
+              "outline-variant": "#acb3b6",
+              "tertiary-fixed": "#d8fefa",
+              "on-primary-fixed": "#00474c",
+              "on-tertiary": "#e1fffc",
+              "surface-dim": "#d4dbde",
+              "on-secondary-fixed": "#164552",
+              tertiary: "#436563",
+              "inverse-primary": "#99f4fd",
+              background: "#f8fafb",
+              "error-container": "#fa746f",
+              "on-surface-variant": "#596063",
+              "error-dim": "#67040d",
+              "surface-container-low": "#f0f4f6",
+              "primary-fixed-dim": "#88e3eb",
+              "secondary-fixed-dim": "#afdbeb",
+              "surface-variant": "#dce4e6",
+              error: "#a83836",
+              "primary-dim": "#005d63",
+              primary: "#006a71",
+              "on-error": "#fff7f6",
+              secondary: "#3a6573",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "on-primary": "#e7fdff",
+              "tertiary-fixed-dim": "#caf0ec",
+              "on-background": "#2c3436",
+              "on-primary-container": "#005b61",
+              "primary-fixed": "#96f1fa",
+              "on-primary-fixed-variant": "#00666d",
+              outline: "#747c7e",
+              "primary-container": "#96f1fa",
+              "on-tertiary-container": "#416361",
+              "on-secondary": "#f0fbff",
+              "surface-tint": "#006a71",
+              "secondary-fixed": "#bdeafa",
+              "secondary-container": "#bdeafa",
+              "accent-gold": "#D4AF37",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-nav {
+        background: rgba(248, 250, 251, 0.8);
+        backdrop-filter: blur(20px);
+      }
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
+      /* Slider Styles */
+      .comparison-slider {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        user-select: none;
+      }
+      .comparison-slider .image-after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .comparison-slider .image-before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: inset(0 50% 0 0);
+      }
+      .comparison-slider .slider-handle {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px;
+        background: white;
+        cursor: ew-resize;
+        transform: translateX(-50%);
+        z-index: 10;
+      }
+      .comparison-slider .slider-handle::after {
+        content: "↔";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        background: #006a71;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      }
+      .whatsapp-float {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+      .whatsapp-float:hover {
+        transform: scale(1.1);
+      }
+      .slider-input {
+        appearance: none;
+        background: transparent;
+        outline: none;
+      }
+      .slider-input::-webkit-slider-thumb {
+        appearance: none;
+        width: 40px;
+        height: 40px;
+        cursor: ew-resize;
+      }
+    </style>
+    <a class="whatsapp-float" href="https://wa.me/201002345678" target="_blank">
+      <svg fill="currentColor" height="32" viewbox="0 0 24 24" width="32">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        ></path>
+      </svg>
+    </a>
+    <!-- TopNavBar -->
+    <header id="site-header"></header>
+    <main class="pt-24">
+      <!-- Hero Section -->
+      <section
+        class="relative px-8 py-20 lg:py-32 max-w-7xl mx-auto overflow-hidden"
+      >
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="z-10">
+            <span
+              class="inline-block px-4 py-1 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-semibold mb-6 tracking-wide"
+              >معرض النتائج</span
+            >
+            <h1
+              class="text-5xl lg:text-7xl font-headline font-extrabold text-on-surface tracking-tighter leading-[1.1] mb-8"
+            >
+              تغيير الابتسامات، <br /><span
+                class="text-primary italic font-light"
+                >رحلة واحدة</span
+              >
+              في كل مرة
+            </h1>
+            <p
+              class="text-lg text-on-surface-variant max-w-md leading-relaxed mb-10"
+            >
+              استكشف دقة إعادة البناء التجميلي لدينا والتأثير المتغير للحياة
+              لابتسامة مصممة خصيصاً لك.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <button
+                class="px-8 py-4 bg-primary text-on-primary rounded-full font-headline font-bold shadow-lg shadow-primary/20 flex items-center gap-2 hover:opacity-90 transition-all"
+                onclick="
+                  document
+                    .getElementById('cases')
+                    .scrollIntoView({ behavior: 'smooth' })
+                "
+              >
+                عرض جميع الحالات
+                <span class="material-symbols-outlined">arrow_downward</span>
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <div
+              class="aspect-[4/5] bg-surface-container-high rounded-xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700"
+            >
+              <img
+                alt="Beautiful Smile Transformation"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4wejt-2nNBgOhK7Nxz7HSdRvKgtdeKeTbBnOd8ozzHhfSTfR8vUzk-YVXSPq4sAaK5W3tQks3XwTgSSXg1MHSOcu7-aFDPSaNes8xC_Oa1DUT2NLkiv0PpZo-9npCGnKEfREWav4-dyyhL7de50r5bsqtsAT7_MvgP29_9P-Txg6CuPPlbJftZhG43BTa4fbIyXEftfbGq4HjEzz6wTtHrhnMoe62Oav_6YGxTyEV5b_y6RdjCf9Y-aPsMKqBnLhV487iyOTZ_9xT"
+              />
+              <div
+                class="absolute bottom-6 left-6 right-6 p-6 bg-surface/90 backdrop-blur-md rounded-lg"
+              >
+                <p class="font-headline font-bold text-teal-900 italic">
+                  "الملاذ الذي لم أكن أعلم أنه يمكن أن يكون عيادة أسنان."
+                </p>
+                <p class="text-sm text-on-surface-variant mt-2">
+                  — سارة ج.، إعادة البناء التجميلي
+                </p>
+              </div>
+            </div>
+            <div
+              class="absolute -top-10 -right-10 w-40 h-40 bg-secondary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Gallery Section -->
+      <section class="bg-surface-container-low py-24 px-8" id="cases">
+        <div class="max-w-7xl mx-auto">
+          <div class="mb-16 text-center md:text-right">
+            <h2
+              class="text-3xl lg:text-4xl font-headline font-bold text-teal-950 mb-4"
+            >
+              معرض الحالات
+            </h2>
+            <div class="h-1 w-20 bg-primary rounded-full mx-auto md:mx-0"></div>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-right"
+          >
+            <!-- Case 1 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="1">
+                  <img
+                    alt="After Result"
+                    class="image-after"
+                    src="/assets/images/processed/dental-treatment-hollywood-smile-turkey-35_after.webp"
+                  />
+                  <img
+                    alt="Before Result"
+                    class="image-before"
+                    src="/assets/images/processed/dental-treatment-hollywood-smile-turkey-35_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  تحول جمالي شامل للابتسامة
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  قشور بورسلين عالية الدقة لتصحيح عدم المحاذاة وتفتيح الابتسامة
+                  الطبيعية للحصول على نتيجة متناغمة ومشرقة.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "لم أعتقد أبدًا أن ابتسامتي يمكن أن تبدو طبيعية ومشرقة في
+                    نفس الوقت. لقد غيرت ثقتي بنفسي تمامًا."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Case 2 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="2">
+                  <img
+                    alt="After Result"
+                    class="image-after"
+                    src="/assets/images/processed/dentalcenterturkey-emax-laminate-bl1-copy-kopyasi_after.webp"
+                  />
+                  <img
+                    alt="Before Result"
+                    class="image-before"
+                    src="/assets/images/processed/dentalcenterturkey-emax-laminate-bl1-copy-kopyasi_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  إعادة البناء الوظيفي المتقدم
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  استعادة سلامة الأسنان والتوازن الجمالي من خلال ترميمات
+                  السيراميك المصممة خصيصًا.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "أخيرًا، يمكنني أن أبتسم وآكل براحة تامة. كان الاهتمام
+                    بالتفاصيل ملحوظًا."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Case 3 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="3">
+                  <img
+                    alt="After Result"
+                    class="image-after"
+                    src="/assets/images/processed/dental-centre-turkey-e.max-crown-emax-laminate-veneers-127_after.webp"
+                  />
+                  <img
+                    alt="Before Result"
+                    class="image-before"
+                    src="/assets/images/processed/dental-centre-turkey-e.max-crown-emax-laminate-veneers-127_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  فن قشور البورسلين المخصصة
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  تطبيق قشور مستهدف لإغلاق الفراغات وتنعيم شكل السن للحصول على
+                  مظهر خالٍ من العيوب وأنيق.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "كانت العملية سلسة، والنتائج أفضل مما كنت أتخيل. عمل يغير
+                    الحياة حقًا."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Case 4 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="4">
+                  <img
+                    alt="After Result"
+                    class="image-after"
+                    src="/assets/images/processed/dental-centre-turkey-bl3-dental-crowns-35 (1)_after.webp"
+                  />
+                  <img
+                    alt="Before Result"
+                    class="image-before"
+                    src="/assets/images/processed/dental-centre-turkey-bl3-dental-crowns-35 (1)_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  إعادة التأهيل الفموي الشامل
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  نهج كامل للفم لاستعادة الصحة والجمال، وتصحيح سنوات من التآكل
+                  والتلف.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "أعاد لي الدكتور أحمد ابتسامة صحية أفخر بإظهارها للعالم.
+                    احترافية في أبهى صورها."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Case 5 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="5">
+                  <img
+                    alt="After Result"
+                    class="image-after"
+                    src="/assets/images/processed/10-upper-10-lower-composite-bonding-snow-white-dentalcentreturkey_after.webp"
+                  />
+                  <img
+                    alt="Before Result"
+                    class="image-before"
+                    src="/assets/images/processed/10-upper-10-lower-composite-bonding-snow-white-dentalcentreturkey_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  تحسينات تجميلية دقيقة
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  تصحيحات دقيقة ومؤثرة للتماثل واللون، باستخدام تقنيات تجميلية
+                  محافظة.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "التفاصيل الصغيرة هي التي أحدثت الفارق الكبير. أشعر أن
+                    ابتسامتي متجددة ومثالية."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Case 6 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="6">
+                  <img
+                    alt="After Result"
+                    class="image-after"
+                    src="/assets/images/processed/2.-celtra-duo-crowns-bl3-_after.webp"
+                  />
+                  <img
+                    alt="Before Result"
+                    class="image-before"
+                    src="/assets/images/processed/2.-celtra-duo-crowns-bl3-_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  التميز السريري في زراعة الأسنان
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  تكامل سلس للزراعات المتطورة لاستعادة الأسنان المفقودة بنتائج
+                  دائمة وذات مظهر طبيعي.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "لا أستطيع حتى معرفة أي منها هي الزراعات. إنها تبدو وتشعر
+                    تمامًا مثل أسناني الطبيعية."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Case 7 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="7">
+                  <img
+                    alt="After Result"
+                    class="image-after"
+                    src="/assets/images/processed/all-on-four-02-copy_after.webp"
+                  />
+                  <img
+                    alt="Before Result"
+                    class="image-before"
+                    src="/assets/images/processed/all-on-four-02-copy_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  تكامل متقدم لزراعة الأسنان
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  استعادة الاستقرار الهيكلي والتدفق الجمالي باستخدام أحدث تقنيات
+                  زراعة الأسنان.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "كانت الخبرة واضحة في الجراحة. شعرت بالأمان والنتيجة مذهلة."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Case 8 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="8">
+                  <img
+                    alt="After - Clinical Result"
+                    class="image-after"
+                    src="/assets/images/processed/dental-centre-turkey-emax-crown-bl1-59_after.webp"
+                  />
+                  <img
+                    alt="Before - Clinical Case"
+                    class="image-before"
+                    src="/assets/images/processed/dental-centre-turkey-emax-crown-bl1-59_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  تبييض بيولوجي احترافي
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  بروتوكولات تبييض سريرية متقدمة لإزالة التصبغات العميقة مع
+                  حماية صحة المينا.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "لم تكن أسناني بهذا البياض منذ عشر سنوات. إجراء بسيط بتأثير
+                    هائل على مظهري."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Case 9 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="9">
+                  <img
+                    alt="After Result"
+                    class="image-after"
+                    src="/assets/images/processed/composite-bonding-veneers-03_after.webp"
+                  />
+                  <img
+                    alt="Before Result"
+                    class="image-before"
+                    src="/assets/images/processed/composite-bonding-veneers-03_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  تركيبات الزيركونيا المتينة
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  استخدام زيركونيا عالية القوة للأسنان الخلفية، مما يجمع بين
+                  المتانة الدائمة واللمسة الطبيعية.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "القوة والجمال يجتمعان بشكل مثالي. تيجاني الجديدة تبدو صلبة
+                    للغاية ومظهرها رائع."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Case 10 -->
+            <div
+              class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-outline-variant/10"
+            >
+              <div class="relative aspect-[4/3] bg-surface-container">
+                <div class="comparison-slider" data-id="10">
+                  <img
+                    alt="After - Aligned Smile"
+                    class="image-after"
+                    src="/assets/images/processed/dental-centre-turkey-metal-b1-65_after.webp"
+                  />
+                  <img
+                    alt="Before - Severe Gaps"
+                    class="image-before"
+                    src="/assets/images/processed/dental-centre-turkey-metal-b1-65_before.webp"
+                  />
+                  <div class="slider-handle"></div>
+                  <input
+                    class="slider-input absolute inset-0 w-full h-full opacity-0 cursor-ew-resize z-40"
+                    max="100"
+                    min="0"
+                    oninput="
+                      this.parentElement.querySelector(
+                        '.image-before',
+                      ).style.clipPath = `inset(0 ${100 - this.value}% 0 0)`;
+                      this.parentElement.querySelector(
+                        '.slider-handle',
+                      ).style.left = `${this.value}%`;
+                    "
+                    type="range"
+                    value="50"
+                  />
+                  <span
+                    class="absolute top-4 left-4 px-2 py-1 bg-black/60 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >قبل</span
+                  >
+                  <span
+                    class="absolute top-4 right-4 px-2 py-1 bg-primary/80 text-white text-[10px] rounded uppercase font-bold z-20"
+                    >بعد</span
+                  >
+                </div>
+              </div>
+              <div class="p-8">
+                <h3 class="font-headline font-bold text-xl mb-3">
+                  تقويم الأسنان الحديث
+                </h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                  تصحيح مشاكل الازدحام والإطباق المعقدة باستخدام تقنيات المحاذاة
+                  المعاصرة للحصول على ابتسامة مستقيمة وصحية.
+                </p>
+                <div
+                  class="flex items-center gap-3 pt-6 border-t border-surface-container"
+                >
+                  <div
+                    class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center"
+                  >
+                    <span
+                      class="material-symbols-outlined text-sm text-on-tertiary-fixed"
+                      >format_quote</span
+                    >
+                  </div>
+                  <p class="text-xs italic text-on-surface-variant font-medium">
+                    "كانت الرحلة تستحق كل لحظة. كانت رؤية النتيجة النهائية لحظة
+                    عاطفية وفخر بالنسبة لي."
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="site-footer"></footer>
+  </body>
 </html>
