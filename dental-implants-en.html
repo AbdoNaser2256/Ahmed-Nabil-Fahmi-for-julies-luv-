@@ -1,0 +1,466 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-fixed": "#96f1fa",
+              "on-background": "#2c3436",
+              "on-tertiary-fixed": "#2f514f",
+              "on-secondary": "#f0fbff",
+              "surface-container-lowest": "#ffffff",
+              "tertiary-dim": "#375957",
+              "surface-container-highest": "#dce4e6",
+              "error-container": "#fa746f",
+              "secondary-fixed-dim": "#afdbeb",
+              "inverse-on-surface": "#9a9d9e",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "on-secondary-fixed": "#164552",
+              error: "#a83836",
+              "surface-bright": "#f8fafb",
+              "on-primary-fixed-variant": "#00666d",
+              "surface-container-high": "#e3e9eb",
+              "secondary-dim": "#2d5966",
+              "on-secondary-container": "#2b5765",
+              "tertiary-fixed": "#d8fefa",
+              outline: "#747c7e",
+              "on-secondary-fixed-variant": "#36616f",
+              "on-primary-fixed": "#00474c",
+              "primary-dim": "#005d63",
+              "on-tertiary-container": "#416361",
+              secondary: "#3a6573",
+              "primary-fixed-dim": "#88e3eb",
+              surface: "#f8fafb",
+              "error-dim": "#67040d",
+              "secondary-container": "#bdeafa",
+              "inverse-surface": "#0b0f10",
+              "primary-container": "#96f1fa",
+              primary: "#006a71",
+              "inverse-primary": "#99f4fd",
+              "tertiary-fixed-dim": "#caf0ec",
+              "secondary-fixed": "#bdeafa",
+              "on-primary": "#e7fdff",
+              "surface-container-low": "#f0f4f6",
+              "on-primary-container": "#005b61",
+              "on-error": "#fff7f6",
+              background: "#f8fafb",
+              "surface-variant": "#dce4e6",
+              "on-surface-variant": "#596063",
+              "surface-dim": "#d4dbde",
+              "on-surface": "#2c3436",
+              "tertiary-container": "#d8fefa",
+              "surface-container": "#eaeff0",
+              "outline-variant": "#acb3b6",
+              "surface-tint": "#006a71",
+              "on-error-container": "#6e0a12",
+              tertiary: "#436563",
+              "on-tertiary": "#e1fffc",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .text-gold {
+        color: #c5a059;
+      } /* Custom brand accent for "premium" feel */
+      .bg-gold {
+        background-color: #c5a059;
+      }
+      .glass-nav {
+        background: rgba(248, 250, 251, 0.8);
+        backdrop-filter: blur(20px);
+      }
+
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-surface font-body text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <div id="site-header"></div>
+
+    <!-- TopNavBar -->
+
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section class="relative min-h-[819px] flex items-center overflow-hidden">
+        <div
+          class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-12 items-center"
+        >
+          <div class="z-10 py-12">
+            <span
+              class="text-gold font-bold tracking-widest uppercase text-xs mb-4 block"
+              >Premium Restorative Care</span
+            >
+            <h1
+              class="text-6xl md:text-7xl font-headline font-extrabold text-on-surface leading-[1.1] mb-6 tracking-tight"
+            >
+              Dental Implants: <br /><span
+                class="text-primary italic font-medium"
+                >A Lifetime Smile.</span
+              >
+            </h1>
+            <p
+              class="text-on-surface-variant text-lg max-w-lg mb-10 leading-relaxed"
+            >
+              Rediscover the confidence of a natural, functional smile. Our
+              high-precision dental implants offer a permanent solution for
+              missing teeth, tailored to your unique facial aesthetics.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold shadow-xl shadow-primary/20 flex items-center justify-center gap-2 group"
+              >
+                Start Your Journey
+                <span
+                  class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                  >arrow_forward</span
+                >
+              </button>
+              <button
+                class="border border-outline-variant text-on-surface px-8 py-4 rounded-full font-bold hover:bg-surface-container-low transition-colors"
+              >
+                View Case Studies
+              </button>
+            </div>
+          </div>
+          <div
+            class="relative md:absolute md:right-0 md:top-0 md:bottom-0 md:w-1/2 md:h-full flex items-center"
+          >
+            <div
+              class="w-full h-[500px] md:h-full rounded-l-3xl overflow-hidden shadow-2xl"
+            >
+              <img
+                alt="Professional Smile"
+                class="w-full h-full object-cover"
+                data-alt="A close-up of a confident, healthy middle-aged person with a perfect white smile, soft natural lighting in a high-end dental studio"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCoEC3o1rnGaT-tUzrKQeyrHY_QOyKSxiKnqLPh1aoxpFrZzHGkjwF1VY_1d2HLN-NcgG7RZKv63bNAwaLcNJKI9LL1Ti8kayZX9ZBbjV4NtC7gZucWsqYjtGUHbHd_WcKh-MJAt64tm9RfXuOWYFKawJthnFHR97A461GF3WVpV0Y2xjVEDBJcQg3AKYVKanW69hs9iCa9h46Kk3DwsXzr_9Ju3qBGdkTEtyBzSgSwU9apgIznnxawgIe1muGkn3tB9QVTDkTr9T6"
+              />
+            </div>
+            <!-- Aesthetic Overlay -->
+            <div
+              class="absolute -left-12 bottom-20 p-8 bg-surface-container-lowest rounded-xl shadow-xl hidden lg:block border border-outline-variant/10"
+            >
+              <div class="flex items-center gap-4">
+                <div class="bg-tertiary-fixed p-3 rounded-full">
+                  <span
+                    class="material-symbols-outlined text-primary"
+                    data-weight="fill"
+                    >verified</span
+                  >
+                </div>
+                <div>
+                  <p class="text-sm font-bold">Titanium Quality</p>
+                  <p class="text-xs text-on-surface-variant">
+                    Medical Grade Precision
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Benefits Bento Grid -->
+      <section class="py-32 bg-surface-container-low">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-headline font-bold mb-4">
+              Why Choose Dental Implants?
+            </h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto">
+              Modern dentistry that mimics the natural form and function of your
+              original teeth, providing comfort that lasts a lifetime.
+            </p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div
+              class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 flex flex-col items-start hover:translate-y-[-4px] transition-transform"
+            >
+              <div class="mb-6 bg-primary-container/30 p-4 rounded-2xl">
+                <span class="material-symbols-outlined text-primary text-3xl"
+                  >shield_with_heart</span
+                >
+              </div>
+              <h3 class="text-xl font-bold mb-3">Durability &amp; Longevity</h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Unlike dentures or bridges, implants are fused with your
+                jawbone, offering a permanent solution that can last decades
+                with proper care.
+              </p>
+            </div>
+            <!-- Card 2 (Highlight) -->
+            <div
+              class="bg-primary p-10 rounded-xl text-on-primary flex flex-col items-start shadow-2xl shadow-primary/30"
+            >
+              <div class="mb-6 bg-on-primary/10 p-4 rounded-2xl">
+                <span class="material-symbols-outlined text-on-primary text-3xl"
+                  >face</span
+                >
+              </div>
+              <h3 class="text-xl font-bold mb-3">Natural Aesthetics</h3>
+              <p class="opacity-90 text-sm leading-relaxed">
+                Custom-crafted crowns that match the color, shape, and
+                translucency of your natural teeth for a seamless visual result.
+              </p>
+            </div>
+            <!-- Card 3 -->
+            <div
+              class="bg-surface-container-lowest p-10 rounded-xl border border-outline-variant/10 flex flex-col items-start hover:translate-y-[-4px] transition-transform"
+            >
+              <div class="mb-6 bg-secondary-container/30 p-4 rounded-2xl">
+                <span class="material-symbols-outlined text-secondary text-3xl"
+                  >skeleton</span
+                >
+              </div>
+              <h3 class="text-xl font-bold mb-3">Jawbone Preservation</h3>
+              <p class="text-on-surface-variant text-sm leading-relaxed">
+                Implants stimulate bone growth, preventing the facial sagging
+                and bone loss commonly associated with missing teeth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- The Procedure (Peace of Mind Progress) -->
+      <section class="py-32 bg-surface overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            <div class="relative">
+              <div
+                class="aspect-square rounded-full overflow-hidden border-[16px] border-surface-container-low shadow-inner"
+              >
+                <img
+                  alt="Dental Procedure"
+                  class="w-full h-full object-cover"
+                  data-alt="High-tech dental operatory with clean clinical lighting, focused dental surgical equipment and advanced 3D scanning technology screen in background"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT9qihfwe8ts8J4NI5h9hWzCZ41arKcWrcTleO3iS3ro8PiFcSz71w45k3liQt9sPJ7JMeoDUSRFppAYnU29BoQ0HdI_MKP4uNQPWqQrK9IafqFNKZSTu1hmaL1H2JxYG2YJN4tgAru7ML15WazYFjJ3Xj9l3miM3d4MV461pcFmmaKu2lnsGXFrBTlJhZ6xqdYkZleKCwfFMzaNfdv45rORNsIGAnwuHfKoBHDT62wl7_nI4YIJGIrtxXNFzpcKMA9Mj9ARi_EWeG"
+                />
+              </div>
+              <div
+                class="absolute -top-6 -right-6 w-32 h-32 bg-gold rounded-full flex items-center justify-center text-on-primary font-headline font-bold text-center p-4 text-xs"
+              >
+                Precise Digital Planning
+              </div>
+            </div>
+            <div>
+              <h2 class="text-4xl font-headline font-bold mb-12">
+                The Sanctuary Procedure
+              </h2>
+              <div class="space-y-12">
+                <!-- Step 1 -->
+                <div class="flex gap-6 items-start">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 rounded-lg bg-tertiary-fixed-dim flex items-center justify-center font-bold text-primary"
+                  >
+                    01
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">
+                      Initial Consultation &amp; 3D Scan
+                    </h4>
+                    <p class="text-on-surface-variant">
+                      We utilize advanced CT imaging to map your oral anatomy
+                      and design your precise surgical guide.
+                    </p>
+                  </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="flex gap-6 items-start">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 rounded-lg bg-tertiary-fixed-dim flex items-center justify-center font-bold text-primary"
+                  >
+                    02
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Implant Placement</h4>
+                    <p class="text-on-surface-variant">
+                      A gentle, minimally invasive procedure to place the
+                      titanium post. Local anesthesia ensures total comfort.
+                    </p>
+                  </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="flex gap-6 items-start">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 rounded-lg bg-tertiary-fixed-dim flex items-center justify-center font-bold text-primary"
+                  >
+                    03
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Osseointegration</h4>
+                    <p class="text-on-surface-variant">
+                      Over 3-6 months, the implant heals and fuses with your
+                      jawbone to create a rock-solid foundation.
+                    </p>
+                  </div>
+                </div>
+                <!-- Step 4 -->
+                <div class="flex gap-6 items-start">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 rounded-lg bg-primary flex items-center justify-center font-bold text-on-primary"
+                  >
+                    04
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-2">Final Restoration</h4>
+                    <p class="text-on-surface-variant">
+                      We attach your custom-made crown, meticulously
+                      color-matched to your surrounding teeth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ Section -->
+      <section class="py-32 bg-surface-container-low/50">
+        <div class="max-w-4xl mx-auto px-8">
+          <div class="text-center mb-16">
+            <h2 class="text-4xl font-headline font-bold mb-4">Patient FAQ</h2>
+            <p class="text-on-surface-variant">
+              Common questions about starting your implant journey.
+            </p>
+          </div>
+          <div class="space-y-4">
+            <div
+              class="bg-surface-container-lowest p-6 rounded-2xl hover:bg-surface-bright transition-colors cursor-pointer group"
+            >
+              <div class="flex justify-between items-center">
+                <h4 class="font-bold">Does the procedure hurt?</h4>
+                <span
+                  class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors"
+                  >add</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest p-6 rounded-2xl border border-primary/20"
+            >
+              <div class="flex justify-between items-center mb-4">
+                <h4 class="font-bold text-primary">
+                  How long do dental implants last?
+                </h4>
+                <span class="material-symbols-outlined text-primary"
+                  >remove</span
+                >
+              </div>
+              <p class="text-sm text-on-surface-variant leading-relaxed">
+                With proper oral hygiene and regular professional cleanings,
+                dental implants are designed to be a lifelong solution. They do
+                not decay like natural teeth, though the health of the
+                surrounding gum and bone is vital.
+              </p>
+            </div>
+            <div
+              class="bg-surface-container-lowest p-6 rounded-2xl hover:bg-surface-bright transition-colors cursor-pointer group"
+            >
+              <div class="flex justify-between items-center">
+                <h4 class="font-bold">Am I a good candidate for implants?</h4>
+                <span
+                  class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors"
+                  >add</span
+                >
+              </div>
+            </div>
+            <div
+              class="bg-surface-container-lowest p-6 rounded-2xl hover:bg-surface-bright transition-colors cursor-pointer group"
+            >
+              <div class="flex justify-between items-center">
+                <h4 class="font-bold">How much do dental implants cost?</h4>
+                <span
+                  class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-colors"
+                  >add</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Call to Action -->
+      <section class="py-24 px-8">
+        <div
+          class="max-w-7xl mx-auto bg-primary rounded-3xl overflow-hidden relative"
+        >
+          <!-- Abstract Design Elements -->
+          <div
+            class="absolute top-0 right-0 w-64 h-64 bg-on-primary/5 rounded-full -translate-y-1/2 translate-x-1/2"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-96 h-96 bg-primary-dim/30 rounded-full translate-y-1/2 -translate-x-1/4"
+          ></div>
+          <div
+            class="relative z-10 p-12 md:p-20 text-center flex flex-col items-center"
+          >
+            <h2
+              class="text-3xl md:text-5xl font-headline font-bold text-on-primary mb-6 max-w-3xl leading-tight"
+            >
+              Transform Your Smile with Egypt's Leading Dental Expert
+            </h2>
+            <p class="text-on-primary opacity-80 mb-12 max-w-xl text-lg">
+              Schedule a comprehensive consultation with Prof. Dr Ahmed Nabil
+              and take the first step towards a new, confident you.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6">
+              <button
+                class="bg-surface-container-lowest text-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-on-primary transition-all flex items-center justify-center gap-3"
+              >
+                Book Consultation Now
+                <span class="material-symbols-outlined">event_available</span>
+              </button>
+              <button
+                class="bg-transparent border-2 border-on-primary/30 text-on-primary px-10 py-5 rounded-full font-bold text-lg hover:bg-on-primary/10 transition-all"
+              >
+                Talk to a Specialist
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="site-footer"></footer>
+  </body>
+</html>
