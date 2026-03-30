@@ -1,0 +1,965 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary-container": "#96f1fa",
+              "tertiary-fixed-dim": "#caf0ec",
+              "on-primary-fixed-variant": "#00666d",
+              "on-background": "#2c3436",
+              "on-secondary-container": "#2b5765",
+              error: "#a83836",
+              "on-surface-variant": "#596063",
+              secondary: "#3a6573",
+              "accent-gold": "#D4AF37",
+              "accent-gold-light": "#E5C76B",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-highest": "#dce4e6",
+              "secondary-dim": "#2d5966",
+              "surface-bright": "#f8fafb",
+              "on-tertiary-fixed": "#2f514f",
+              "primary-dim": "#005d63",
+              surface: "#f8fafb",
+              "surface-container": "#eaeff0",
+              "inverse-on-surface": "#9a9d9e",
+              "on-primary-fixed": "#00474c",
+              "outline-variant": "#acb3b6",
+              "on-surface": "#2c3436",
+              "secondary-fixed": "#bdeafa",
+              "inverse-surface": "#0b0f10",
+              "inverse-primary": "#99f4fd",
+              "secondary-fixed-dim": "#afdbeb",
+              "surface-container-low": "#f0f4f6",
+              "error-container": "#fa746f",
+              outline: "#747c7e",
+              "on-secondary": "#f0fbff",
+              "on-error": "#fff7f6",
+              "primary-fixed": "#96f1fa",
+              background: "#f8fafb",
+              primary: "#006a71",
+              "on-secondary-fixed-variant": "#36616f",
+              "surface-container-high": "#e3e9eb",
+              tertiary: "#436563",
+              "on-primary": "#e7fdff",
+              "surface-dim": "#d4dbde",
+              "tertiary-fixed": "#d8fefa",
+              "on-tertiary-fixed-variant": "#4c6e6c",
+              "error-dim": "#67040d",
+              "tertiary-dim": "#375957",
+              "tertiary-container": "#d8fefa",
+              "primary-fixed-dim": "#88e3eb",
+              "secondary-container": "#bdeafa",
+              "surface-tint": "#006a71",
+              "on-error-container": "#6e0a12",
+              "on-primary-container": "#005b61",
+              "on-tertiary": "#e1fffc",
+              "on-tertiary-container": "#416361",
+              "surface-variant": "#dce4e6",
+              "on-secondary-fixed": "#164552",
+            },
+            fontFamily: {
+              headline: ["Manrope"],
+              body: ["Manrope"],
+              label: ["Manrope"],
+              display: "Manrope",
+            },
+            borderRadius: {
+              DEFAULT: "1rem",
+              lg: "2rem",
+              xl: "3rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(20px);
+      }
+      .asymmetric-gradient {
+        background: linear-gradient(135deg, #006a71 0%, #d4af37 100%);
+      }
+      .arabesque-pattern {
+        background-color: #fdfcf9;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0l5.89 19.11L55.03 15 40.89 30l14.14 15-19.14-4.11L30 60l-5.89-19.11L5 45l14.14-15L5 15l19.11 4.11z' fill='%23d4af37' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+      }
+      .gold-border {
+        border-color: #d4af37;
+      }
+      .text-gold {
+        color: #d4af37;
+      }
+      .nav-dropdown:hover .nav-dropdown-content {
+        display: block;
+      }
+    </style>
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body class="bg-surface text-on-background font-body arabesque-pattern">
+    <!-- TopNavBar -->
+    <div id="site-header"></div>
+
+    <main class="pt-20">
+      <!-- Hero Section -->
+      <section
+        class="relative min-h-[850px] flex items-center overflow-hidden bg-surface"
+      >
+        <div
+          class="max-w-7xl mx-auto px-8 w-full grid grid-cols-1 md:grid-cols-12 gap-12 items-center"
+        >
+          <div class="md:col-span-7 z-10">
+            <div
+              class="inline-block px-4 py-1 bg-accent-gold/10 text-accent-gold rounded-full font-bold text-sm mb-6 uppercase tracking-widest border border-accent-gold/20"
+            >
+              Luxury Oral Healthcare
+            </div>
+            <h1
+              class="font-headline text-5xl md:text-7xl font-extrabold text-on-background leading-[1.1] tracking-tight mb-6"
+            >
+              Dentistry
+              <span class="text-accent-gold italic">Reimagined</span> with
+              Elegance.
+            </h1>
+            <p
+              class="text-lg md:text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed"
+            >
+              Experience world-class precision in a sanctuary of refined
+              comfort. We combine advanced clinical expertise with the warmth of
+              Egyptian hospitality.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                class="bg-primary text-white px-10 py-4 rounded-xl font-headline font-bold text-lg shadow-xl hover:bg-primary-dim transition-all active:scale-95 border-b-4 border-primary-dim"
+              >
+                Book Appointment
+              </button>
+              <button
+                class="bg-white text-on-surface px-10 py-4 rounded-xl font-headline font-bold text-lg border border-accent-gold/30 hover:bg-surface-container-low transition-all"
+              >
+                View Services
+              </button>
+            </div>
+          </div>
+          <div class="md:col-span-5 relative h-full">
+            <div
+              class="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white"
+            >
+              <img
+                alt="Professional friendly dentists in modern clinic"
+                class="w-full aspect-[4/5] object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZYsUyJ_Ze8GAJdlrx3AsmWn03UYAbKJ3yUIW6Cme9csOOm53BaYHEjvskLugikbEtiqjEyDnFPpzAb11kfM9qEiY-l96AhFm261S3z_KZsCclPPydSsEPsW6I9Xeb8y-Buz55i7rFul05sE5LVq3b08CTN6kEqPKA4oK4PObdmanS5tQkpW6qG242lUBxUY8uW9KwEWq1NONShULRmJrhAUxWkbNHSi-s4a6SsrBqcaQ0wuy9fQXbVHUfUJhxECHa0bAQ6znObiwS"
+              />
+            </div>
+            <div
+              class="absolute -bottom-10 -left-10 w-64 h-64 bg-accent-gold/10 rounded-full blur-3xl -z-10"
+            ></div>
+            <div
+              class="absolute -top-10 -right-10 w-48 h-48 bg-primary/10 rounded-full blur-2xl -z-10"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <!-- Our Services -->
+      <section class="py-24 bg-surface-container-low relative">
+        <div class="max-w-7xl mx-auto px-8 relative z-10">
+          <div class="mb-16 text-center md:text-left">
+            <span
+              class="text-accent-gold font-headline font-bold tracking-widest text-sm uppercase"
+              >Bespoke Treatments</span
+            >
+            <h2 class="font-headline text-4xl md:text-5xl font-bold mt-2">
+              Elite Dental Services
+            </h2>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Bento Items -->
+            <div
+              class="md:col-span-2 bg-white p-10 rounded-xl hover:shadow-xl transition-shadow border border-accent-gold/20 group relative overflow-hidden"
+            >
+              <div
+                class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity"
+              >
+                <span
+                  class="material-symbols-outlined text-9xl text-accent-gold"
+                  >auto_awesome</span
+                >
+              </div>
+              <div class="flex flex-col h-full justify-between relative z-10">
+                <div>
+                  <span
+                    class="material-symbols-outlined text-accent-gold text-5xl mb-6"
+                    >auto_awesome</span
+                  >
+                  <h3 class="text-2xl font-headline font-bold mb-4">
+                    Aesthetic Reconstruction
+                  </h3>
+                  <p class="text-on-surface-variant max-w-md">
+                    Mastering the art of porcelain veneers and smile design to
+                    create naturally radiant results tailored to your unique
+                    profile.
+                  </p>
+                </div>
+                <div
+                  class="mt-8 flex items-center text-accent-gold font-bold group-hover:gap-2 transition-all cursor-pointer"
+                >
+                  Discover Artistry
+                  <span class="material-symbols-outlined ml-2"
+                    >arrow_forward</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="bg-primary p-10 rounded-xl text-white group relative">
+              <span
+                class="material-symbols-outlined text-accent-gold-light text-5xl mb-6"
+                >biotech</span
+              >
+              <h3 class="text-2xl font-headline font-bold mb-4">
+                Advanced Diagnostics
+              </h3>
+              <p class="opacity-90 leading-relaxed">
+                Utilizing 3D imaging and digital precision for preventative care
+                and restorative work of the highest caliber.
+              </p>
+            </div>
+            <div
+              class="bg-white p-10 rounded-xl border border-accent-gold/20 hover:shadow-xl transition-shadow group"
+            >
+              <span
+                class="material-symbols-outlined text-accent-gold text-5xl mb-6"
+                >spa</span
+              >
+              <h3 class="text-2xl font-headline font-bold mb-4">
+                V.I.P. Comfort
+              </h3>
+              <p class="text-on-surface-variant">
+                Anxiety-free treatments supported by specialized protocols in
+                our private, serene treatment suites.
+              </p>
+            </div>
+            <div
+              class="md:col-span-2 bg-white p-10 rounded-xl border border-accent-gold/20 hover:shadow-xl transition-shadow flex flex-col md:flex-row gap-8 items-center"
+            >
+              <div class="flex-1">
+                <span
+                  class="material-symbols-outlined text-accent-gold text-5xl mb-6"
+                  >orthopedics</span
+                >
+                <h3 class="text-2xl font-headline font-bold mb-4">
+                  Invisible Orthodontics
+                </h3>
+                <p class="text-on-surface-variant">
+                  Modern, discreet alignment solutions for a transformation that
+                  remains your secret until the big reveal.
+                </p>
+              </div>
+              <div
+                class="w-full md:w-1/3 rounded-xl overflow-hidden h-48 border-2 border-accent-gold/10"
+              >
+                <img
+                  alt="Advanced alignment technology"
+                  class="w-full h-full object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU3oQQ8bCxjGceJ_wDCwc1L7OU5exLeu4sFrce1UdZ_RQ5niC55X4wjxXkR932cRl4po9dWpOXWGjCy-1FkO_C8UjylJbv8ZCLsC4uvE5JflqfQjLMKMxy7ccd-HnltG4jZdj3IgzYerQCf5onNddddlAB2hgXxdUuQIwpPS-Hti0uZUzGjQL7B8qgnCZdz3My4kr-denIcvLB5XeslRRSYctTJLzbqGaz7y4Vw_1nxZuvuWY9mnN9YJlhCNKSGs57-o6iwnaKYXU6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Meet the Doctor -->
+      <section class="py-32 bg-surface overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 relative">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+            <div class="md:col-span-6 order-2 md:order-1 relative">
+              <div
+                class="absolute -top-8 -left-8 w-full h-full border-4 border-accent-gold/20 rounded-2xl -z-10 hidden md:block"
+              ></div>
+              <div
+                class="rounded-2xl shadow-2xl overflow-hidden border-8 border-white"
+              >
+                <img
+                  alt="Expert Lead Dentist"
+                  class="w-full aspect-[3/4] object-cover"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ_RndvteJV5GTCS-vUnWqYJ1shQPZqe0GnXSp8Q07qHNOuRe0PQCvcifi2CZXj0nuV5uP2kiSmOfGuazeFDrlD6ux2MZAAsNZcMKsOzoWGs0TqLxCmWbSFMLFTyMOD8TfVKzpIWJJu0vnBBA8ktRyfRcidrnPd0Ubm9zWYN0ZBqkUeO885Ypu5uKXimW6u3UeLNA6Xsz9KeirfZFcvBqIqGVu9T6xrzDYfJnkgX7KRLNzLnOP84LxwKJNEDBGnFlgql6dB5DSuC4T"
+                />
+              </div>
+              <div
+                class="absolute bottom-10 -right-4 bg-primary p-6 rounded-xl shadow-2xl max-w-xs border-r-8 border-accent-gold"
+              >
+                <p class="font-headline font-bold text-white text-xl">
+                  Doctor Ahmed Nabil Fahmi
+                </p>
+                <p class="text-sm text-accent-gold-light font-bold">
+                  Professor in faculty of Dentistry
+                </p>
+              </div>
+            </div>
+            <div class="md:col-span-6 order-1 md:order-2">
+              <span
+                class="text-accent-gold font-headline font-bold tracking-widest text-sm uppercase"
+                >The Visionary Expertise</span
+              >
+              <h2
+                class="font-headline text-4xl md:text-5xl font-bold mt-4 mb-8"
+              >
+                Clinical Mastery, Boutique Hospitality.
+              </h2>
+              <div
+                class="space-y-6 text-on-surface-variant text-lg leading-relaxed"
+              >
+                <p class="">
+                  With an international pedigree and a deep commitment to the
+                  region, Dr. Omar founded The Clinical Ethereal to offer a
+                  standard of care previously only found in the world's leading
+                  medical capitals.
+                </p>
+                <p class="">
+                  “My philosophy centers on the marriage of technical perfection
+                  and the patient's absolute serenity. Every visit should feel
+                  like a retreat into wellness.”
+                </p>
+              </div>
+              <div
+                class="mt-12 grid grid-cols-2 gap-8 border-t border-accent-gold/20 pt-10"
+              >
+                <div>
+                  <p class="text-4xl font-headline font-black text-primary">
+                    20+
+                  </p>
+                  <p
+                    class="text-sm text-accent-gold font-bold uppercase tracking-wider"
+                  >
+                    Years Excellence
+                  </p>
+                </div>
+                <div>
+                  <p class="text-4xl font-headline font-black text-primary">
+                    5.0
+                  </p>
+                  <p
+                    class="text-sm text-accent-gold font-bold uppercase tracking-wider"
+                  >
+                    Patient Rating
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Service Widgets -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 mt-8"
+        >
+          <a
+            href="/services/dental-implants.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >implants</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Dental Implants
+            </h3>
+            <p class="text-sm text-slate-500">Advanced replacement</p>
+          </a>
+          <a
+            href="/services/hollywood-smile.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >sentiment_satisfied</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Hollywood Smile
+            </h3>
+            <p class="text-sm text-slate-500">Perfect design</p>
+          </a>
+          <a
+            href="/services/veneers.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >auto_awesome</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Veneers
+            </h3>
+            <p class="text-sm text-slate-500">Porcelain shells</p>
+          </a>
+          <a
+            href="/services/root-canal.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >medical_services</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Root Canal
+            </h3>
+            <p class="text-sm text-slate-500">Microscopic care</p>
+          </a>
+          <a
+            href="/services/childrens-teeth.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >child_care</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Pediatric
+            </h3>
+            <p class="text-sm text-slate-500">Gentle treatment</p>
+          </a>
+          <a
+            href="/services/gum-depigmentation.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >masks</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Gum Depigmentation
+            </h3>
+            <p class="text-sm text-slate-500">Laser bleaching</p>
+          </a>
+          <a
+            href="/services/cosmetic-fillings.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >format_paint</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Cosmetic Fillings
+            </h3>
+            <p class="text-sm text-slate-500">Tooth-colored</p>
+          </a>
+          <a
+            href="/services/orthodontics.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >align_horizontal_center</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Orthodontics
+            </h3>
+            <p class="text-sm text-slate-500">Modern braces</p>
+          </a>
+          <a
+            href="/services/teeth-whitening.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >clean_hands</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Teeth Whitening
+            </h3>
+            <p class="text-sm text-slate-500">Sparkling smile</p>
+          </a>
+          <a
+            href="/services/casted-crown.html"
+            class="bg-white p-6 rounded-xl hover:shadow-xl transition-all border border-accent-gold/20 flex flex-col items-center text-center group"
+          >
+            <span
+              class="material-symbols-outlined text-4xl text-teal-700 mb-4 group-hover:text-accent-gold transition-colors"
+              >health_and_safety</span
+            >
+            <h3 class="font-headline font-bold text-lg text-teal-900 mb-2">
+              Dental Crowns
+            </h3>
+            <p class="text-sm text-slate-500">Protection & repair</p>
+          </a>
+        </div>
+      </section>
+      <!-- Patient Testimonials -->
+      <section class="py-24 bg-surface-container-high relative overflow-hidden">
+        <div
+          class="absolute inset-0 opacity-10 arabesque-pattern pointer-events-none"
+        ></div>
+        <div class="max-w-7xl mx-auto px-8 text-center mb-16 relative z-10">
+          <h2 class="font-headline text-4xl font-bold">
+            Refined Patient Experiences
+          </h2>
+          <p class="text-on-surface-variant mt-4">
+            Discreet reflections from our esteemed community.
+          </p>
+        </div>
+        <div
+          class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10"
+        >
+          <!-- Testimonials -->
+          <div
+            class="bg-white p-8 rounded-xl border-t-4 border-accent-gold shadow-lg flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex text-accent-gold mb-6">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+              </div>
+              <p class="text-on-surface italic text-lg leading-relaxed">
+                "The most sophisticated dental experience I've had. The
+                attention to detail and the ambiance are truly exceptional."
+              </p>
+            </div>
+            <div
+              class="mt-8 flex items-center gap-4 border-t border-accent-gold/10 pt-6"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center font-bold text-white"
+              >
+                HA
+              </div>
+              <div class="text-left">
+                <p class="font-bold">Hana A.</p>
+                <p class="text-xs text-on-surface-variant">
+                  Patient since 2019
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white p-8 rounded-xl border-t-4 border-accent-gold shadow-lg flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex text-accent-gold mb-6">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+              </div>
+              <p class="text-on-surface italic text-lg leading-relaxed">
+                "A level of professionalism that is rare to find. The digital
+                workflow made my complex treatment seamless."
+              </p>
+            </div>
+            <div
+              class="mt-8 flex items-center gap-4 border-t border-accent-gold/10 pt-6"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-accent-gold flex items-center justify-center font-bold text-white"
+              >
+                YM
+              </div>
+              <div class="text-left">
+                <p class="font-bold">Youssef M.</p>
+                <p class="text-xs text-on-surface-variant">
+                  Patient since 2022
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-white p-8 rounded-xl border-t-4 border-accent-gold shadow-lg flex flex-col justify-between"
+          >
+            <div>
+              <div class="flex text-accent-gold mb-6">
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+                <span
+                  class="material-symbols-outlined"
+                  style="font-variation-settings: &quot;FILL&quot; 1"
+                  >star</span
+                >
+              </div>
+              <p class="text-on-surface italic text-lg leading-relaxed">
+                "It feels more like a wellness retreat than a clinic. My smile
+                has never looked more vibrant."
+              </p>
+            </div>
+            <div
+              class="mt-8 flex items-center gap-4 border-t border-accent-gold/10 pt-6"
+            >
+              <div
+                class="w-12 h-12 rounded-full bg-primary-dim flex items-center justify-center font-bold text-white"
+              >
+                LK
+              </div>
+              <div class="text-left">
+                <p class="font-bold">Layla K.</p>
+                <p class="text-xs text-on-surface-variant">
+                  Patient since 2023
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 mt-16 text-center relative z-10">
+          <button
+            class="inline-flex items-center gap-3 bg-white text-on-surface px-8 py-4 rounded-full font-headline font-bold border-2 border-accent-gold hover:bg-accent-gold hover:text-white transition-all shadow-md group"
+          >
+            <svg
+              class="w-6 h-6 group-hover:fill-white fill-[#4285F4]"
+              viewbox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.48 10.92v3.28h7.84c-.24 1.84-.92 3.32-2.12 4.52-1.2 1.2-3.04 2.12-5.72 2.12-4.64 0-8.44-3.76-8.44-8.4s3.8-8.4 8.44-8.4c2.52 0 4.4 1 5.8 2.32l2.32-2.32C18.44 2.12 15.76 1 12.48 1 6.48 1 1.6 5.84 1.6 11.8s4.88 10.8 10.88 10.8c3.24 0 5.72-1.08 7.6-3.08 2-2 2.64-4.8 2.64-7.12 0-.48-.04-.96-.12-1.44h-10.12z"
+              ></path>
+            </svg>
+            <span class="">Write a Google Review</span>
+          </button>
+        </div>
+      </section>
+      <!-- Consultation & Sanctuary Info Section -->
+      <section class="pt-24 pb-12 bg-surface px-6">
+        <div class="max-w-7xl mx-auto">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start mb-12"
+          >
+            <!-- Request Consultation -->
+            <div
+              class="lg:col-span-7 bg-white p-8 md:p-12 rounded-xl shadow-sm border border-slate-100"
+            >
+              <div class="mb-10">
+                <h2 class="text-2xl font-headline font-bold mb-2">
+                  Request a Consultation
+                </h2>
+                <p class="text-on-surface-variant text-sm">
+                  Please fill in your details and our concierge will contact you
+                  shortly.
+                </p>
+              </div>
+              <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="space-y-2">
+                    <label
+                      class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant ml-4 font-headline"
+                      >Full Name</label
+                    >
+                    <input
+                      class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-xl px-6 py-4 text-on-surface placeholder:text-outline"
+                      placeholder="Enter your name"
+                      type="text"
+                    />
+                  </div>
+                  <div class="space-y-2">
+                    <label
+                      class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant ml-4 font-headline"
+                      >Phone Number</label
+                    >
+                    <div class="relative">
+                      <span
+                        class="absolute left-6 top-1/2 -translate-y-1/2 text-on-surface-variant font-medium"
+                        >+20</span
+                      >
+                      <input
+                        class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-xl pl-16 pr-6 py-4 text-on-surface placeholder:text-outline"
+                        placeholder="123 456 7890"
+                        type="tel"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant ml-4 font-headline"
+                    >Preferred Service</label
+                  >
+                  <select
+                    class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-xl px-6 py-4 text-on-surface appearance-none"
+                  >
+                    <option>Cosmetic Dentistry</option>
+                    <option>Dental Implants</option>
+                    <option>Orthodontics</option>
+                    <option>General Checkup</option>
+                    <option>Other Consultation</option>
+                  </select>
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="text-xs font-semibold uppercase tracking-wider text-on-surface-variant ml-4 font-headline"
+                    >Additional Notes</label
+                  >
+                  <textarea
+                    class="w-full bg-surface-container-low border-none focus:ring-2 focus:ring-primary rounded-xl px-6 py-4 text-on-surface placeholder:text-outline resize-none"
+                    placeholder="Tell us about your concerns..."
+                    rows="4"
+                  ></textarea>
+                </div>
+                <!-- Progress Indicator -->
+                <div class="flex items-center space-x-4 py-4">
+                  <div class="h-2 flex-1 rounded-full bg-primary"></div>
+                  <div
+                    class="h-2 flex-1 rounded-full bg-tertiary-fixed-dim"
+                  ></div>
+                  <div
+                    class="h-2 flex-1 rounded-full bg-tertiary-fixed-dim"
+                  ></div>
+                </div>
+                <button
+                  class="w-full bg-gradient-to-r from-primary to-secondary text-white font-headline font-bold py-5 rounded-full text-lg shadow-lg hover:shadow-xl hover:opacity-95 transition-all active:scale-[0.98]"
+                  type="submit"
+                >
+                  Confirm Request
+                </button>
+              </form>
+            </div>
+            <!-- Sanctuary Details -->
+            <div class="lg:col-span-5 space-y-8">
+              <!-- Cairo Sanctuary Card -->
+              <div
+                class="bg-surface-container-low p-8 rounded-xl overflow-hidden relative h-full"
+              >
+                <div class="relative z-10">
+                  <div
+                    class="inline-flex items-center space-x-2 bg-white/40 backdrop-blur-sm px-4 py-1.5 rounded-full mb-6"
+                  >
+                    <span
+                      class="material-symbols-outlined text-primary text-sm"
+                      style="font-variation-settings: &quot;FILL&quot; 1"
+                      >location_on</span
+                    >
+                    <span
+                      class="text-xs font-bold text-primary uppercase tracking-widest font-headline"
+                      >Cairo Sanctuary</span
+                    >
+                  </div>
+                  <h3 class="text-3xl font-headline font-bold mb-4">
+                    The Elite Clinic
+                  </h3>
+                  <p class="text-on-surface-variant leading-relaxed mb-8">
+                    Experience luxury dental care in our state-of-the-art
+                    facility located in the heart of Maadi, Cairo. Designed as a
+                    sanctuary for those who value privacy and excellence.
+                  </p>
+                  <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary"
+                      >
+                        <span class="material-symbols-outlined">call</span>
+                      </div>
+                      <div>
+                        <p
+                          class="text-[10px] text-on-surface-variant font-bold uppercase tracking-tighter font-headline"
+                        >
+                          Emergency Line
+                        </p>
+                        <p class="font-semibold text-teal-900">
+                          +20 100 2345 678
+                        </p>
+                      </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                      <div
+                        class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-primary"
+                      >
+                        <span class="material-symbols-outlined">schedule</span>
+                      </div>
+                      <div>
+                        <p
+                          class="text-[10px] text-on-surface-variant font-bold uppercase tracking-tighter font-headline"
+                        >
+                          Opening Hours
+                        </p>
+                        <div
+                          class="space-y-1 mt-1 font-semibold text-teal-900 text-sm"
+                        >
+                          <div class="flex justify-between gap-4">
+                            <span class="">Saturday:</span>
+                            <span class="">10:00 AM - 09:00 PM</span>
+                          </div>
+                          <div class="flex justify-between gap-4">
+                            <span class="">Sunday:</span>
+                            <span class="">10:00 AM - 09:00 PM</span>
+                          </div>
+                          <div class="flex justify-between gap-4">
+                            <span class="">Monday:</span>
+                            <span class="">10:00 AM - 09:00 PM</span>
+                          </div>
+                          <div class="flex justify-between gap-4">
+                            <span class="">Tuesday:</span>
+                            <span class="">10:00 AM - 09:00 PM</span>
+                          </div>
+                          <div class="flex justify-between gap-4">
+                            <span class="">Wednesday:</span>
+                            <span class="">10:00 AM - 09:00 PM</span>
+                          </div>
+                          <div class="flex justify-between gap-4">
+                            <span class="">Thursday:</span>
+                            <span class="">10:00 AM - 09:00 PM</span>
+                          </div>
+                          <div class="flex justify-between gap-4 text-error">
+                            <span class="">Friday:</span>
+                            <span class="">Closed</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Full Width Map Integration -->
+          <div
+            class="w-full rounded-2xl bg-surface-container overflow-hidden relative group shadow-sm h-[450px]"
+          >
+            <iframe
+              allowfullscreen=""
+              height="450"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d27631.58705468498!2d31.203894499999997!3d30.038338699999997!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458470065787065%3A0x14e81febbd9d4c0!2sProf.%20Ahmed%20Nabil%20Fahmi!5e0!3m2!1sen!2seg!4v1774204789137!5m2!1sen!2seg"
+              style="border: 0"
+              width="100%"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- Final CTA -->
+      <section class="py-24 bg-surface">
+        <div
+          class="max-w-5xl mx-auto px-8 bg-primary rounded-2xl p-16 text-center text-white relative overflow-hidden shadow-2xl border-b-8 border-accent-gold"
+        >
+          <div class="relative z-10">
+            <h2 class="font-headline text-4xl md:text-5xl font-bold mb-6">
+              Experience Excellence.
+            </h2>
+            <p class="text-xl opacity-90 mb-10 max-w-2xl mx-auto">
+              Join an exclusive circle of patients who refuse to compromise on
+              their oral health and aesthetic.
+            </p>
+            <button
+              class="bg-accent-gold text-white px-12 py-5 rounded-xl font-headline font-bold text-xl hover:bg-[#c4a030] transition-all shadow-xl active:scale-95 border-b-4 border-[#a38428]"
+            >
+              Schedule Your Consult
+            </button>
+          </div>
+          <div
+            class="absolute inset-0 opacity-10 arabesque-pattern pointer-events-none"
+          ></div>
+          <div
+            class="absolute -top-20 -left-20 w-80 h-80 bg-accent-gold/20 rounded-full blur-3xl"
+          ></div>
+          <div
+            class="absolute -bottom-20 -right-20 w-80 h-80 bg-accent-gold/20 rounded-full blur-3xl"
+          ></div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="site-footer"></footer>
+    <!-- Floating WhatsApp Button -->
+    <a
+      class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all group"
+      href="https://wa.me/201002345678"
+      target="_blank"
+    >
+      <svg
+        class="w-10 h-10"
+        fill="currentColor"
+        viewbox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+        ></path>
+      </svg>
+      <div
+        class="absolute right-full mr-4 bg-white text-slate-800 px-4 py-2 rounded-lg shadow-xl font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none border border-slate-100"
+      >
+        Chat with us
+      </div>
+    </a>
+  </body>
+</html>
